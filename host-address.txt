@@ -1,0 +1,3 @@
+No published host address is available for this site yet.
+The website is currently a local static project at:
+c:\Users\sbarzeg1\Desktop\SimaBarzegarWebsite

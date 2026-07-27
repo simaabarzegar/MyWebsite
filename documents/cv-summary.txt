@@ -1,0 +1,21 @@
+Sima Barzegar
+
+Current role:
+- International HPC Training Program Officer, Barcelona Supercomputing Center (BSC)
+- Leading Work Package 3 for CASTIEL 2: Training, Twinning, and Mentoring
+
+Education:
+- PhD in Computer Architecture, Universitat Politècnica de Catalunya (UPC), 2019–2022
+  Thesis: Autonomous and reliable operation of multilayer optical networks
+- Master of Science in Electrical Engineering, Sahand University of Technology, 2013
+
+Selected publications:
+- Multi-Agent Autonomous 6G Service Control with Intelligent Reconfiguration (2026)
+- Provisioning of Time-Sensitive and Non-Time-Sensitive Flows With Assured Performance (2025)
+- Near-real-time 6G service operation enabled by distributed intelligence and in-band telemetry (2025)
+- Autonomous Flow Routing for Near Real-Time Quality of Service Assurance (2024)
+
+Research interests:
+- Autonomous optical networks
+- High-performance computing education
+- AI-enabled network control and management
