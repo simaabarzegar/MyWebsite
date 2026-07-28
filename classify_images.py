@@ -5,6 +5,7 @@ import pillow_heif
 import torch
 from transformers import pipeline
 
+# Register HEIF / HEIC image support (e.g., iPhone photos)
 pillow_heif.register_heif_opener()
 
 images_dir = r"C:\Users\sbarzeg1\Desktop\SimaBarzegarWebsite\images"
@@ -12,11 +13,11 @@ images_dir = r"C:\Users\sbarzeg1\Desktop\SimaBarzegarWebsite\images"
 print("Step 1: Collecting image files...")
 image_files = sorted([
     f for f in os.listdir(images_dir)
-    if f.lower().endswith(('.jpg', '.jpeg', '.png')) and not f.startswith('.')
+    if f.lower().endswith(('.jpg', '.jpeg', '.png', '.heic')) and not f.startswith('.')
 ])
 print(f"Total web-compatible images found: {len(image_files)}")
 
-print("Step 2: Initializing CLIP classification model...")
+print("Step 2: Initializing CLIP vision-language model...")
 device = 0 if torch.cuda.is_available() else -1
 classifier = pipeline(
     "zero-shot-image-classification",
@@ -24,34 +25,49 @@ classifier = pipeline(
     device=device
 )
 
-candidate_labels = [
-    "nature, forest, trees, mountains, garden, foliage, or green natural landscape",
-    "city view, cityscape, street, buildings, skyscrapers, or urban architecture",
-    "sea side, beach, ocean, sea waves, or coastal water",
-    "flowers, flower blossom, petals, bouquet, or floral arrangement",
-    "people, portrait of a person, group of people, human face, or person pose",
-    "places, travel destination, room interior, house, terrace, or architectural location",
-    "moon, night sky with moon, dark sky, or night view",
-    "food, dish, meal, cooking, plate of food, fruit, or beverage",
-    "art, painting, drawing, artwork, sketch, or creative illustration",
-    "sunset or sunrise sky, evening twilight, golden hour, or dawn"
-]
-
-label_to_category = {
-    "nature, forest, trees, mountains, garden, foliage, or green natural landscape": "nature",
-    "city view, cityscape, street, buildings, skyscrapers, or urban architecture": "city view",
-    "sea side, beach, ocean, sea waves, or coastal water": "sea side",
-    "flowers, flower blossom, petals, bouquet, or floral arrangement": "flowers",
-    "people, portrait of a person, group of people, human face, or person pose": "people",
-    "places, travel destination, room interior, house, terrace, or architectural location": "places",
-    "moon, night sky with moon, dark sky, or night view": "moon",
-    "food, dish, meal, cooking, plate of food, fruit, or beverage": "food",
-    "art, painting, drawing, artwork, sketch, or creative illustration": "art",
-    "sunset or sunrise sky, evening twilight, golden hour, or dawn": "sunset/sunrise"
+# Taxonomy strict to the 3 main categories requested
+taxonomy = {
+    # 1. Landscapes & Nature
+    "a photo of dense forest, green trees, mountains, garden foliage, or natural wilderness": {
+        "folder": "landscapes_nature",
+        "category": "Landscapes & Nature"
+    },
+    "a photo of ocean water, beach sand, sea waves, or coastal shore": {
+        "folder": "landscapes_nature",
+        "category": "Landscapes & Nature"
+    },
+    "a photo of the moon, starry night sky, twilight hour, or blue sky": {
+        "folder": "landscapes_nature",
+        "category": "Landscapes & Nature"
+    },
+    
+    # 2. People & Places
+    "a photo of a person, human face portrait, group of friends, family, or people": {
+        "folder": "people_places",
+        "category": "People & Places"
+    },
+    "a photo of city skyline, modern architecture, urban buildings, streets, room interior, or place": {
+        "folder": "people_places",
+        "category": "People & Places"
+    },
+    
+    # 3. Art & Creative
+    "a photo of handmade craft, art painting, drawing illustration, sculpture, or stained glass window": {
+        "folder": "art_creative",
+        "category": "Art & Creative"
+    },
+    "a photo of flower petals, blooming floral blossom, or flower bouquet": {
+        "folder": "art_creative",
+        "category": "Art & Creative"
+    }
 }
 
+candidate_labels = list(taxonomy.keys())
+
 category_mapping = {}
-print("Categorizing all 471 images...")
+detailed_mapping = {}
+
+print("Categorizing images into the 3 main collections...")
 
 batch_size = 16
 for i in range(0, len(image_files), batch_size):
@@ -63,10 +79,12 @@ for i in range(0, len(image_files), batch_size):
         fpath = os.path.join(images_dir, fname)
         try:
             img = Image.open(fpath).convert("RGB")
+            # Downsample for faster and consistent CLIP processing
+            img.thumbnail((512, 512))
             batch_imgs.append(img)
             batch_names.append(fname)
         except Exception as e:
-            print(f"Skipping corrupt image {fname}: {e}")
+            print(f"Skipping unreadable image {fname}: {e}")
             
     if not batch_imgs:
         continue
@@ -78,46 +96,57 @@ for i in range(0, len(image_files), batch_size):
             
         for fname, res in zip(batch_names, results):
             top_label = res[0]["label"]
-            category_mapping[fname] = label_to_category[top_label]
+            match_data = taxonomy[top_label]
+            
+            category_mapping[fname] = match_data["category"]
+            detailed_mapping[fname] = {
+                "folder": match_data["folder"],
+                "category": match_data["category"],
+                "confidence": round(res[0]["score"], 3)
+            }
     except Exception as err:
-        print(f"Batch classification error at {i}: {err}")
+        print(f"Batch processing error at index {i}: {err}. Retrying individually...")
         for fname, img in zip(batch_names, batch_imgs):
             try:
                 res = classifier(img, candidate_labels=candidate_labels)
-                category_mapping[fname] = label_to_category[res[0]["label"]]
-            except:
-                category_mapping[fname] = "nature"
-                
-    print(f"Categorized {min(i+batch_size, len(image_files))}/{len(image_files)} images...")
+                top_label = res[0]["label"]
+                match_data = taxonomy[top_label]
+                category_mapping[fname] = match_data["category"]
+                detailed_mapping[fname] = {
+                    "folder": match_data["folder"],
+                    "category": match_data["category"],
+                    "confidence": round(res[0]["score"], 3)
+                }
+            except Exception as single_err:
+                print(f"Fallback assigned for {fname}: {single_err}")
+                category_mapping[fname] = "Landscapes & Nature"
+                detailed_mapping[fname] = {
+                    "folder": "landscapes_nature",
+                    "category": "Landscapes & Nature",
+                    "confidence": 0.0
+                }
 
-print("\nStep 3: Writing gallery data files...")
+    print(f"Processed {min(i+batch_size, len(image_files))}/{len(image_files)} images...")
 
-# Write gallery-categories.js
-js_content = f"window.galleryCategories = {{\n  \"mapping\": {json.dumps(category_mapping, indent=4)}\n}};\n"
+print("\nStep 3: Saving output JSON and JavaScript files...")
+
+# Output JS for web integration
+js_content = f"window.galleryCategories = {{\n  \"mapping\": {json.dumps(category_mapping, indent=4)},\n  \"detailed\": {json.dumps(detailed_mapping, indent=4)}\n}};\n"
 with open(os.path.join(images_dir, "gallery-categories.js"), "w", encoding="utf-8") as f:
     f.write(js_content)
 
-# Write gallery-images.js
-all_images = sorted(list(category_mapping.keys()))
-images_js_content = f"window.galleryImages = {json.dumps(all_images, indent=2)};\n"
-with open(os.path.join(images_dir, "gallery-images.js"), "w", encoding="utf-8") as f:
-    f.write(images_js_content)
-
-# Write image-categories.json
+# Output JSON
 with open(os.path.join(images_dir, "image-categories.json"), "w", encoding="utf-8") as f:
-    json.dump({"mapping": category_mapping}, f, indent=2)
+    json.dump({"mapping": category_mapping, "detailed": detailed_mapping}, f, indent=2)
 
-# Write gallery-files.txt
-with open(os.path.join(images_dir, "gallery-files.txt"), "w", encoding="utf-8") as f:
-    for img_name in all_images:
-        f.write(f"{img_name}\n")
-
-# Summary
+# Print Summary
 summary = {}
-for cat in category_mapping.values():
+for item in detailed_mapping.values():
+    cat = item["category"]
     summary[cat] = summary.get(cat, 0) + 1
 
-print("\n--- Final Category Summary ---")
+print("\n--- Categorization Summary ---")
 for cat, count in sorted(summary.items()):
-    print(f"  {cat}: {count} images")
-print("Image processing and classification successfully finished!")
+    print(f"  • {cat}: {count} images")
+
+print("\nClassification process completed successfully!")
