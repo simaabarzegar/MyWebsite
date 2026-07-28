@@ -1,231 +1,173 @@
-const year = document.getElementById('year');
-if (year) {
-  year.textContent = new Date().getFullYear();
-}
-
-const folderTriggers = document.querySelectorAll('.gallery-folder');
-const folderView = document.getElementById('folder-view');
-const folderViewGrid = document.getElementById('folder-view-grid');
-const folderViewTitle = document.getElementById('folder-view-title');
-const folderViewClose = document.querySelector('.folder-view-close');
-const zoomModal = document.getElementById('zoom-modal');
-const zoomModalImage = document.getElementById('zoom-modal-image');
-const zoomModalClose = document.querySelector('.zoom-modal-close');
-
-const allGalleryImages = (window.galleryImages || [])
-  .filter((imageName) => /\.(jpe?g|png)$/i.test(imageName));
-
-const categoryMapping = (window.galleryCategories && window.galleryCategories.mapping) || {};
-
-const categoryDisplayNames = {
-  'nature': 'Nature',
-  'sea side': 'Sea side',
-  'sunset/sunrise': 'Sunset / Sunrise',
-  'moon': 'Moon',
-  'people': 'People',
-  'places': 'Places',
-  'city view': 'City view',
-  'art': 'Art',
-  'food': 'Food',
-  'flowers': 'Flowers'
-};
-
-const mainFolders = {
-  landscapes: {
-    title: 'Landscapes & nature',
-    subtitle: 'Nature, sea side, sunset/sunrise, and moon photos.',
-    subcategories: ['nature', 'sea side', 'sunset/sunrise', 'moon']
-  },
-  people: {
-    title: 'People & places',
-    subtitle: 'People, places, and city views.',
-    subcategories: ['people', 'places', 'city view']
-  },
-  creative: {
-    title: 'Art & creative',
-    subtitle: 'Art, food, and flower photos.',
-    subcategories: ['art', 'food', 'flowers']
+document.addEventListener("DOMContentLoaded", () => {
+  // 1. Dynamic Footer Year
+  const yearElem = document.getElementById("year");
+  if (yearElem) {
+    yearElem.textContent = new Date().getFullYear();
   }
-};
 
-const folderImages = Object.fromEntries(
-  Object.entries(mainFolders).map(([folderKey, folder]) => [
-    folderKey,
-    allGalleryImages.filter((imageName) => folder.subcategories.includes(categoryMapping[imageName]))
-  ])
-);
+  // 2. Element References
+  const folderCards = document.querySelectorAll(".gallery-folder");
+  const folderView = document.getElementById("folder-view");
+  const folderTitle = document.getElementById("folder-view-title");
+  const folderGrid = document.getElementById("folder-view-grid");
+  const folderCloseBtn = document.getElementById("folder-close-btn");
+  const subcatList = document.getElementById("folder-subcategory-list");
 
-const folderCategoryLists = Object.fromEntries(
-  Object.entries(mainFolders).map(([folderKey, folder]) => [
-    folderKey,
-    folder.subcategories.filter((subcat) => Object.values(categoryMapping).includes(subcat))
-  ])
-);
+  const modal = document.getElementById("zoom-modal");
+  const modalImg = document.getElementById("zoom-modal-image");
+  const zoomCloseBtn = document.getElementById("zoom-close-btn");
 
-if (folderTriggers.length && folderView && folderViewGrid) {
-  let activeFolder = null;
-  let activeSubcategory = null;
+  // Read category data from window object
+  const categoryData = (window.galleryCategories && window.galleryCategories.detailed) || {};
 
-  const renderSubcategories = (folderKey) => {
-    const list = document.getElementById('folder-subcategory-list');
-    if (!list) return;
+  // 3. Open Category Drawer
+  folderCards.forEach((folder) => {
+    folder.addEventListener("click", () => {
+      const folderCategory = folder.getAttribute("data-folder");
+      if (folderTitle) folderTitle.textContent = folderCategory;
+      if (folderView) folderView.hidden = false;
 
-    const availableSubcats = folderCategoryLists[folderKey] || [];
-    list.innerHTML = availableSubcats
-      .map((subcategory) => `<button type="button" class="folder-subcategory-button" data-folder="${folderKey}" data-subcategory="${subcategory}">${categoryDisplayNames[subcategory] || subcategory}</button>`)
-      .join('');
-
-    list.querySelectorAll('.folder-subcategory-button').forEach((button) => {
-      button.addEventListener('click', () => {
-        const subcategory = button.dataset.subcategory;
-        renderFolderImages(folderKey, subcategory);
-      });
+      folderView?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      setupSubcategoriesAndImages(folderCategory);
     });
-  };
+  });
 
-  const renderFolderImages = (folderKey, subcategory) => {
-    if (!folderViewTitle) return;
-    activeFolder = folderKey;
-    activeSubcategory = subcategory;
-    folderViewGrid.innerHTML = (allGalleryImages
-      .filter((imageName) => categoryMapping[imageName] === subcategory)
-      .map((imageName) => `<img src="images/${imageName}" alt="${subcategory} photo" loading="lazy" data-full-image="images/${imageName}" />`)
-      .join('')) || '<p class="folder-empty">No images found for this subcategory yet.</p>';
+  // 4. Setup Subcategories & Filter Options
+  function setupSubcategoriesAndImages(mainCategory) {
+    if (!subcatList || !folderGrid) return;
+    subcatList.innerHTML = "";
+    folderGrid.innerHTML = "";
 
-    folderViewGrid.querySelectorAll('img').forEach((image) => {
-      image.addEventListener('click', () => {
-        if (zoomModal && zoomModalImage) {
-          zoomModalImage.src = image.dataset.fullImage;
-          zoomModalImage.alt = image.alt;
-          zoomModal.hidden = false;
-          zoomModal.classList.add('is-open');
-          document.body.style.overflow = 'hidden';
+    const categoryEntries = Object.entries(categoryData).filter(([_, info]) => {
+      const cat = typeof info === "object" ? info.category : info;
+      return cat === mainCategory;
+    });
+
+    if (categoryEntries.length === 0) {
+      folderGrid.innerHTML = `<p style="font-size: 0.9rem; color: var(--text-muted);">No images found for this category.</p>`;
+      return;
+    }
+
+    const subcategories = Array.from(
+      new Set(
+        categoryEntries.map(([_, info]) =>
+          typeof info === "object" && info.subcategory ? info.subcategory : "General"
+        )
+      )
+    );
+
+    // Filter Button: "All"
+    const allBtn = document.createElement("button");
+    allBtn.className = "subcat-btn active";
+    allBtn.textContent = "All Subcategories";
+    allBtn.addEventListener("click", () => {
+      document.querySelectorAll(".subcat-btn").forEach((b) => b.classList.remove("active"));
+      allBtn.classList.add("active");
+      renderMicroThumbnails(categoryEntries);
+    });
+    subcatList.appendChild(allBtn);
+
+    // Individual Subcategory Pills
+    subcategories.forEach((sub) => {
+      const btn = document.createElement("button");
+      btn.className = "subcat-btn";
+      btn.textContent = sub;
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".subcat-btn").forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        const filtered = categoryEntries.filter(([_, info]) => {
+          const s = typeof info === "object" && info.subcategory ? info.subcategory : "General";
+          return s === sub;
+        });
+        renderMicroThumbnails(filtered);
+      });
+      subcatList.appendChild(btn);
+    });
+
+    renderMicroThumbnails(categoryEntries);
+  }
+
+  // 5. Render Micro-Thumbnails
+  function renderMicroThumbnails(entries) {
+    if (!folderGrid) return;
+    folderGrid.innerHTML = "";
+
+    entries.forEach(([filename, info]) => {
+      const img = document.createElement("img");
+      const imgPath = filename.startsWith("images/") ? filename : `images/${filename}`;
+      img.src = imgPath;
+      img.alt = typeof info === "object" && info.subcategory ? info.subcategory : filename;
+      img.className = "micro-thumb";
+      img.loading = "lazy";
+
+      // Lightbox click handler
+      img.addEventListener("click", () => {
+        if (modal && modalImg) {
+          modalImg.src = imgPath;
+          modal.classList.add("active");
+          modal.setAttribute("aria-hidden", "false");
         }
       });
+
+      folderGrid.appendChild(img);
     });
-
-    const buttons = document.querySelectorAll('.folder-subcategory-button');
-    buttons.forEach((button) => {
-      button.classList.toggle('active', button.dataset.subcategory === subcategory);
-    });
-  };
-
-  const openFolder = (folderKey, title) => {
-    folderView.hidden = false;
-    if (folderViewTitle) {
-      folderViewTitle.textContent = title;
-    }
-    renderSubcategories(folderKey);
-    const defaultSubcategory = folderCategoryLists[folderKey]?.[0] || 'nature';
-    renderFolderImages(folderKey, defaultSubcategory);
-  };
-
-  const closeFolder = () => {
-    folderView.hidden = true;
-    folderViewGrid.innerHTML = '';
-  };
-
-  folderTriggers.forEach((trigger) => {
-    trigger.addEventListener('click', () => {
-      openFolder(trigger.dataset.folder, trigger.dataset.title || 'Gallery');
-    });
-
-    trigger.addEventListener('keydown', (event) => {
-      if (event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault();
-        openFolder(trigger.dataset.folder, trigger.dataset.title || 'Gallery');
-      }
-    });
-  });
-
-  if (folderViewClose) {
-    folderViewClose.addEventListener('click', closeFolder);
   }
-}
 
-if (zoomModal && zoomModalClose) {
-  const closeZoomModal = () => {
-    zoomModal.hidden = true;
-    zoomModal.classList.remove('is-open');
-    document.body.style.overflow = '';
-  };
-
-  zoomModal.addEventListener('click', (event) => {
-    if (event.target === zoomModal) {
-      closeZoomModal();
-    }
-  });
-
-  zoomModalClose.addEventListener('click', closeZoomModal);
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') {
-      closeZoomModal();
-    }
-  });
-}
-
-const nav = document.querySelector('.nav');
-const navToggle = document.querySelector('.nav-toggle');
-
-if (nav && navToggle) {
-  navToggle.addEventListener('click', () => {
-    const isOpen = nav.classList.toggle('nav-open');
-    navToggle.setAttribute('aria-expanded', String(isOpen));
-  });
-
-  document.querySelectorAll('.nav-links a').forEach((link) => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('nav-open');
-      navToggle.setAttribute('aria-expanded', 'false');
+  // 6. Modal and Drawer Close Events
+  if (folderCloseBtn && folderView) {
+    folderCloseBtn.addEventListener("click", () => {
+      folderView.hidden = true;
     });
-  });
-}
-
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.12 }
-);
-
-document.querySelectorAll('.hero-content, .section, .card, .profile-card, .timeline-item, .highlight-box, .survey-form, .section-heading').forEach((element) => {
-  element.classList.add('reveal');
-  revealObserver.observe(element);
-});
-
-const certificateCard = document.querySelector('.certificate-card');
-const certificateToggle = document.querySelector('.certificate-toggle');
-
-if (certificateCard && certificateToggle) {
-  certificateToggle.addEventListener('click', () => {
-    certificateCard.classList.toggle('is-open');
-    certificateToggle.textContent = certificateCard.classList.contains('is-open') ? 'Hide certificate' : 'View certificate';
-  });
-}
-
-const form = document.getElementById('survey-form');
-const message = document.getElementById('form-message');
-
-if (form && message) {
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const formData = new FormData(form);
-    const name = formData.get('name')?.toString().trim();
-
-    if (name) {
-      message.textContent = `Thank you, ${name}! Your message has been received.`;
-      form.reset();
-    }
-  });
-}
-
-document.addEventListener('contextmenu', (event) => {
-  if (event.target.closest('.hero-photo')) {
-    event.preventDefault();
   }
+
+  if (zoomCloseBtn && modal) {
+    const closeModal = () => {
+      modal.classList.remove("active");
+      modal.setAttribute("aria-hidden", "true");
+    };
+
+    zoomCloseBtn.addEventListener("click", closeModal);
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) closeModal();
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeModal();
+    });
+  }
+
+  // 7. Mobile Navigation Toggle
+  const nav = document.querySelector(".nav");
+  const navToggle = document.querySelector(".nav-toggle");
+  if (nav && navToggle) {
+    navToggle.addEventListener("click", () => {
+      const isOpen = nav.classList.toggle("nav-open");
+      navToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    document.querySelectorAll(".nav-links a").forEach((link) => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("nav-open");
+        navToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  // 8. Scroll Animations
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  document.querySelectorAll(".hero-content, .section, .card, .profile-card, .timeline-item, .highlight-box").forEach((el) => {
+    el.classList.add("reveal");
+    revealObserver.observe(el);
+  });
 });
