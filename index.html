@@ -38,7 +38,30 @@
           <a href="#languages">Languages</a>
           <a href="#profiles">Profiles</a>
           <a href="#research">Research</a>
-          <a href="#gallery">Gallery</a>
+          <div class="nav-item dropdown">
+            <a href="#gallery" class="dropdown-toggle">Gallery <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+            <div class="dropdown-menu">
+              <div class="dropdown-column">
+                <span class="dropdown-header">Landscapes & Nature</span>
+                <a href="#gallery" data-subcat="nature"><i class="fa-solid fa-tree"></i> Nature</a>
+                <a href="#gallery" data-subcat="sea side"><i class="fa-solid fa-water"></i> Sea side</a>
+                <a href="#gallery" data-subcat="sunset/sunrise"><i class="fa-solid fa-sun"></i> Sunset / Sunrise</a>
+                <a href="#gallery" data-subcat="moon"><i class="fa-solid fa-moon"></i> Moon</a>
+              </div>
+              <div class="dropdown-column">
+                <span class="dropdown-header">People & Places</span>
+                <a href="#gallery" data-subcat="people"><i class="fa-solid fa-user-group"></i> People</a>
+                <a href="#gallery" data-subcat="places"><i class="fa-solid fa-location-dot"></i> Places</a>
+                <a href="#gallery" data-subcat="city view"><i class="fa-solid fa-city"></i> City view</a>
+              </div>
+              <div class="dropdown-column">
+                <span class="dropdown-header">Art & Creative</span>
+                <a href="#gallery" data-subcat="art"><i class="fa-solid fa-palette"></i> Art</a>
+                <a href="#gallery" data-subcat="food"><i class="fa-solid fa-utensils"></i> Food</a>
+                <a href="#gallery" data-subcat="flowers"><i class="fa-solid fa-spa"></i> Flowers</a>
+              </div>
+            </div>
+          </div>
           <a href="#milestones">Milestones</a>
           <a href="#contact">Contact</a>
         </div>
@@ -285,7 +308,23 @@
       <section class="section" id="gallery">
         <div class="section-heading">
           <h2>Gallery Highlights</h2>
-          <p>Select a category folder to expand subcategories. Thumbnails are kept small (~32px)—click any image to enlarge.</p>
+          <p>Select a category folder below or pick a subcategory directly from the top bar. Click any micro-thumbnail (~32px) to view full screen.</p>
+        </div>
+
+        <!-- Top Sub-Navigation Filter Bar -->
+        <div class="gallery-top-subnav">
+          <span class="subnav-label"><i class="fa-solid fa-filter"></i> Quick Filter:</span>
+          <button type="button" class="top-subnav-btn active" data-top-subcat="all">All</button>
+          <button type="button" class="top-subnav-btn" data-top-subcat="nature"><i class="fa-solid fa-tree"></i> Nature</button>
+          <button type="button" class="top-subnav-btn" data-top-subcat="sea side"><i class="fa-solid fa-water"></i> Sea side</button>
+          <button type="button" class="top-subnav-btn" data-top-subcat="sunset/sunrise"><i class="fa-solid fa-sun"></i> Sunset / Sunrise</button>
+          <button type="button" class="top-subnav-btn" data-top-subcat="moon"><i class="fa-solid fa-moon"></i> Moon</button>
+          <button type="button" class="top-subnav-btn" data-top-subcat="people"><i class="fa-solid fa-user-group"></i> People</button>
+          <button type="button" class="top-subnav-btn" data-top-subcat="places"><i class="fa-solid fa-location-dot"></i> Places</button>
+          <button type="button" class="top-subnav-btn" data-top-subcat="city view"><i class="fa-solid fa-city"></i> City view</button>
+          <button type="button" class="top-subnav-btn" data-top-subcat="art"><i class="fa-solid fa-palette"></i> Art</button>
+          <button type="button" class="top-subnav-btn" data-top-subcat="food"><i class="fa-solid fa-utensils"></i> Food</button>
+          <button type="button" class="top-subnav-btn" data-top-subcat="flowers"><i class="fa-solid fa-spa"></i> Flowers</button>
         </div>
 
         <div class="gallery-grid">
