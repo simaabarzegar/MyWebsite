@@ -69,7 +69,8 @@
       </nav>
 
     <main>
-      <!-- PAGE SECTION: HOME (WELCOME NOTE + SUBPAGE DIRECTORY) -->
+    <main>
+      <!-- PAGE SECTION: HOME (INITIAL WELCOME NOTE SCREEN) -->
       <section class="section page-section active" id="home">
         <div class="hero-content">
           <div class="hero-copy">
@@ -80,8 +81,9 @@
               Blending academic research in autonomous networks with continuous learning, yoga, dance, handcrafts, and a deep devotion to family, friends, and diversity in STEM.
             </p>
             <div class="hero-actions">
-              <a class="btn primary nav-subpage-btn" href="#about">Explore About Me</a>
-              <a class="btn secondary nav-subpage-btn" href="#gallery">Browse Photo Gallery</a>
+              <a class="btn primary nav-subpage-btn" href="#about">About Sima</a>
+              <a class="btn secondary nav-subpage-btn" href="#research">Research & Publications</a>
+              <a class="btn secondary nav-subpage-btn" href="#gallery">Photo Gallery</a>
             </div>
           </div>
 
@@ -97,42 +99,58 @@
             </ul>
           </div>
         </div>
-
-        <div class="section-heading" style="margin-top: 3.5rem;">
-          <h2>Explore Pages</h2>
-          <p>Select any section below or use the top menu bar to open dedicated subpages.</p>
-        </div>
-
-        <div class="card-grid">
-          <article class="card nav-subpage-card" data-target="about" tabindex="0">
-            <h3><i class="fa-solid fa-user-check"></i> About Me</h3>
-            <p>PhD in Computer Architecture, UPC postdoctoral researcher, and BSC HPC Training officer.</p>
-          </article>
-          <article class="card nav-subpage-card" data-target="beyond-work" tabindex="0">
-            <h3><i class="fa-solid fa-heart"></i> Personal Life</h3>
-            <p>Yoga, dance, handmade crafts, family, friends, and Women in STEM advocacy.</p>
-          </article>
-          <article class="card nav-subpage-card" data-target="languages" tabindex="0">
-            <h3><i class="fa-solid fa-language"></i> Languages</h3>
-            <p>Persian, English, Spanish, Catalan, and Azeri language proficiency.</p>
-          </article>
-          <article class="card nav-subpage-card" data-target="profiles" tabindex="0">
-            <h3><i class="fa-solid fa-id-card"></i> Profiles</h3>
-            <p>ORCID, Google Scholar, LinkedIn, ResearchGate, and BSC research profiles.</p>
-          </article>
-          <article class="card nav-subpage-card" data-target="research" tabindex="0">
-            <h3><i class="fa-solid fa-microscope"></i> Research & Publications</h3>
-            <p>Autonomous 6G networks, optical service routing, and IEEE journal papers.</p>
-          </article>
-          <article class="card nav-subpage-card" data-target="gallery" tabindex="0">
-            <h3><i class="fa-solid fa-images"></i> Photo Gallery</h3>
-            <p>471 categorized photos across 10 subcategories with micro-thumbnail views.</p>
-          </article>
-        </div>
       </section>
 
       <!-- PAGE SECTION: ABOUT -->
       <section class="section intro page-section" id="about">
+        <div class="section-heading">
+          <h2>About Sima Barzegar</h2>
+          <p>Select a subsection below to learn more about my background and roles.</p>
+        </div>
+
+        <!-- About Subsection Filter Tabs -->
+        <div class="section-subnav">
+          <button type="button" class="subnav-filter-btn active" data-sec="about" data-sub="all">All Overview</button>
+          <button type="button" class="subnav-filter-btn" data-sec="about" data-sub="bsc"><i class="fa-solid fa-building-columns"></i> BSC Training Role</button>
+          <button type="button" class="subnav-filter-btn" data-sec="about" data-sub="upc"><i class="fa-solid fa-graduation-cap"></i> UPC PhD & Postdoc</button>
+          <button type="button" class="subnav-filter-btn" data-sec="about" data-sub="weintel"><i class="fa-solid fa-hands-holding-circle"></i> WeInTel Leadership</button>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-content-blocks">
+            <p class="about-block" data-sub="bsc">
+              I am an International HPC Training Program Officer at the Barcelona
+              Supercomputing Center (BSC), where I focus on Training Coordination and Collaboration 
+              across National Competence Centres for the CASTIEL project.
+            </p>
+            <p class="about-block" data-sub="upc">
+              I completed my PhD in Computer Architecture at UPC in 2022 with a thesis on 
+              “Autonomous and reliable operation of multilayer optical networks,” followed by over 
+              two years as a Postdoctoral Researcher at UPC (2022 – Jan 2025).
+            </p>
+            <p class="about-block" data-sub="weintel">
+              Beyond research, I am deeply involved in advocating for women in optical networking, 
+              co-organizing the annual <em>Women in Telecommunication and Optical Networks (WeInTel)</em> 
+              workshop at ICTON since 2023.
+            </p>
+            <p class="about-block" data-sub="all">
+              Life outside work revolves around movement, arts, and connection. I regularly practice yoga, 
+              dance, work on handcrafts, paint, and cherish time with family and friends.
+            </p>
+          </div>
+          <div class="highlight-box">
+            <h3>At a glance</h3>
+            <ul>
+              <li>HPC Training Officer, BSC (Feb 2025 – Present)</li>
+              <li>Postdoctoral Researcher, UPC (2022 – Jan 2025)</li>
+              <li>PhD in Computer Architecture, UPC (Graduated 2022)</li>
+              <li>Co-Organizer, WeInTel Workshop @ ICTON (2023–2026)</li>
+              <li>Special Doctoral Award Winner (2024)</li>
+              <li>Fluent in 5 languages</li>
+            </ul>
+          </div>
+        </div>
+      </section>
         <div class="about-grid">
           <div>
             <p class="eyebrow">About me</p>
@@ -173,32 +191,44 @@
 
       <section class="section page-section" id="beyond-work">
         <div class="section-heading">
-          <h2>Beyond work</h2>
-          <p>The habits, arts, and values that enrich my daily life.</p>
+          <h2>Beyond Work & Personal Life</h2>
+          <p>Select a subsection below to explore my passions and interests.</p>
         </div>
+
+        <!-- Personal Subsection Filter Tabs -->
+        <div class="section-subnav">
+          <button type="button" class="subnav-filter-btn active" data-sec="personal" data-sub="all">All Personal</button>
+          <button type="button" class="subnav-filter-btn" data-sec="personal" data-sub="yoga"><i class="fa-solid fa-om"></i> Yoga & Fitness</button>
+          <button type="button" class="subnav-filter-btn" data-sec="personal" data-sub="dance"><i class="fa-solid fa-music"></i> Dance & Expression</button>
+          <button type="button" class="subnav-filter-btn" data-sec="personal" data-sub="handcrafts"><i class="fa-solid fa-scissors"></i> Handcrafts</button>
+          <button type="button" class="subnav-filter-btn" data-sec="personal" data-sub="family"><i class="fa-solid fa-people-roof"></i> Family & Friends</button>
+          <button type="button" class="subnav-filter-btn" data-sec="personal" data-sub="learning"><i class="fa-solid fa-book-open"></i> Continuous Learning</button>
+          <button type="button" class="subnav-filter-btn" data-sec="personal" data-sub="nature"><i class="fa-solid fa-palette"></i> Art & Nature</button>
+        </div>
+
         <div class="card-grid">
-          <article class="card">
-            <h3>Yoga & Fitness</h3>
+          <article class="card personal-card" data-sub="yoga">
+            <h3><i class="fa-solid fa-om"></i> Yoga & Fitness</h3>
             <p>A 200-hour certified Ashtanga Vinyasa yoga teacher. Staying active and healthy is a daily priority.</p>
           </article>
-          <article class="card">
-            <h3>Dance & Expression</h3>
+          <article class="card personal-card" data-sub="dance">
+            <h3><i class="fa-solid fa-music"></i> Dance & Expression</h3>
             <p>Dancing as a passion for joy, movement, rhythm, and self-expression.</p>
           </article>
-          <article class="card">
-            <h3>Handcrafts & Handmade</h3>
+          <article class="card personal-card" data-sub="handcrafts">
+            <h3><i class="fa-solid fa-scissors"></i> Handcrafts & Handmade</h3>
             <p>I love making handcrafts, DIY projects, and creating tangible handmade items.</p>
           </article>
-          <article class="card">
-            <h3>Family & Friends</h3>
+          <article class="card personal-card" data-sub="family">
+            <h3><i class="fa-solid fa-people-roof"></i> Family & Friends</h3>
             <p>My family and friends are priceless to me. Spending quality time with loved ones is essential.</p>
           </article>
-          <article class="card">
-            <h3>Continuous Learning</h3>
+          <article class="card personal-card" data-sub="learning">
+            <h3><i class="fa-solid fa-book-open"></i> Continuous Learning</h3>
             <p>Always seeking new skills, hobbies, routines, and life experiences with curiosity.</p>
           </article>
-          <article class="card">
-            <h3>Art & Nature</h3>
+          <article class="card personal-card" data-sub="nature">
+            <h3><i class="fa-solid fa-palette"></i> Art & Nature</h3>
             <p>Painting, photography, nature walks, animals, and blue skies keep me inspired.</p>
           </article>
         </div>
@@ -251,11 +281,20 @@
       <section class="section page-section" id="research">
         <div class="section-heading">
           <h2>Research & Interests</h2>
-          <p>Core focus areas in high-performance computing, network automation, and diversity in engineering.</p>
+          <p>Select a subsection below to explore my research domains and published works.</p>
+        </div>
+
+        <!-- Research Subsection Filter Tabs -->
+        <div class="section-subnav">
+          <button type="button" class="subnav-filter-btn active" data-sec="research" data-sub="all">All Topics & Publications</button>
+          <button type="button" class="subnav-filter-btn" data-sec="research" data-sub="hpc"><i class="fa-solid fa-server"></i> HPC Training</button>
+          <button type="button" class="subnav-filter-btn" data-sec="research" data-sub="6g"><i class="fa-solid fa-network-wired"></i> Autonomous 6G</button>
+          <button type="button" class="subnav-filter-btn" data-sec="research" data-sub="weintel"><i class="fa-solid fa-users"></i> WeInTel Workshops</button>
+          <button type="button" class="subnav-filter-btn" data-sec="research" data-sub="publications"><i class="fa-solid fa-newspaper"></i> Selected Publications</button>
         </div>
 
         <div class="research-rows">
-          <article class="card research-card">
+          <article class="card research-card" data-sub="hpc">
             <div class="research-card-header">
               <h3>High-Performance Computing</h3>
               <div class="badge-group">
@@ -267,7 +306,7 @@
             <p>Coordinating international HPC training programs and fostering community growth across National Competence Centres.</p>
           </article>
 
-          <article class="card research-card">
+          <article class="card research-card" data-sub="6g">
             <div class="research-card-header">
               <h3>Autonomous 6G Networks</h3>
               <div class="badge-group">
@@ -279,7 +318,7 @@
             <p>Researching multi-agent systems and real-time autonomous routing in optical network architectures.</p>
           </article>
 
-          <article class="card research-card">
+          <article class="card research-card" data-sub="weintel">
             <div class="research-card-header">
               <h3>Women in STEM & Leadership</h3>
               <div class="badge-group">
@@ -288,7 +327,7 @@
                 <span class="btn secondary badge">ICTON</span>
               </div>
             </div>
-            
+
             <p>
               Co-organizer of the <strong>Women in Telecommunication and Optical Networks (WeInTel)</strong> workshop series at ICTON:
             </p>
@@ -313,30 +352,23 @@
             </div>
           </article>
         </div>
-      </section>
 
-      <section class="section" id="publications">
-        <div class="section-heading">
-          <h2>Selected Publications</h2>
-          <p>Recent research contributions and journal papers.</p>
-        </div>
-        <div class="publication-grid">
-          <article class="card publication-item">
-            <h3>Multi-Agent Autonomous 6G Service Control</h3>
-            <p>IEEE Transactions on Network and Service Management, 2026.</p>
-          </article>
-          <article class="card publication-item">
-            <h3>Provisioning of Time-Sensitive Flows</h3>
-            <p>IEEE Transactions on Network and Service Management, 2025.</p>
-          </article>
-          <article class="card publication-item">
-            <h3>Near-real-time 6G Service Operation</h3>
-            <p>Journal of Optical Communications and Networking, 2025.</p>
-          </article>
-          <article class="card publication-item">
-            <h3>Autonomous Flow Routing for Near Real-Time QoS</h3>
-            <p>IEEE Transactions on Network and Service Management, 2024.</p>
-          </article>
+        <div class="publication-block" data-sub="publications" style="margin-top: 2rem;">
+          <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; color: var(--primary-color);">Selected Publications</h3>
+          <div class="publication-grid">
+            <article class="card publication-item" data-sub="publications">
+              <h3>Multi-Agent Autonomous 6G Service Control</h3>
+              <p>IEEE Transactions on Network and Service Management, 2026.</p>
+            </article>
+            <article class="card publication-item" data-sub="publications">
+              <h3>Provisioning of Time-Sensitive Flows</h3>
+              <p>IEEE Transactions on Network and Service Management, 2025.</p>
+            </article>
+            <article class="card publication-item" data-sub="publications">
+              <h3>Near-real-time 6G Service Operation</h3>
+              <p>Journal of Optical Communications and Networking, 2025.</p>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -445,27 +477,9 @@
         </div>
       </section>
 
-      <section class="section" id="survey">
-        <div class="section-heading">
-          <h2>Quick Message / Feedback</h2>
-          <p>Feel free to leave a thought or say hello.</p>
-        </div>
-        <form class="survey-form" id="survey-form">
-          <label>
-            Name
-            <input type="text" name="name" placeholder="Your name" required />
-          </label>
-          <label>
-            Message
-            <textarea name="message" rows="4" placeholder="Share a message" required></textarea>
-          </label>
-          <button class="btn primary" type="submit">Send Message</button>
-          <p class="form-message" id="form-message"></p>
-        </form>
-      </section>
     </main>
 
-    <!-- FOOTER WITH SOCIAL MEDIA ICONS (Option B) -->
+    <!-- FOOTER: ALWAYS VISIBLE, NOT PART OF THE PAGE TAB SYSTEM -->
     <footer class="footer" id="contact">
       <div class="footer-socials">
         <a href="https://www.linkedin.com/in/sima-barzegar/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -484,6 +498,26 @@
           <i class="fa-solid fa-envelope"></i>
         </a>
       </div>
+
+      <div class="footer-message">
+        <div class="section-heading">
+          <h2>Quick message</h2>
+          <p>Feel free to leave a thought or say hello.</p>
+        </div>
+        <form class="survey-form" id="survey-form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Share a message" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send Message</button>
+          <p class="form-message" id="form-message"></p>
+        </form>
+      </div>
+
       <p>Contact: hello@sima-barzegar.com</p>
       <p>© <span id="year"></span> Sima Barzegar</p>
     </footer>

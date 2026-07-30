@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const dropdownSubcatLinks = document.querySelectorAll(".dropdown-menu a[data-subcat]");
   const dropdownToggle = document.querySelector(".dropdown-toggle");
   const dropdownContainer = document.querySelector(".nav-item.dropdown");
-  const subpageCards = document.querySelectorAll(".nav-subpage-card");
   const subpageBtns = document.querySelectorAll(".nav-subpage-btn");
+  const subnavFilterBtns = document.querySelectorAll(".subnav-filter-btn");
 
   // Read category data from window object
   const categoryMapping = (window.galleryCategories && window.galleryCategories.mapping) || {};
@@ -81,10 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Scroll to top of section smoothly
-    const targetElem = document.getElementById(cleanId);
-    if (targetElem) {
-      targetElem.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+    window.scrollTo({ top: 0, behavior: "smooth" });
 
     // Special handling for Gallery subcategory selection
     if (cleanId === "gallery" && targetSubcat) {
@@ -92,7 +89,39 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // 4. Header Nav Link Click Handlers
+  // 4. Subsection Filter Tabs Logic (About, Personal, Research)
+  subnavFilterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const sectionId = btn.getAttribute("data-sec");
+      const subKey = btn.getAttribute("data-sub");
+
+      if (!sectionId || !subKey) return;
+
+      // Update active pill button inside section
+      const siblingBtns = document.querySelectorAll(`.subnav-filter-btn[data-sec="${sectionId}"]`);
+      siblingBtns.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      // Filter content elements inside section
+      const targetSection = document.getElementById(sectionId === "personal" ? "beyond-work" : sectionId);
+      if (!targetSection) return;
+
+      const filterableElements = targetSection.querySelectorAll("[data-sub]");
+      filterableElements.forEach((elem) => {
+        // Skip buttons themselves
+        if (elem.classList.contains("subnav-filter-btn")) return;
+
+        const elemSub = elem.getAttribute("data-sub");
+        if (subKey === "all" || elemSub === subKey) {
+          elem.style.display = "";
+        } else {
+          elem.style.display = "none";
+        }
+      });
+    });
+  });
+
+  // 5. Header Nav Link Click Handlers
   navLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
       const href = link.getAttribute("href");
@@ -103,17 +132,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Update URL Hash without jumping
         history.pushState(null, "", `#${pageId}`);
-      }
-    });
-  });
-
-  // Home Quick Cards Click Handlers
-  subpageCards.forEach((card) => {
-    card.addEventListener("click", () => {
-      const target = card.getAttribute("data-target");
-      if (target) {
-        navigateToPage(target);
-        history.pushState(null, "", `#${target}`);
       }
     });
   });
@@ -140,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 5. Open Category Drawer from Card Click
+  // 6. Open Category Drawer from Card Click
   folderCards.forEach((folder) => {
     folder.addEventListener("click", () => {
       const folderCategory = folder.getAttribute("data-folder");
@@ -156,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
     folderView?.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
-  // 6. Setup Subcategories & Filter Options
+  // 7. Setup Subcategories & Filter Options
   function setupSubcategoriesAndImages(mainCategory, activeSubcatFilter = "all") {
     if (!subcatList || !folderGrid) return;
     subcatList.innerHTML = "";
@@ -225,7 +243,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // 7. Render Micro-Thumbnails
+  // 8. Render Micro-Thumbnails
   function renderMicroThumbnails(entries) {
     if (!folderGrid) return;
     folderGrid.innerHTML = "";
@@ -250,7 +268,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 8. Direct Subcategory Selection Handler
+  // 9. Direct Subcategory Selection Handler
   function selectGallerySubcategory(targetSubcat) {
     updateTopSubnavActive(targetSubcat);
 
@@ -296,7 +314,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 9. Modal and Drawer Close Events
+  // 10. Modal and Drawer Close Events
   if (folderCloseBtn && folderView) {
     folderCloseBtn.addEventListener("click", () => {
       folderView.hidden = true;
@@ -318,7 +336,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 10. Mobile Navigation Toggle
+  // 11. Mobile Navigation Toggle
   const nav = document.querySelector(".nav");
   const navToggle = document.querySelector(".nav-toggle");
   if (nav && navToggle) {
@@ -328,7 +346,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 11. Initial URL Hash Routing & Popstate Support
+  // 12. Initial URL Hash Routing & Popstate Support
   function handleUrlHash() {
     const hash = window.location.hash.replace("#", "") || "home";
     navigateToPage(hash);

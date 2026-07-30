@@ -479,6 +479,42 @@ main {
   color: var(--text-muted);
 }
 
+/* SUBSECTION TABS (e.g. Research: Overview / Publications) */
+.subsection-tabs {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.subtab-btn {
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.subtab-btn.active,
+.subtab-btn:hover {
+  background: var(--primary-color);
+  color: #ffffff;
+  border-color: var(--primary-color);
+  box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
+}
+
+.subsection-panel {
+  display: none;
+}
+
+.subsection-panel.active {
+  display: block;
+}
+
 /* TIMELINE */
 .timeline {
   display: flex;
@@ -551,6 +587,42 @@ main {
 .form-message {
   font-size: 0.85rem;
   color: var(--primary-color);
+}
+
+/* SECTION SUB-NAVIGATION TABS */
+.section-subnav {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  padding: 0.8rem 1.2rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  margin-bottom: 2rem;
+}
+
+.subnav-filter-btn {
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 7px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-muted);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  transition: var(--transition);
+}
+
+.subnav-filter-btn:hover,
+.subnav-filter-btn.active {
+  background: var(--primary-color);
+  color: #ffffff;
+  border-color: var(--primary-color);
+  box-shadow: 0 3px 12px rgba(59, 130, 246, 0.4);
 }
 
 /* FOOTER */
