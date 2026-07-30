@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // 2. Element References
+  const pageSections = document.querySelectorAll(".page-section");
+  const navLinks = document.querySelectorAll(".nav-link");
   const folderCards = document.querySelectorAll(".gallery-folder");
   const folderView = document.getElementById("folder-view");
   const folderTitle = document.getElementById("folder-view-title");
@@ -21,26 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const dropdownSubcatLinks = document.querySelectorAll(".dropdown-menu a[data-subcat]");
   const dropdownToggle = document.querySelector(".dropdown-toggle");
   const dropdownContainer = document.querySelector(".nav-item.dropdown");
+  const subpageCards = document.querySelectorAll(".nav-subpage-card");
+  const subpageBtns = document.querySelectorAll(".nav-subpage-btn");
 
   // Read category data from window object
   const categoryMapping = (window.galleryCategories && window.galleryCategories.mapping) || {};
   const detailedData = (window.galleryCategories && window.galleryCategories.detailed) || {};
-
-  // Category & Subcategory Mapping Reference
-  const mainFolders = {
-    "landscapes": {
-      title: "Landscapes & Nature",
-      subcategories: ["nature", "sea side", "sunset/sunrise", "moon"]
-    },
-    "people": {
-      title: "People & Places",
-      subcategories: ["people", "places", "city view"]
-    },
-    "creative": {
-      title: "Art & Creative",
-      subcategories: ["art", "food", "flowers"]
-    }
-  };
 
   const subcategoryToMainFolder = {
     "nature": "Landscapes & Nature",
@@ -68,7 +56,91 @@ document.addEventListener("DOMContentLoaded", () => {
     "flowers": "Flowers"
   };
 
-  // 3. Open Category Drawer from Card Click
+  // 3. SPA Sub-Page Navigation Router
+  function navigateToPage(targetId, targetSubcat = null) {
+    const cleanId = targetId.replace("#", "").toLowerCase() || "home";
+
+    // Hide all page sections, activate target section
+    pageSections.forEach((section) => {
+      const sectionId = section.id.toLowerCase();
+      if (sectionId === cleanId) {
+        section.classList.add("active");
+      } else {
+        section.classList.remove("active");
+      }
+    });
+
+    // Update active class on header nav links
+    navLinks.forEach((link) => {
+      const href = link.getAttribute("href");
+      if (href && href.replace("#", "").toLowerCase() === cleanId) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+
+    // Scroll to top of section smoothly
+    const targetElem = document.getElementById(cleanId);
+    if (targetElem) {
+      targetElem.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    // Special handling for Gallery subcategory selection
+    if (cleanId === "gallery" && targetSubcat) {
+      selectGallerySubcategory(targetSubcat);
+    }
+  }
+
+  // 4. Header Nav Link Click Handlers
+  navLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      const href = link.getAttribute("href");
+      if (href && href.startsWith("#")) {
+        e.preventDefault();
+        const pageId = href.replace("#", "");
+        navigateToPage(pageId);
+
+        // Update URL Hash without jumping
+        history.pushState(null, "", `#${pageId}`);
+      }
+    });
+  });
+
+  // Home Quick Cards Click Handlers
+  subpageCards.forEach((card) => {
+    card.addEventListener("click", () => {
+      const target = card.getAttribute("data-target");
+      if (target) {
+        navigateToPage(target);
+        history.pushState(null, "", `#${target}`);
+      }
+    });
+  });
+
+  subpageBtns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      const href = btn.getAttribute("href");
+      if (href && href.startsWith("#")) {
+        e.preventDefault();
+        const pageId = href.replace("#", "");
+        navigateToPage(pageId);
+        history.pushState(null, "", `#${pageId}`);
+      }
+    });
+  });
+
+  // Brand Header Title Click Handler -> Go Home
+  const brandLink = document.querySelector(".brand");
+  if (brandLink) {
+    brandLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      navigateToPage("home");
+      history.pushState(null, "", "#home");
+    });
+  }
+
+  // 5. Open Category Drawer from Card Click
   folderCards.forEach((folder) => {
     folder.addEventListener("click", () => {
       const folderCategory = folder.getAttribute("data-folder");
@@ -84,13 +156,12 @@ document.addEventListener("DOMContentLoaded", () => {
     folderView?.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
-  // 4. Setup Subcategories & Filter Options
+  // 6. Setup Subcategories & Filter Options
   function setupSubcategoriesAndImages(mainCategory, activeSubcatFilter = "all") {
     if (!subcatList || !folderGrid) return;
     subcatList.innerHTML = "";
     folderGrid.innerHTML = "";
 
-    // Filter images matching main category name
     const categoryEntries = Object.entries(categoryMapping).filter(([_, catName]) => catName === mainCategory);
 
     if (categoryEntries.length === 0) {
@@ -98,7 +169,6 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Determine subcategory list for this main category
     let subcategories = [];
     if (mainCategory === "Landscapes & Nature") {
       subcategories = ["nature", "sea side", "sunset/sunrise", "moon"];
@@ -108,7 +178,6 @@ document.addEventListener("DOMContentLoaded", () => {
       subcategories = ["art", "food", "flowers"];
     }
 
-    // Filter Button: "All Subcategories"
     const allBtn = document.createElement("button");
     allBtn.className = `subcat-btn ${activeSubcatFilter === "all" ? "active" : ""}`;
     allBtn.textContent = "All Subcategories";
@@ -120,7 +189,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     subcatList.appendChild(allBtn);
 
-    // Individual Subcategory Pills
     subcategories.forEach((subKey) => {
       const btn = document.createElement("button");
       const isSelected = activeSubcatFilter.toLowerCase() === subKey.toLowerCase();
@@ -136,7 +204,7 @@ document.addEventListener("DOMContentLoaded", () => {
           if (detail && detail.subcategory) {
             return detail.subcategory.toLowerCase() === subKey.toLowerCase();
           }
-          return true; // Fallback show
+          return true;
         });
         renderMicroThumbnails(filtered.length > 0 ? filtered : categoryEntries);
       });
@@ -157,7 +225,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // 5. Render Micro-Thumbnails
+  // 7. Render Micro-Thumbnails
   function renderMicroThumbnails(entries) {
     if (!folderGrid) return;
     folderGrid.innerHTML = "";
@@ -182,7 +250,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 6. Direct Selection Handler for Top Sub-Nav & Dropdown
+  // 8. Direct Subcategory Selection Handler
   function selectGallerySubcategory(targetSubcat) {
     updateTopSubnavActive(targetSubcat);
 
@@ -202,7 +270,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Top Subnav Filter Buttons Listener
   topSubnavBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       const subcatKey = btn.getAttribute("data-top-subcat");
@@ -212,17 +279,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Dropdown Subcategory Links Listener
   dropdownSubcatLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
       const subcatKey = link.getAttribute("data-subcat");
-      if (subcatKey) {
-        selectGallerySubcategory(subcatKey);
-      }
+      navigateToPage("gallery", subcatKey);
+      history.pushState(null, "", "#gallery");
     });
   });
 
-  // Dropdown Mobile Toggle Support
   if (dropdownToggle && dropdownContainer) {
     dropdownToggle.addEventListener("click", (e) => {
       if (window.innerWidth <= 768) {
@@ -232,7 +296,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 7. Modal and Drawer Close Events
+  // 9. Modal and Drawer Close Events
   if (folderCloseBtn && folderView) {
     folderCloseBtn.addEventListener("click", () => {
       folderView.hidden = true;
@@ -254,7 +318,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 8. Mobile Navigation Toggle & Smooth Link Closing
+  // 10. Mobile Navigation Toggle
   const nav = document.querySelector(".nav");
   const navToggle = document.querySelector(".nav-toggle");
   if (nav && navToggle) {
@@ -262,12 +326,14 @@ document.addEventListener("DOMContentLoaded", () => {
       const isOpen = nav.classList.toggle("nav-open");
       navToggle.setAttribute("aria-expanded", String(isOpen));
     });
-
-    document.querySelectorAll(".nav-links a:not(.dropdown-toggle)").forEach((link) => {
-      link.addEventListener("click", () => {
-        nav.classList.remove("nav-open");
-        navToggle.setAttribute("aria-expanded", "false");
-      });
-    });
   }
+
+  // 11. Initial URL Hash Routing & Popstate Support
+  function handleUrlHash() {
+    const hash = window.location.hash.replace("#", "") || "home";
+    navigateToPage(hash);
+  }
+
+  window.addEventListener("popstate", handleUrlHash);
+  handleUrlHash();
 });

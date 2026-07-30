@@ -33,13 +33,14 @@
           <span></span>
         </button>
         <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#beyond-work">Personal</a>
-          <a href="#languages">Languages</a>
-          <a href="#profiles">Profiles</a>
-          <a href="#research">Research</a>
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#beyond-work" class="nav-link">Personal</a>
+          <a href="#languages" class="nav-link">Languages</a>
+          <a href="#profiles" class="nav-link">Profiles</a>
+          <a href="#research" class="nav-link">Research</a>
           <div class="nav-item dropdown">
-            <a href="#gallery" class="dropdown-toggle">Gallery <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+            <a href="#gallery" class="dropdown-toggle nav-link">Gallery <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
             <div class="dropdown-menu">
               <div class="dropdown-column">
                 <span class="dropdown-header">Landscapes & Nature</span>
@@ -62,41 +63,76 @@
               </div>
             </div>
           </div>
-          <a href="#milestones">Milestones</a>
-          <a href="#contact">Contact</a>
+          <a href="#milestones" class="nav-link">Milestones</a>
+          <a href="#contact" class="nav-link">Contact</a>
         </div>
       </nav>
 
-      <section class="hero-content reveal">
-        <div class="hero-copy">
-          <p class="eyebrow">Personal website</p>
-          <h1>Welcome to Sima Barzegar's space</h1>
-          <p class="hero-lead">
-            International HPC Training Program Officer at Barcelona Supercomputing Center. 
-            Blending academic research in autonomous networks with continuous learning, yoga, dance, handcrafts, and a deep devotion to family, friends, and diversity in STEM.
-          </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#profiles">View profiles</a>
-            <a class="btn secondary" href="#publications">View publications</a>
+    <main>
+      <!-- PAGE SECTION: HOME (WELCOME NOTE + SUBPAGE DIRECTORY) -->
+      <section class="section page-section active" id="home">
+        <div class="hero-content">
+          <div class="hero-copy">
+            <p class="eyebrow">Personal website</p>
+            <h1>Welcome to Sima Barzegar's space</h1>
+            <p class="hero-lead">
+              International HPC Training Program Officer at Barcelona Supercomputing Center. 
+              Blending academic research in autonomous networks with continuous learning, yoga, dance, handcrafts, and a deep devotion to family, friends, and diversity in STEM.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary nav-subpage-btn" href="#about">Explore About Me</a>
+              <a class="btn secondary nav-subpage-btn" href="#gallery">Browse Photo Gallery</a>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <h3>Sima Barzegar</h3>
+            <p>International HPC Training Program Officer at BSC (Feb 2025–Present) & former Postdoctoral Researcher at UPC (2022–Jan 2025).</p>
+            <ul>
+              <li>PhD in Computer Architecture, UPC (2019–2022)</li>
+              <li>Special Doctoral Award 2024</li>
+              <li>Co-Organizer of ICTON WeInTel Workshop Series (2023–2026)</li>
+              <li>Multilingual (5 Languages)</li>
+              <li>200-hour certified Ashtanga Vinyasa yoga teacher</li>
+            </ul>
           </div>
         </div>
 
-        <div class="hero-card">
-          <h3>Sima Barzegar</h3>
-          <p>International HPC Training Program Officer at BSC (Feb 2025–Present) & former Postdoctoral Researcher at UPC (2022–Jan 2025).</p>
-          <ul>
-            <li>PhD in Computer Architecture, UPC (2019–2022)</li>
-            <li>Special Doctoral Award 2024</li>
-            <li>Co-Organizer of ICTON WeInTel Workshop Series (2023–2026)</li>
-            <li>Multilingual (5 Languages)</li>
-            <li>200-hour certified Ashtanga Vinyasa yoga teacher</li>
-          </ul>
+        <div class="section-heading" style="margin-top: 3.5rem;">
+          <h2>Explore Pages</h2>
+          <p>Select any section below or use the top menu bar to open dedicated subpages.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card nav-subpage-card" data-target="about" tabindex="0">
+            <h3><i class="fa-solid fa-user-check"></i> About Me</h3>
+            <p>PhD in Computer Architecture, UPC postdoctoral researcher, and BSC HPC Training officer.</p>
+          </article>
+          <article class="card nav-subpage-card" data-target="beyond-work" tabindex="0">
+            <h3><i class="fa-solid fa-heart"></i> Personal Life</h3>
+            <p>Yoga, dance, handmade crafts, family, friends, and Women in STEM advocacy.</p>
+          </article>
+          <article class="card nav-subpage-card" data-target="languages" tabindex="0">
+            <h3><i class="fa-solid fa-language"></i> Languages</h3>
+            <p>Persian, English, Spanish, Catalan, and Azeri language proficiency.</p>
+          </article>
+          <article class="card nav-subpage-card" data-target="profiles" tabindex="0">
+            <h3><i class="fa-solid fa-id-card"></i> Profiles</h3>
+            <p>ORCID, Google Scholar, LinkedIn, ResearchGate, and BSC research profiles.</p>
+          </article>
+          <article class="card nav-subpage-card" data-target="research" tabindex="0">
+            <h3><i class="fa-solid fa-microscope"></i> Research & Publications</h3>
+            <p>Autonomous 6G networks, optical service routing, and IEEE journal papers.</p>
+          </article>
+          <article class="card nav-subpage-card" data-target="gallery" tabindex="0">
+            <h3><i class="fa-solid fa-images"></i> Photo Gallery</h3>
+            <p>471 categorized photos across 10 subcategories with micro-thumbnail views.</p>
+          </article>
         </div>
       </section>
-    </header>
 
-    <main>
-      <section class="section intro" id="about">
+      <!-- PAGE SECTION: ABOUT -->
+      <section class="section intro page-section" id="about">
         <div class="about-grid">
           <div>
             <p class="eyebrow">About me</p>
@@ -135,7 +171,7 @@
         </div>
       </section>
 
-      <section class="section" id="beyond-work">
+      <section class="section page-section" id="beyond-work">
         <div class="section-heading">
           <h2>Beyond work</h2>
           <p>The habits, arts, and values that enrich my daily life.</p>
@@ -168,7 +204,7 @@
         </div>
       </section>
 
-      <section class="section" id="languages">
+      <section class="section page-section" id="languages">
         <div class="section-heading">
           <h2>Languages</h2>
           <p>Communicating across cultures and communities.</p>
@@ -197,7 +233,7 @@
         </div>
       </section>
 
-      <section class="section" id="profiles">
+      <section class="section page-section" id="profiles">
         <div class="section-heading">
           <h2>Professional profiles</h2>
           <p>Explore my academic presence and professional links across platforms.</p>
@@ -212,7 +248,7 @@
         </div>
       </section>
 
-      <section class="section" id="research">
+      <section class="section page-section" id="research">
         <div class="section-heading">
           <h2>Research & Interests</h2>
           <p>Core focus areas in high-performance computing, network automation, and diversity in engineering.</p>
@@ -305,7 +341,7 @@
       </section>
 
       <!-- GALLERY SECTION WITH HIDDEN SUBCATEGORY DRAWER -->
-      <section class="section" id="gallery">
+      <section class="section page-section" id="gallery">
         <div class="section-heading">
           <h2>Gallery Highlights</h2>
           <p>Select a category folder below or pick a subcategory directly from the top bar. Click any micro-thumbnail (~32px) to view full screen.</p>
@@ -375,7 +411,7 @@
         </div>
       </section>
 
-      <section class="section" id="milestones">
+      <section class="section page-section" id="milestones">
         <div class="section-heading">
           <h2>Career & Education Milestones</h2>
           <p>Key academic and professional milestones.</p>
