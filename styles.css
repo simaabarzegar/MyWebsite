@@ -186,6 +186,11 @@ img {
   transform: translateX(-50%) translateY(4px);
 }
 
+.dropdown-menu.simple {
+  grid-template-columns: 1fr;
+  min-width: 240px;
+}
+
 .dropdown-column {
   display: flex;
   flex-direction: column;
@@ -479,40 +484,10 @@ main {
   color: var(--text-muted);
 }
 
-/* SUBSECTION TABS (e.g. Research: Overview / Publications) */
-.subsection-tabs {
+.about-content-blocks {
   display: flex;
-  gap: 0.6rem;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-}
-
-.subtab-btn {
-  font-size: 0.85rem;
-  font-weight: 600;
-  padding: 8px 18px;
-  border-radius: 20px;
-  border: 1px solid var(--border-color);
-  background: var(--bg-card);
-  color: var(--text-muted);
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.subtab-btn.active,
-.subtab-btn:hover {
-  background: var(--primary-color);
-  color: #ffffff;
-  border-color: var(--primary-color);
-  box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
-}
-
-.subsection-panel {
-  display: none;
-}
-
-.subsection-panel.active {
-  display: block;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
 /* TIMELINE */
@@ -663,6 +638,20 @@ main {
   border-color: var(--primary-color);
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+.footer-message {
+  max-width: 600px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.footer-message .section-heading {
+  margin-bottom: 1.5rem;
+}
+
+.footer-message .survey-form {
+  margin: 0 auto;
+  text-align: left;
 }
 
 /* ==========================================================================

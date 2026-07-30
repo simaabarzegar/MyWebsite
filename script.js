@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const topSubnavBtns = document.querySelectorAll(".top-subnav-btn");
   const dropdownSubcatLinks = document.querySelectorAll(".dropdown-menu a[data-subcat]");
-  const dropdownToggle = document.querySelector(".dropdown-toggle");
-  const dropdownContainer = document.querySelector(".nav-item.dropdown");
+  const dropdownSubsecLinks = document.querySelectorAll(".dropdown-menu a[data-sec]");
+  const dropdownContainers = document.querySelectorAll(".nav-item.dropdown");
   const subpageBtns = document.querySelectorAll(".nav-subpage-btn");
   const subnavFilterBtns = document.querySelectorAll(".subnav-filter-btn");
 
@@ -59,65 +59,76 @@ document.addEventListener("DOMContentLoaded", () => {
   // 3. SPA Sub-Page Navigation Router
   function navigateToPage(targetId, targetSubcat = null) {
     const cleanId = targetId.replace("#", "").toLowerCase() || "home";
+    const matchesPage = Array.from(pageSections).some(
+      (section) => section.id.toLowerCase() === cleanId
+    );
 
-    // Hide all page sections, activate target section
-    pageSections.forEach((section) => {
-      const sectionId = section.id.toLowerCase();
-      if (sectionId === cleanId) {
-        section.classList.add("active");
-      } else {
-        section.classList.remove("active");
+    // Only swap which page is shown when the link actually targets a page.
+    // "#contact" targets the always-visible footer, not a tab, so it's left alone.
+    if (matchesPage) {
+      pageSections.forEach((section) => {
+        section.classList.toggle("active", section.id.toLowerCase() === cleanId);
+      });
+
+      navLinks.forEach((link) => {
+        const href = link.getAttribute("href");
+        link.classList.toggle("active", href && href.replace("#", "").toLowerCase() === cleanId);
+      });
+
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      const targetElem = document.getElementById(cleanId);
+      if (targetElem) {
+        targetElem.scrollIntoView({ behavior: "smooth", block: "start" });
       }
-    });
-
-    // Update active class on header nav links
-    navLinks.forEach((link) => {
-      const href = link.getAttribute("href");
-      if (href && href.replace("#", "").toLowerCase() === cleanId) {
-        link.classList.add("active");
-      } else {
-        link.classList.remove("active");
-      }
-    });
-
-    // Scroll to top of section smoothly
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    }
 
     // Special handling for Gallery subcategory selection
-    if (cleanId === "gallery" && targetSubcat) {
+    if (matchesPage && cleanId === "gallery" && targetSubcat) {
       selectGallerySubcategory(targetSubcat);
     }
   }
 
   // 4. Subsection Filter Tabs Logic (About, Personal, Research)
+  // Shared by the in-page pill buttons and the nav dropdown sub-links below.
+  function applySubnavFilter(sectionId, subKey) {
+    if (!sectionId || !subKey) return;
+
+    // Update active pill button inside section
+    const siblingBtns = document.querySelectorAll(`.subnav-filter-btn[data-sec="${sectionId}"]`);
+    siblingBtns.forEach((b) => b.classList.toggle("active", b.getAttribute("data-sub") === subKey));
+
+    // Filter content elements inside section
+    const targetSection = document.getElementById(sectionId === "personal" ? "beyond-work" : sectionId);
+    if (!targetSection) return;
+
+    const filterableElements = targetSection.querySelectorAll("[data-sub]");
+    filterableElements.forEach((elem) => {
+      // Skip buttons themselves
+      if (elem.classList.contains("subnav-filter-btn")) return;
+
+      const elemSub = elem.getAttribute("data-sub");
+      elem.style.display = subKey === "all" || elemSub === subKey ? "" : "none";
+    });
+  }
+
   subnavFilterBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
-      const sectionId = btn.getAttribute("data-sec");
-      const subKey = btn.getAttribute("data-sub");
+      applySubnavFilter(btn.getAttribute("data-sec"), btn.getAttribute("data-sub"));
+    });
+  });
 
-      if (!sectionId || !subKey) return;
+  // Nav dropdown sub-links (About/Personal/Research) navigate to the page and apply its filter
+  dropdownSubsecLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const sectionId = link.getAttribute("data-sec");
+      const subKey = link.getAttribute("data-sub");
+      const pageId = sectionId === "personal" ? "beyond-work" : sectionId;
 
-      // Update active pill button inside section
-      const siblingBtns = document.querySelectorAll(`.subnav-filter-btn[data-sec="${sectionId}"]`);
-      siblingBtns.forEach((b) => b.classList.remove("active"));
-      btn.classList.add("active");
-
-      // Filter content elements inside section
-      const targetSection = document.getElementById(sectionId === "personal" ? "beyond-work" : sectionId);
-      if (!targetSection) return;
-
-      const filterableElements = targetSection.querySelectorAll("[data-sub]");
-      filterableElements.forEach((elem) => {
-        // Skip buttons themselves
-        if (elem.classList.contains("subnav-filter-btn")) return;
-
-        const elemSub = elem.getAttribute("data-sub");
-        if (subKey === "all" || elemSub === subKey) {
-          elem.style.display = "";
-        } else {
-          elem.style.display = "none";
-        }
-      });
+      navigateToPage(pageId);
+      history.pushState(null, "", `#${pageId}`);
+      applySubnavFilter(sectionId, subKey);
     });
   });
 
@@ -163,6 +174,14 @@ document.addEventListener("DOMContentLoaded", () => {
     folder.addEventListener("click", () => {
       const folderCategory = folder.getAttribute("data-folder");
       openFolderCategory(folderCategory);
+    });
+
+    folder.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        const folderCategory = folder.getAttribute("data-folder");
+        openFolderCategory(folderCategory);
+      }
     });
   });
 
@@ -305,14 +324,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  if (dropdownToggle && dropdownContainer) {
-    dropdownToggle.addEventListener("click", (e) => {
+  dropdownContainers.forEach((container) => {
+    const toggle = container.querySelector(".dropdown-toggle");
+    if (!toggle) return;
+
+    toggle.addEventListener("click", (e) => {
       if (window.innerWidth <= 768) {
         e.preventDefault();
-        dropdownContainer.classList.toggle("is-open");
+        container.classList.toggle("is-open");
       }
     });
-  }
+  });
 
   // 10. Modal and Drawer Close Events
   if (folderCloseBtn && folderView) {
@@ -333,6 +355,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") closeModal();
+    });
+  }
+
+  // 11b. Quick Message Form (Footer) — client-side only, no backend
+  const surveyForm = document.getElementById("survey-form");
+  const formMessage = document.getElementById("form-message");
+
+  if (surveyForm && formMessage) {
+    surveyForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const formData = new FormData(surveyForm);
+      const name = formData.get("name")?.toString().trim();
+
+      if (name) {
+        formMessage.textContent = `Thank you, ${name}! Your message has been received.`;
+        surveyForm.reset();
+      }
     });
   }
 

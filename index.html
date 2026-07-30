@@ -34,11 +34,52 @@
         </button>
         <div class="nav-links">
           <a href="#home" class="nav-link active">Home</a>
-          <a href="#about" class="nav-link">About</a>
-          <a href="#beyond-work" class="nav-link">Personal</a>
+          <div class="nav-item dropdown">
+            <a href="#about" class="dropdown-toggle nav-link">About <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+            <div class="dropdown-menu simple">
+              <div class="dropdown-column">
+                <span class="dropdown-header">About Sima</span>
+                <a href="#about" data-sec="about" data-sub="all"><i class="fa-solid fa-layer-group"></i> All Overview</a>
+                <a href="#about" data-sec="about" data-sub="bsc"><i class="fa-solid fa-building-columns"></i> BSC Training Role</a>
+                <a href="#about" data-sec="about" data-sub="upc"><i class="fa-solid fa-graduation-cap"></i> UPC PhD & Postdoc</a>
+                <a href="#about" data-sec="about" data-sub="weintel"><i class="fa-solid fa-hands-holding-circle"></i> WeInTel Leadership</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-item dropdown">
+            <a href="#beyond-work" class="dropdown-toggle nav-link">Personal <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+            <div class="dropdown-menu simple">
+              <div class="dropdown-column">
+                <span class="dropdown-header">Beyond Work</span>
+                <a href="#beyond-work" data-sec="personal" data-sub="all"><i class="fa-solid fa-layer-group"></i> All Personal</a>
+                <a href="#beyond-work" data-sec="personal" data-sub="yoga"><i class="fa-solid fa-om"></i> Yoga & Fitness</a>
+                <a href="#beyond-work" data-sec="personal" data-sub="dance"><i class="fa-solid fa-music"></i> Dance & Expression</a>
+                <a href="#beyond-work" data-sec="personal" data-sub="handcrafts"><i class="fa-solid fa-scissors"></i> Handcrafts</a>
+                <a href="#beyond-work" data-sec="personal" data-sub="family"><i class="fa-solid fa-people-roof"></i> Family & Friends</a>
+                <a href="#beyond-work" data-sec="personal" data-sub="learning"><i class="fa-solid fa-book-open"></i> Continuous Learning</a>
+                <a href="#beyond-work" data-sec="personal" data-sub="nature"><i class="fa-solid fa-palette"></i> Art & Nature</a>
+              </div>
+            </div>
+          </div>
+
           <a href="#languages" class="nav-link">Languages</a>
           <a href="#profiles" class="nav-link">Profiles</a>
-          <a href="#research" class="nav-link">Research</a>
+
+          <div class="nav-item dropdown">
+            <a href="#research" class="dropdown-toggle nav-link">Research <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+            <div class="dropdown-menu simple">
+              <div class="dropdown-column">
+                <span class="dropdown-header">Research & Publications</span>
+                <a href="#research" data-sec="research" data-sub="all"><i class="fa-solid fa-layer-group"></i> All Topics & Publications</a>
+                <a href="#research" data-sec="research" data-sub="hpc"><i class="fa-solid fa-server"></i> HPC Training</a>
+                <a href="#research" data-sec="research" data-sub="6g"><i class="fa-solid fa-network-wired"></i> Autonomous 6G</a>
+                <a href="#research" data-sec="research" data-sub="weintel"><i class="fa-solid fa-users"></i> WeInTel Workshops</a>
+                <a href="#research" data-sec="research" data-sub="publications"><i class="fa-solid fa-newspaper"></i> Selected Publications</a>
+              </div>
+            </div>
+          </div>
+
           <div class="nav-item dropdown">
             <a href="#gallery" class="dropdown-toggle nav-link">Gallery <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
             <div class="dropdown-menu">
@@ -68,7 +109,6 @@
         </div>
       </nav>
 
-    <main>
     <main>
       <!-- PAGE SECTION: HOME (INITIAL WELCOME NOTE SCREEN) -->
       <section class="section page-section active" id="home">
@@ -134,43 +174,6 @@
               workshop at ICTON since 2023.
             </p>
             <p class="about-block" data-sub="all">
-              Life outside work revolves around movement, arts, and connection. I regularly practice yoga, 
-              dance, work on handcrafts, paint, and cherish time with family and friends.
-            </p>
-          </div>
-          <div class="highlight-box">
-            <h3>At a glance</h3>
-            <ul>
-              <li>HPC Training Officer, BSC (Feb 2025 – Present)</li>
-              <li>Postdoctoral Researcher, UPC (2022 – Jan 2025)</li>
-              <li>PhD in Computer Architecture, UPC (Graduated 2022)</li>
-              <li>Co-Organizer, WeInTel Workshop @ ICTON (2023–2026)</li>
-              <li>Special Doctoral Award Winner (2024)</li>
-              <li>Fluent in 5 languages</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-        <div class="about-grid">
-          <div>
-            <p class="eyebrow">About me</p>
-            <h2>Sima Barzegar</h2>
-            <p>
-              I am an International HPC Training Program Officer at the Barcelona
-              Supercomputing Center (BSC), where I focus on Training Coordination and Collaboration 
-              across National Competence Centres for the CASTIEL project.
-            </p>
-            <p>
-              I completed my PhD in Computer Architecture at UPC in 2022 with a thesis on 
-              “Autonomous and reliable operation of multilayer optical networks,” followed by over 
-              two years as a Postdoctoral Researcher at UPC (2022 – Jan 2025).
-            </p>
-            <p>
-              Beyond research, I am deeply involved in advocating for women in optical networking, 
-              co-organizing the annual <em>Women in Telecommunication and Optical Networks (WeInTel)</em> 
-              workshop at ICTON since 2023.
-            </p>
-            <p>
               Life outside work revolves around movement, arts, and connection. I regularly practice yoga, 
               dance, work on handcrafts, paint, and cherish time with family and friends.
             </p>
@@ -477,10 +480,57 @@
         </div>
       </section>
 
+      <!-- PAGE SECTION: CONTACT -->
+      <section class="section page-section" id="contact">
+        <div class="section-heading">
+          <h2>Contact</h2>
+          <p>Reach out on social platforms or send a quick message below.</p>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/sima-barzegar/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://orcid.org/0000-0003-1916-7217" target="_blank" rel="noopener noreferrer" aria-label="ORCID">
+            <i class="fa-brands fa-orcid"></i>
+          </a>
+          <a href="https://scholar.google.com/citations?user=9ZgwwOcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </a>
+          <a href="https://www.researchgate.net/profile/Sima-Barzegar" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate">
+            <i class="fa-brands fa-researchgate"></i>
+          </a>
+          <a href="mailto:hello@sima-barzegar.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+
+        <div class="footer-message">
+          <div class="section-heading">
+            <h2>Quick message</h2>
+            <p>Feel free to leave a thought or say hello.</p>
+          </div>
+          <form class="survey-form" id="survey-form">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Share a message" required></textarea>
+            </label>
+            <button class="btn primary" type="submit">Send Message</button>
+            <p class="form-message" id="form-message"></p>
+          </form>
+        </div>
+
+        <p>Email: hello@sima-barzegar.com</p>
+      </section>
+
     </main>
 
-    <!-- FOOTER: ALWAYS VISIBLE, NOT PART OF THE PAGE TAB SYSTEM -->
-    <footer class="footer" id="contact">
+    <!-- FOOTER: ALWAYS VISIBLE AT THE END OF EVERY SUBPAGE -->
+    <footer class="footer">
       <div class="footer-socials">
         <a href="https://www.linkedin.com/in/sima-barzegar/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
           <i class="fa-brands fa-linkedin-in"></i>
@@ -498,26 +548,6 @@
           <i class="fa-solid fa-envelope"></i>
         </a>
       </div>
-
-      <div class="footer-message">
-        <div class="section-heading">
-          <h2>Quick message</h2>
-          <p>Feel free to leave a thought or say hello.</p>
-        </div>
-        <form class="survey-form" id="survey-form">
-          <label>
-            Name
-            <input type="text" name="name" placeholder="Your name" required />
-          </label>
-          <label>
-            Message
-            <textarea name="message" rows="4" placeholder="Share a message" required></textarea>
-          </label>
-          <button class="btn primary" type="submit">Send Message</button>
-          <p class="form-message" id="form-message"></p>
-        </form>
-      </div>
-
       <p>Contact: hello@sima-barzegar.com</p>
       <p>© <span id="year"></span> Sima Barzegar</p>
     </footer>
