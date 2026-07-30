@@ -1,396 +1,558 @@
-document.addEventListener("DOMContentLoaded", () => {
-  // 1. Dynamic Footer Year
-  const yearElem = document.getElementById("year");
-  if (yearElem) {
-    yearElem.textContent = new Date().getFullYear();
-  }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sima Barzegar | Personal Website</title>
+    <meta
+      name="description"
+      content="Sima Barzegar's personal website — International HPC Training Officer, PhD in Computer Architecture, Yoga teacher, and Women in STEM advocate."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="home">
+      <nav class="nav">
+        <a class="brand" href="#home">Sima Barzegar</a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="#home" class="nav-link active">Home</a>
+          <div class="nav-item dropdown">
+            <a href="#about" class="dropdown-toggle nav-link">About <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+            <div class="dropdown-menu simple">
+              <div class="dropdown-column">
+                <span class="dropdown-header">About Sima</span>
+                <a href="#about" data-sec="about" data-sub="all"><i class="fa-solid fa-layer-group"></i> All Overview</a>
+                <a href="#about" data-sec="about" data-sub="bsc"><i class="fa-solid fa-building-columns"></i> BSC Training Role</a>
+                <a href="#about" data-sec="about" data-sub="upc"><i class="fa-solid fa-graduation-cap"></i> UPC PhD & Postdoc</a>
+                <a href="#about" data-sec="about" data-sub="weintel"><i class="fa-solid fa-hands-holding-circle"></i> WeInTel Leadership</a>
+              </div>
+            </div>
+          </div>
 
-  // 2. Element References
-  const pageSections = document.querySelectorAll(".page-section");
-  const navLinks = document.querySelectorAll(".nav-link");
-  const folderCards = document.querySelectorAll(".gallery-folder");
-  const folderView = document.getElementById("folder-view");
-  const folderTitle = document.getElementById("folder-view-title");
-  const folderGrid = document.getElementById("folder-view-grid");
-  const folderCloseBtn = document.getElementById("folder-close-btn");
-  const subcatList = document.getElementById("folder-subcategory-list");
+          <div class="nav-item dropdown">
+            <a href="#beyond-work" class="dropdown-toggle nav-link">Personal <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+            <div class="dropdown-menu simple">
+              <div class="dropdown-column">
+                <span class="dropdown-header">Beyond Work</span>
+                <a href="#beyond-work" data-sec="personal" data-sub="all"><i class="fa-solid fa-layer-group"></i> All Personal</a>
+                <a href="#beyond-work" data-sec="personal" data-sub="yoga"><i class="fa-solid fa-om"></i> Yoga & Fitness</a>
+                <a href="#beyond-work" data-sec="personal" data-sub="dance"><i class="fa-solid fa-music"></i> Dance & Expression</a>
+                <a href="#beyond-work" data-sec="personal" data-sub="handcrafts"><i class="fa-solid fa-scissors"></i> Handcrafts</a>
+                <a href="#beyond-work" data-sec="personal" data-sub="family"><i class="fa-solid fa-people-roof"></i> Family & Friends</a>
+                <a href="#beyond-work" data-sec="personal" data-sub="learning"><i class="fa-solid fa-book-open"></i> Continuous Learning</a>
+                <a href="#beyond-work" data-sec="personal" data-sub="nature"><i class="fa-solid fa-palette"></i> Art & Nature</a>
+              </div>
+            </div>
+          </div>
 
-  const modal = document.getElementById("zoom-modal");
-  const modalImg = document.getElementById("zoom-modal-image");
-  const zoomCloseBtn = document.getElementById("zoom-close-btn");
+          <a href="#languages" class="nav-link">Languages</a>
+          <a href="#profiles" class="nav-link">Profiles</a>
 
-  const topSubnavBtns = document.querySelectorAll(".top-subnav-btn");
-  const dropdownSubcatLinks = document.querySelectorAll(".dropdown-menu a[data-subcat]");
-  const dropdownSubsecLinks = document.querySelectorAll(".dropdown-menu a[data-sec]");
-  const dropdownContainers = document.querySelectorAll(".nav-item.dropdown");
-  const subpageBtns = document.querySelectorAll(".nav-subpage-btn");
-  const subnavFilterBtns = document.querySelectorAll(".subnav-filter-btn");
+          <div class="nav-item dropdown">
+            <a href="#research" class="dropdown-toggle nav-link">Research <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+            <div class="dropdown-menu simple">
+              <div class="dropdown-column">
+                <span class="dropdown-header">Research & Publications</span>
+                <a href="#research" data-sec="research" data-sub="all"><i class="fa-solid fa-layer-group"></i> All Topics & Publications</a>
+                <a href="#research" data-sec="research" data-sub="hpc"><i class="fa-solid fa-server"></i> HPC Training</a>
+                <a href="#research" data-sec="research" data-sub="6g"><i class="fa-solid fa-network-wired"></i> Autonomous 6G</a>
+                <a href="#research" data-sec="research" data-sub="weintel"><i class="fa-solid fa-users"></i> WeInTel Workshops</a>
+                <a href="#research" data-sec="research" data-sub="publications"><i class="fa-solid fa-newspaper"></i> Selected Publications</a>
+              </div>
+            </div>
+          </div>
 
-  // Read category data from window object
-  const categoryMapping = (window.galleryCategories && window.galleryCategories.mapping) || {};
-  const detailedData = (window.galleryCategories && window.galleryCategories.detailed) || {};
+          <div class="nav-item dropdown">
+            <a href="#gallery" class="dropdown-toggle nav-link">Gallery <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+            <div class="dropdown-menu">
+              <div class="dropdown-column">
+                <span class="dropdown-header">Landscapes & Nature</span>
+                <a href="#gallery" data-subcat="nature"><i class="fa-solid fa-tree"></i> Nature</a>
+                <a href="#gallery" data-subcat="sea side"><i class="fa-solid fa-water"></i> Sea side</a>
+                <a href="#gallery" data-subcat="sunset/sunrise"><i class="fa-solid fa-sun"></i> Sunset / Sunrise</a>
+                <a href="#gallery" data-subcat="moon"><i class="fa-solid fa-moon"></i> Moon</a>
+              </div>
+              <div class="dropdown-column">
+                <span class="dropdown-header">People & Places</span>
+                <a href="#gallery" data-subcat="people"><i class="fa-solid fa-user-group"></i> People</a>
+                <a href="#gallery" data-subcat="places"><i class="fa-solid fa-location-dot"></i> Places</a>
+                <a href="#gallery" data-subcat="city view"><i class="fa-solid fa-city"></i> City view</a>
+              </div>
+              <div class="dropdown-column">
+                <span class="dropdown-header">Art & Creative</span>
+                <a href="#gallery" data-subcat="art"><i class="fa-solid fa-palette"></i> Art</a>
+                <a href="#gallery" data-subcat="food"><i class="fa-solid fa-utensils"></i> Food</a>
+                <a href="#gallery" data-subcat="flowers"><i class="fa-solid fa-spa"></i> Flowers</a>
+              </div>
+            </div>
+          </div>
+          <a href="#milestones" class="nav-link">Milestones</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </nav>
 
-  const subcategoryToMainFolder = {
-    "nature": "Landscapes & Nature",
-    "sea side": "Landscapes & Nature",
-    "sunset/sunrise": "Landscapes & Nature",
-    "moon": "Landscapes & Nature",
-    "people": "People & Places",
-    "places": "People & Places",
-    "city view": "People & Places",
-    "art": "Art & Creative",
-    "food": "Art & Creative",
-    "flowers": "Art & Creative"
-  };
+    <main>
+      <!-- PAGE SECTION: HOME (INITIAL WELCOME NOTE SCREEN) -->
+      <section class="section page-section active" id="home">
+        <div class="hero-content">
+          <div class="hero-copy">
+            <p class="eyebrow">Personal website</p>
+            <h1>Welcome to Sima Barzegar's space</h1>
+            <p class="hero-lead">
+              International HPC Training Program Officer at Barcelona Supercomputing Center. 
+              Blending academic research in autonomous networks with continuous learning, yoga, dance, handcrafts, and a deep devotion to family, friends, and diversity in STEM.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary nav-subpage-btn" href="#about">About Sima</a>
+              <a class="btn secondary nav-subpage-btn" href="#research">Research & Publications</a>
+              <a class="btn secondary nav-subpage-btn" href="#gallery">Photo Gallery</a>
+            </div>
+          </div>
 
-  const categoryDisplayNames = {
-    "nature": "Nature",
-    "sea side": "Sea side",
-    "sunset/sunrise": "Sunset / Sunrise",
-    "moon": "Moon",
-    "people": "People",
-    "places": "Places",
-    "city view": "City view",
-    "art": "Art",
-    "food": "Food",
-    "flowers": "Flowers"
-  };
+          <div class="hero-card">
+            <h3>Sima Barzegar</h3>
+            <p>International HPC Training Program Officer at BSC (Feb 2025–Present) & former Postdoctoral Researcher at UPC (2022–Jan 2025).</p>
+            <ul>
+              <li>PhD in Computer Architecture, UPC (2019–2022)</li>
+              <li>Special Doctoral Award 2024</li>
+              <li>Co-Organizer of ICTON WeInTel Workshop Series (2023–2026)</li>
+              <li>Multilingual (5 Languages)</li>
+              <li>200-hour certified Ashtanga Vinyasa yoga teacher</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-  // 3. SPA Sub-Page Navigation Router
-  function navigateToPage(targetId, targetSubcat = null) {
-    const cleanId = targetId.replace("#", "").toLowerCase() || "home";
-    const matchesPage = Array.from(pageSections).some(
-      (section) => section.id.toLowerCase() === cleanId
-    );
+      <!-- PAGE SECTION: ABOUT -->
+      <section class="section intro page-section" id="about">
+        <div class="section-heading">
+          <h2>About Sima Barzegar</h2>
+          <p>Select a subsection below to learn more about my background and roles.</p>
+        </div>
 
-    // Only swap which page is shown when the link actually targets a page.
-    // "#contact" targets the always-visible footer, not a tab, so it's left alone.
-    if (matchesPage) {
-      pageSections.forEach((section) => {
-        section.classList.toggle("active", section.id.toLowerCase() === cleanId);
-      });
+        <!-- About Subsection Filter Tabs -->
+        <div class="section-subnav">
+          <button type="button" class="subnav-filter-btn active" data-sec="about" data-sub="all">All Overview</button>
+          <button type="button" class="subnav-filter-btn" data-sec="about" data-sub="bsc"><i class="fa-solid fa-building-columns"></i> BSC Training Role</button>
+          <button type="button" class="subnav-filter-btn" data-sec="about" data-sub="upc"><i class="fa-solid fa-graduation-cap"></i> UPC PhD & Postdoc</button>
+          <button type="button" class="subnav-filter-btn" data-sec="about" data-sub="weintel"><i class="fa-solid fa-hands-holding-circle"></i> WeInTel Leadership</button>
+        </div>
 
-      navLinks.forEach((link) => {
-        const href = link.getAttribute("href");
-        link.classList.toggle("active", href && href.replace("#", "").toLowerCase() === cleanId);
-      });
+        <div class="about-grid">
+          <div class="about-content-blocks">
+            <p class="about-block" data-sub="bsc">
+              I am an International HPC Training Program Officer at the Barcelona
+              Supercomputing Center (BSC), where I focus on Training Coordination and Collaboration 
+              across National Competence Centres for the CASTIEL project.
+            </p>
+            <p class="about-block" data-sub="upc">
+              I completed my PhD in Computer Architecture at UPC in 2022 with a thesis on 
+              “Autonomous and reliable operation of multilayer optical networks,” followed by over 
+              two years as a Postdoctoral Researcher at UPC (2022 – Jan 2025).
+            </p>
+            <p class="about-block" data-sub="weintel">
+              Beyond research, I am deeply involved in advocating for women in optical networking, 
+              co-organizing the annual <em>Women in Telecommunication and Optical Networks (WeInTel)</em> 
+              workshop at ICTON since 2023.
+            </p>
+            <p class="about-block" data-sub="all">
+              Life outside work revolves around movement, arts, and connection. I regularly practice yoga, 
+              dance, work on handcrafts, paint, and cherish time with family and friends.
+            </p>
+          </div>
+          <div class="highlight-box">
+            <h3>At a glance</h3>
+            <ul>
+              <li>HPC Training Officer, BSC (Feb 2025 – Present)</li>
+              <li>Postdoctoral Researcher, UPC (2022 – Jan 2025)</li>
+              <li>PhD in Computer Architecture, UPC (Graduated 2022)</li>
+              <li>Co-Organizer, WeInTel Workshop @ ICTON (2023–2026)</li>
+              <li>Special Doctoral Award Winner (2024)</li>
+              <li>Fluent in 5 languages</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else {
-      const targetElem = document.getElementById(cleanId);
-      if (targetElem) {
-        targetElem.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    }
+      <section class="section page-section" id="beyond-work">
+        <div class="section-heading">
+          <h2>Beyond Work & Personal Life</h2>
+          <p>Select a subsection below to explore my passions and interests.</p>
+        </div>
 
-    // Special handling for Gallery subcategory selection
-    if (matchesPage && cleanId === "gallery" && targetSubcat) {
-      selectGallerySubcategory(targetSubcat);
-    }
-  }
+        <!-- Personal Subsection Filter Tabs -->
+        <div class="section-subnav">
+          <button type="button" class="subnav-filter-btn active" data-sec="personal" data-sub="all">All Personal</button>
+          <button type="button" class="subnav-filter-btn" data-sec="personal" data-sub="yoga"><i class="fa-solid fa-om"></i> Yoga & Fitness</button>
+          <button type="button" class="subnav-filter-btn" data-sec="personal" data-sub="dance"><i class="fa-solid fa-music"></i> Dance & Expression</button>
+          <button type="button" class="subnav-filter-btn" data-sec="personal" data-sub="handcrafts"><i class="fa-solid fa-scissors"></i> Handcrafts</button>
+          <button type="button" class="subnav-filter-btn" data-sec="personal" data-sub="family"><i class="fa-solid fa-people-roof"></i> Family & Friends</button>
+          <button type="button" class="subnav-filter-btn" data-sec="personal" data-sub="learning"><i class="fa-solid fa-book-open"></i> Continuous Learning</button>
+          <button type="button" class="subnav-filter-btn" data-sec="personal" data-sub="nature"><i class="fa-solid fa-palette"></i> Art & Nature</button>
+        </div>
 
-  // 4. Subsection Filter Tabs Logic (About, Personal, Research)
-  // Shared by the in-page pill buttons and the nav dropdown sub-links below.
-  function applySubnavFilter(sectionId, subKey) {
-    if (!sectionId || !subKey) return;
+        <div class="card-grid">
+          <article class="card personal-card" data-sub="yoga">
+            <h3><i class="fa-solid fa-om"></i> Yoga & Fitness</h3>
+            <p>A 200-hour certified Ashtanga Vinyasa yoga teacher. Staying active and healthy is a daily priority.</p>
+          </article>
+          <article class="card personal-card" data-sub="dance">
+            <h3><i class="fa-solid fa-music"></i> Dance & Expression</h3>
+            <p>Dancing as a passion for joy, movement, rhythm, and self-expression.</p>
+          </article>
+          <article class="card personal-card" data-sub="handcrafts">
+            <h3><i class="fa-solid fa-scissors"></i> Handcrafts & Handmade</h3>
+            <p>I love making handcrafts, DIY projects, and creating tangible handmade items.</p>
+          </article>
+          <article class="card personal-card" data-sub="family">
+            <h3><i class="fa-solid fa-people-roof"></i> Family & Friends</h3>
+            <p>My family and friends are priceless to me. Spending quality time with loved ones is essential.</p>
+          </article>
+          <article class="card personal-card" data-sub="learning">
+            <h3><i class="fa-solid fa-book-open"></i> Continuous Learning</h3>
+            <p>Always seeking new skills, hobbies, routines, and life experiences with curiosity.</p>
+          </article>
+          <article class="card personal-card" data-sub="nature">
+            <h3><i class="fa-solid fa-palette"></i> Art & Nature</h3>
+            <p>Painting, photography, nature walks, animals, and blue skies keep me inspired.</p>
+          </article>
+        </div>
+      </section>
 
-    // Update active pill button inside section
-    const siblingBtns = document.querySelectorAll(`.subnav-filter-btn[data-sec="${sectionId}"]`);
-    siblingBtns.forEach((b) => b.classList.toggle("active", b.getAttribute("data-sub") === subKey));
+      <section class="section page-section" id="languages">
+        <div class="section-heading">
+          <h2>Languages</h2>
+          <p>Communicating across cultures and communities.</p>
+        </div>
+        <div class="profile-grid">
+          <div class="profile-card">
+            <h3>Azarbaijani</h3>
+            <p>Mother Tongue</p>
+          </div>
+          <div class="profile-card">
+            <h3>Persian</h3>
+            <p>Official Language (Native Fluency)</p>
+          </div>
+          <div class="profile-card">
+            <h3>English</h3>
+            <p>Full Professional Proficiency</p>
+          </div>
+          <div class="profile-card">
+            <h3>Turkish</h3>
+            <p>Fluent</p>
+          </div>
+          <div class="profile-card">
+            <h3>Spanish</h3>
+            <p>Conversational & Professional</p>
+          </div>
+        </div>
+      </section>
 
-    // Filter content elements inside section
-    const targetSection = document.getElementById(sectionId === "personal" ? "beyond-work" : sectionId);
-    if (!targetSection) return;
+      <section class="section page-section" id="profiles">
+        <div class="section-heading">
+          <h2>Professional profiles</h2>
+          <p>Explore my academic presence and professional links across platforms.</p>
+        </div>
+        <div class="profile-grid">
+          <a class="profile-card" href="https://orcid.org/0000-0003-1916-7217" target="_blank" rel="noopener noreferrer">ORCID Profile</a>
+          <a class="profile-card" href="https://www.bsc.es/es/barzegar-sima" target="_blank" rel="noopener noreferrer">BSC Profile</a>
+          <a class="profile-card" href="https://futur.upc.edu/SimaBarzegar" target="_blank" rel="noopener noreferrer">Futur UPC</a>
+          <a class="profile-card" href="https://www.linkedin.com/in/sima-barzegar/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="profile-card" href="https://scholar.google.com/citations?user=9ZgwwOcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+          <a class="profile-card" href="https://www.researchgate.net/profile/Sima-Barzegar" target="_blank" rel="noopener noreferrer">ResearchGate</a>
+        </div>
+      </section>
 
-    const filterableElements = targetSection.querySelectorAll("[data-sub]");
-    filterableElements.forEach((elem) => {
-      // Skip buttons themselves
-      if (elem.classList.contains("subnav-filter-btn")) return;
+      <section class="section page-section" id="research">
+        <div class="section-heading">
+          <h2>Research & Interests</h2>
+          <p>Select a subsection below to explore my research domains and published works.</p>
+        </div>
 
-      const elemSub = elem.getAttribute("data-sub");
-      elem.style.display = subKey === "all" || elemSub === subKey ? "" : "none";
-    });
-  }
+        <!-- Research Subsection Filter Tabs -->
+        <div class="section-subnav">
+          <button type="button" class="subnav-filter-btn active" data-sec="research" data-sub="all">All Topics & Publications</button>
+          <button type="button" class="subnav-filter-btn" data-sec="research" data-sub="hpc"><i class="fa-solid fa-server"></i> HPC Training</button>
+          <button type="button" class="subnav-filter-btn" data-sec="research" data-sub="6g"><i class="fa-solid fa-network-wired"></i> Autonomous 6G</button>
+          <button type="button" class="subnav-filter-btn" data-sec="research" data-sub="weintel"><i class="fa-solid fa-users"></i> WeInTel Workshops</button>
+          <button type="button" class="subnav-filter-btn" data-sec="research" data-sub="publications"><i class="fa-solid fa-newspaper"></i> Selected Publications</button>
+        </div>
 
-  subnavFilterBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      applySubnavFilter(btn.getAttribute("data-sec"), btn.getAttribute("data-sub"));
-    });
-  });
+        <div class="research-rows">
+          <article class="card research-card" data-sub="hpc">
+            <div class="research-card-header">
+              <h3>High-Performance Computing</h3>
+              <div class="badge-group">
+                <span class="btn secondary badge">CASTIEL</span>
+                <span class="btn secondary badge">BSC</span>
+                <span class="btn secondary badge">HPC Training</span>
+              </div>
+            </div>
+            <p>Coordinating international HPC training programs and fostering community growth across National Competence Centres.</p>
+          </article>
 
-  // Nav dropdown sub-links (About/Personal/Research) navigate to the page and apply its filter
-  dropdownSubsecLinks.forEach((link) => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      const sectionId = link.getAttribute("data-sec");
-      const subKey = link.getAttribute("data-sub");
-      const pageId = sectionId === "personal" ? "beyond-work" : sectionId;
+          <article class="card research-card" data-sub="6g">
+            <div class="research-card-header">
+              <h3>Autonomous 6G Networks</h3>
+              <div class="badge-group">
+                <span class="btn secondary badge">Multi-Agent Systems</span>
+                <span class="btn secondary badge">6G</span>
+                <span class="btn secondary badge">Optical Routing</span>
+              </div>
+            </div>
+            <p>Researching multi-agent systems and real-time autonomous routing in optical network architectures.</p>
+          </article>
 
-      navigateToPage(pageId);
-      history.pushState(null, "", `#${pageId}`);
-      applySubnavFilter(sectionId, subKey);
-    });
-  });
+          <article class="card research-card" data-sub="weintel">
+            <div class="research-card-header">
+              <h3>Women in STEM & Leadership</h3>
+              <div class="badge-group">
+                <span class="btn primary badge">Co-Organizer</span>
+                <span class="btn secondary badge">WeInTel</span>
+                <span class="btn secondary badge">ICTON</span>
+              </div>
+            </div>
 
-  // 5. Header Nav Link Click Handlers
-  navLinks.forEach((link) => {
-    link.addEventListener("click", (e) => {
-      const href = link.getAttribute("href");
-      if (href && href.startsWith("#")) {
-        e.preventDefault();
-        const pageId = href.replace("#", "");
-        navigateToPage(pageId);
+            <p>
+              Co-organizer of the <strong>Women in Telecommunication and Optical Networks (WeInTel)</strong> workshop series at ICTON:
+            </p>
 
-        // Update URL Hash without jumping
-        history.pushState(null, "", `#${pageId}`);
-      }
-    });
-  });
+            <div class="workshop-grid">
+              <div class="workshop-item">
+                <span class="workshop-title">1st Workshop</span>
+                <a href="https://www.gov.pl/web/instytut-lacznosci/icton-2023" target="_blank" rel="noopener noreferrer">ICTON 2023 ↗</a>
+              </div>
+              <div class="workshop-item">
+                <span class="workshop-title">2nd Workshop</span>
+                <a href="https://www.gov.pl/web/instytut-lacznosci/icton-2024" target="_blank" rel="noopener noreferrer">ICTON 2024 ↗</a>
+              </div>
+              <div class="workshop-item">
+                <span class="workshop-title">3rd Workshop</span>
+                <a href="https://icton2025.upc.edu/" target="_blank" rel="noopener noreferrer">ICTON 2025 ↗</a>
+              </div>
+              <div class="workshop-item">
+                <span class="workshop-title">4th Workshop</span>
+                <a href="https://icton2026.ufe.cz/en/about/" target="_blank" rel="noopener noreferrer">ICTON 2026 ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
 
-  subpageBtns.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      const href = btn.getAttribute("href");
-      if (href && href.startsWith("#")) {
-        e.preventDefault();
-        const pageId = href.replace("#", "");
-        navigateToPage(pageId);
-        history.pushState(null, "", `#${pageId}`);
-      }
-    });
-  });
+        <div class="publication-block" data-sub="publications" style="margin-top: 2rem;">
+          <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; color: var(--primary-color);">Selected Publications</h3>
+          <div class="publication-grid">
+            <article class="card publication-item" data-sub="publications">
+              <h3>Multi-Agent Autonomous 6G Service Control</h3>
+              <p>IEEE Transactions on Network and Service Management, 2026.</p>
+            </article>
+            <article class="card publication-item" data-sub="publications">
+              <h3>Provisioning of Time-Sensitive Flows</h3>
+              <p>IEEE Transactions on Network and Service Management, 2025.</p>
+            </article>
+            <article class="card publication-item" data-sub="publications">
+              <h3>Near-real-time 6G Service Operation</h3>
+              <p>Journal of Optical Communications and Networking, 2025.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-  // Brand Header Title Click Handler -> Go Home
-  const brandLink = document.querySelector(".brand");
-  if (brandLink) {
-    brandLink.addEventListener("click", (e) => {
-      e.preventDefault();
-      navigateToPage("home");
-      history.pushState(null, "", "#home");
-    });
-  }
+      <!-- GALLERY SECTION WITH HIDDEN SUBCATEGORY DRAWER -->
+      <section class="section page-section" id="gallery">
+        <div class="section-heading">
+          <h2>Gallery Highlights</h2>
+          <p>Select a category folder below or pick a subcategory directly from the top bar. Click any micro-thumbnail (~32px) to view full screen.</p>
+        </div>
 
-  // 6. Open Category Drawer from Card Click
-  folderCards.forEach((folder) => {
-    folder.addEventListener("click", () => {
-      const folderCategory = folder.getAttribute("data-folder");
-      openFolderCategory(folderCategory);
-    });
+        <!-- Top Sub-Navigation Filter Bar -->
+        <div class="gallery-top-subnav">
+          <span class="subnav-label"><i class="fa-solid fa-filter"></i> Quick Filter:</span>
+          <button type="button" class="top-subnav-btn active" data-top-subcat="all">All</button>
+          <button type="button" class="top-subnav-btn" data-top-subcat="nature"><i class="fa-solid fa-tree"></i> Nature</button>
+          <button type="button" class="top-subnav-btn" data-top-subcat="sea side"><i class="fa-solid fa-water"></i> Sea side</button>
+          <button type="button" class="top-subnav-btn" data-top-subcat="sunset/sunrise"><i class="fa-solid fa-sun"></i> Sunset / Sunrise</button>
+          <button type="button" class="top-subnav-btn" data-top-subcat="moon"><i class="fa-solid fa-moon"></i> Moon</button>
+          <button type="button" class="top-subnav-btn" data-top-subcat="people"><i class="fa-solid fa-user-group"></i> People</button>
+          <button type="button" class="top-subnav-btn" data-top-subcat="places"><i class="fa-solid fa-location-dot"></i> Places</button>
+          <button type="button" class="top-subnav-btn" data-top-subcat="city view"><i class="fa-solid fa-city"></i> City view</button>
+          <button type="button" class="top-subnav-btn" data-top-subcat="art"><i class="fa-solid fa-palette"></i> Art</button>
+          <button type="button" class="top-subnav-btn" data-top-subcat="food"><i class="fa-solid fa-utensils"></i> Food</button>
+          <button type="button" class="top-subnav-btn" data-top-subcat="flowers"><i class="fa-solid fa-spa"></i> Flowers</button>
+        </div>
 
-    folder.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        const folderCategory = folder.getAttribute("data-folder");
-        openFolderCategory(folderCategory);
-      }
-    });
-  });
+        <div class="gallery-grid">
+          <article class="gallery-folder" data-folder="Landscapes & Nature" tabindex="0">
+            <div class="gallery-thumb-wrapper">
+              <img src="images/IMG_5418.JPG" alt="Landscapes & Nature" loading="lazy" class="gallery-thumb" onerror="this.onerror=null; this.src='https://placehold.co/150x150?text=Nature';" />
+            </div>
+            <h3>Landscapes & Nature</h3>
+            <p style="font-size:0.85rem; color:var(--text-muted); margin-top:0.25rem;">Click to view subcategories and micro-views.</p>
+          </article>
 
-  function openFolderCategory(mainCategory, filterSubcategory = "all") {
-    if (folderTitle) folderTitle.textContent = mainCategory;
-    if (folderView) folderView.hidden = false;
+          <article class="gallery-folder" data-folder="People & Places" tabindex="0">
+            <div class="gallery-thumb-wrapper">
+              <img src="images/IMG_5310.JPG" alt="People & Places" loading="lazy" class="gallery-thumb" onerror="this.onerror=null; this.src='https://placehold.co/150x150?text=Places';" />
+            </div>
+            <h3>People & Places</h3>
+            <p style="font-size:0.85rem; color:var(--text-muted); margin-top:0.25rem;">Click to view subcategories and micro-views.</p>
+          </article>
 
-    setupSubcategoriesAndImages(mainCategory, filterSubcategory);
-    folderView?.scrollIntoView({ behavior: "smooth", block: "nearest" });
-  }
+          <article class="gallery-folder" data-folder="Art & Creative" tabindex="0">
+            <div class="gallery-thumb-wrapper">
+              <img src="images/IMG_0262.jpg" alt="Art & Creative" loading="lazy" class="gallery-thumb" onerror="this.onerror=null; this.src='https://placehold.co/150x150?text=Art';" />
+            </div>
+            <h3>Art & Creative</h3>
+            <p style="font-size:0.85rem; color:var(--text-muted); margin-top:0.25rem;">Click to view subcategories and micro-views.</p>
+          </article>
+        </div>
 
-  // 7. Setup Subcategories & Filter Options
-  function setupSubcategoriesAndImages(mainCategory, activeSubcatFilter = "all") {
-    if (!subcatList || !folderGrid) return;
-    subcatList.innerHTML = "";
-    folderGrid.innerHTML = "";
+        <!-- Hidden Subcategory Drawer Container -->
+        <div class="folder-view" id="folder-view" hidden>
+          <div class="folder-view-header">
+            <h3 id="folder-view-title" style="margin:0; font-size:1.2rem;">Category</h3>
+            <button class="folder-view-close btn secondary" id="folder-close-btn" type="button" aria-label="Close folder">✕ Close</button>
+          </div>
 
-    const categoryEntries = Object.entries(categoryMapping).filter(([_, catName]) => catName === mainCategory);
+          <div class="folder-view-controls" id="folder-subcategory-list"></div>
+          
+          <!-- Micro-Thumbnails Container -->
+          <div class="folder-view-grid" id="folder-view-grid"></div>
+        </div>
 
-    if (categoryEntries.length === 0) {
-      folderGrid.innerHTML = `<p style="font-size: 0.9rem; color: var(--text-muted);">No images found for this category.</p>`;
-      return;
-    }
+        <!-- Full-size Zoom Modal -->
+        <div class="zoom-modal" id="zoom-modal" aria-hidden="true">
+          <button class="zoom-modal-close" id="zoom-close-btn" type="button" aria-label="Close image">×</button>
+          <div class="zoom-modal-content">
+            <img id="zoom-modal-image" src="" alt="Enlarged View" />
+          </div>
+        </div>
+      </section>
 
-    let subcategories = [];
-    if (mainCategory === "Landscapes & Nature") {
-      subcategories = ["nature", "sea side", "sunset/sunrise", "moon"];
-    } else if (mainCategory === "People & Places") {
-      subcategories = ["people", "places", "city view"];
-    } else if (mainCategory === "Art & Creative") {
-      subcategories = ["art", "food", "flowers"];
-    }
+      <section class="section page-section" id="milestones">
+        <div class="section-heading">
+          <h2>Career & Education Milestones</h2>
+          <p>Key academic and professional milestones.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-date">Feb 2025 — Present</span>
+            <h3>International HPC Training Officer</h3>
+            <p>Barcelona Supercomputing Center (BSC) — Leading international training initiatives and collaboration across NCCs.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">2023 — Present</span>
+            <h3>Co-Organizer, WeInTel Workshop Series</h3>
+            <p>International Conference on Transparent Optical Networks (ICTON) — Highlighting diverse voices in optical networks.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">2022 — Jan 2025</span>
+            <h3>Postdoctoral Researcher</h3>
+            <p>Universitat Politècnica de Catalunya (UPC) — Advanced research in autonomous networks and control.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">2024</span>
+            <h3>Special Doctoral Award</h3>
+            <p>Awarded by UPC for outstanding PhD research achievements.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">2019 — 2022</span>
+            <h3>PhD in Computer Architecture</h3>
+            <p>Universitat Politècnica de Catalunya (UPC) — Graduation Year: 2022.</p>
+          </div>
+        </div>
+      </section>
 
-    const allBtn = document.createElement("button");
-    allBtn.className = `subcat-btn ${activeSubcatFilter === "all" ? "active" : ""}`;
-    allBtn.textContent = "All Subcategories";
-    allBtn.addEventListener("click", () => {
-      document.querySelectorAll(".subcat-btn").forEach((b) => b.classList.remove("active"));
-      allBtn.classList.add("active");
-      updateTopSubnavActive("all");
-      renderMicroThumbnails(categoryEntries);
-    });
-    subcatList.appendChild(allBtn);
+      <!-- PAGE SECTION: CONTACT -->
+      <section class="section page-section" id="contact">
+        <div class="section-heading">
+          <h2>Contact</h2>
+          <p>Reach out on social platforms or send a quick message below.</p>
+        </div>
 
-    subcategories.forEach((subKey) => {
-      const btn = document.createElement("button");
-      const isSelected = activeSubcatFilter.toLowerCase() === subKey.toLowerCase();
-      btn.className = `subcat-btn ${isSelected ? "active" : ""}`;
-      btn.textContent = categoryDisplayNames[subKey] || subKey;
-      btn.addEventListener("click", () => {
-        document.querySelectorAll(".subcat-btn").forEach((b) => b.classList.remove("active"));
-        btn.classList.add("active");
-        updateTopSubnavActive(subKey);
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/sima-barzegar/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://orcid.org/0000-0003-1916-7217" target="_blank" rel="noopener noreferrer" aria-label="ORCID">
+            <i class="fa-brands fa-orcid"></i>
+          </a>
+          <a href="https://scholar.google.com/citations?user=9ZgwwOcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </a>
+          <a href="https://www.researchgate.net/profile/Sima-Barzegar" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate">
+            <i class="fa-brands fa-researchgate"></i>
+          </a>
+          <a href="mailto:hello@sima-barzegar.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
 
-        const filtered = categoryEntries.filter(([filename, _]) => {
-          const detail = detailedData[filename];
-          if (detail && detail.subcategory) {
-            return detail.subcategory.toLowerCase() === subKey.toLowerCase();
-          }
-          return true;
-        });
-        renderMicroThumbnails(filtered.length > 0 ? filtered : categoryEntries);
-      });
-      subcatList.appendChild(btn);
-    });
+        <div class="footer-message">
+          <div class="section-heading">
+            <h2>Quick message</h2>
+            <p>Feel free to leave a thought or say hello.</p>
+          </div>
+          <form class="survey-form" id="survey-form">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Share a message" required></textarea>
+            </label>
+            <button class="btn primary" type="submit">Send Message</button>
+            <p class="form-message" id="form-message"></p>
+          </form>
+        </div>
 
-    if (activeSubcatFilter !== "all") {
-      const filtered = categoryEntries.filter(([filename, _]) => {
-        const detail = detailedData[filename];
-        if (detail && detail.subcategory) {
-          return detail.subcategory.toLowerCase() === activeSubcatFilter.toLowerCase();
-        }
-        return true;
-      });
-      renderMicroThumbnails(filtered.length > 0 ? filtered : categoryEntries);
-    } else {
-      renderMicroThumbnails(categoryEntries);
-    }
-  }
+        <p>Email: hello@sima-barzegar.com</p>
+      </section>
 
-  // 8. Render Micro-Thumbnails
-  function renderMicroThumbnails(entries) {
-    if (!folderGrid) return;
-    folderGrid.innerHTML = "";
+    </main>
 
-    entries.forEach(([filename, _]) => {
-      const img = document.createElement("img");
-      const imgPath = filename.startsWith("images/") ? filename : `images/${filename}`;
-      img.src = imgPath;
-      img.alt = filename;
-      img.className = "micro-thumb";
-      img.loading = "lazy";
+    <!-- FOOTER: ALWAYS VISIBLE AT THE END OF EVERY SUBPAGE -->
+    <footer class="footer">
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/sima-barzegar/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://orcid.org/0000-0003-1916-7217" target="_blank" rel="noopener noreferrer" aria-label="ORCID">
+          <i class="fa-brands fa-orcid"></i>
+        </a>
+        <a href="https://scholar.google.com/citations?user=9ZgwwOcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </a>
+        <a href="https://www.researchgate.net/profile/Sima-Barzegar" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate">
+          <i class="fa-brands fa-researchgate"></i>
+        </a>
+        <a href="mailto:hello@sima-barzegar.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+      <p>Contact: hello@sima-barzegar.com</p>
+      <p>© <span id="year"></span> Sima Barzegar</p>
+    </footer>
 
-      img.addEventListener("click", () => {
-        if (modal && modalImg) {
-          modalImg.src = imgPath;
-          modal.classList.add("active");
-          modal.setAttribute("aria-hidden", "false");
-        }
-      });
-
-      folderGrid.appendChild(img);
-    });
-  }
-
-  // 9. Direct Subcategory Selection Handler
-  function selectGallerySubcategory(targetSubcat) {
-    updateTopSubnavActive(targetSubcat);
-
-    if (targetSubcat === "all") {
-      openFolderCategory("Landscapes & Nature", "all");
-      return;
-    }
-
-    const mainCategory = subcategoryToMainFolder[targetSubcat.toLowerCase()] || "Landscapes & Nature";
-    openFolderCategory(mainCategory, targetSubcat);
-  }
-
-  function updateTopSubnavActive(subcatKey) {
-    topSubnavBtns.forEach((btn) => {
-      const attr = btn.getAttribute("data-top-subcat");
-      btn.classList.toggle("active", attr && attr.toLowerCase() === subcatKey.toLowerCase());
-    });
-  }
-
-  topSubnavBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const subcatKey = btn.getAttribute("data-top-subcat");
-      if (subcatKey) {
-        selectGallerySubcategory(subcatKey);
-      }
-    });
-  });
-
-  dropdownSubcatLinks.forEach((link) => {
-    link.addEventListener("click", (e) => {
-      const subcatKey = link.getAttribute("data-subcat");
-      navigateToPage("gallery", subcatKey);
-      history.pushState(null, "", "#gallery");
-    });
-  });
-
-  dropdownContainers.forEach((container) => {
-    const toggle = container.querySelector(".dropdown-toggle");
-    if (!toggle) return;
-
-    toggle.addEventListener("click", (e) => {
-      if (window.innerWidth <= 768) {
-        e.preventDefault();
-        container.classList.toggle("is-open");
-      }
-    });
-  });
-
-  // 10. Modal and Drawer Close Events
-  if (folderCloseBtn && folderView) {
-    folderCloseBtn.addEventListener("click", () => {
-      folderView.hidden = true;
-    });
-  }
-
-  if (zoomCloseBtn && modal) {
-    const closeModal = () => {
-      modal.classList.remove("active");
-      modal.setAttribute("aria-hidden", "true");
-    };
-
-    zoomCloseBtn.addEventListener("click", closeModal);
-    modal.addEventListener("click", (e) => {
-      if (e.target === modal) closeModal();
-    });
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeModal();
-    });
-  }
-
-  // 11b. Quick Message Form (Footer) — client-side only, no backend
-  const surveyForm = document.getElementById("survey-form");
-  const formMessage = document.getElementById("form-message");
-
-  if (surveyForm && formMessage) {
-    surveyForm.addEventListener("submit", (event) => {
-      event.preventDefault();
-      const formData = new FormData(surveyForm);
-      const name = formData.get("name")?.toString().trim();
-
-      if (name) {
-        formMessage.textContent = `Thank you, ${name}! Your message has been received.`;
-        surveyForm.reset();
-      }
-    });
-  }
-
-  // 11. Mobile Navigation Toggle
-  const nav = document.querySelector(".nav");
-  const navToggle = document.querySelector(".nav-toggle");
-  if (nav && navToggle) {
-    navToggle.addEventListener("click", () => {
-      const isOpen = nav.classList.toggle("nav-open");
-      navToggle.setAttribute("aria-expanded", String(isOpen));
-    });
-  }
-
-  // 12. Initial URL Hash Routing & Popstate Support
-  function handleUrlHash() {
-    const hash = window.location.hash.replace("#", "") || "home";
-    navigateToPage(hash);
-  }
-
-  window.addEventListener("popstate", handleUrlHash);
-  handleUrlHash();
-});
+    <script src="images/gallery-categories.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
