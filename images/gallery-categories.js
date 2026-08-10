@@ -49,9 +49,12 @@ window.galleryCategories = {
   "Landscape & Nature/Nature/IMG_5418.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_5419.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_5503.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_5504.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_5544.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_5548.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_5549.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_5551.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_5552.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_5558.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_5649.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_5651.JPG": "Landscapes & Nature",
@@ -63,11 +66,14 @@ window.galleryCategories = {
   "Landscape & Nature/Nature/IMG_5894.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_5895.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_5896.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6074.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6111.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6114.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6122.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6123.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6124.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6126.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6127.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6132.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6150.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6175.JPG": "Landscapes & Nature",
@@ -78,6 +84,7 @@ window.galleryCategories = {
   "Landscape & Nature/Nature/IMG_6591.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6619.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6710.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6803.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6804.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6846.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6847.JPG": "Landscapes & Nature",
@@ -85,12 +92,14 @@ window.galleryCategories = {
   "Landscape & Nature/Nature/IMG_6856.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6863.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6869.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6873.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6876.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6880.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6888.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6894.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6895.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6899.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6901.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6903.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6925.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_6927.JPG": "Landscapes & Nature",
@@ -113,6 +122,14 @@ window.galleryCategories = {
   "Landscape & Nature/Nature/IMG_7035.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_7064.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/IMG_7083.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_7181.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_7187.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_7268.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_7320.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_8450.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_8530.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_8532.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_8533.JPG": "Landscapes & Nature",
   "Landscape & Nature/Nature/f342cec4-11a6-45e0-bce2-267ef355254a.jpg": "Landscapes & Nature",
   "Landscape & Nature/Nature/f9a3d4c5-7ab7-4d85-9b6b-7e84d450cf3a.jpg": "Landscapes & Nature",
   "Landscape & Nature/Nature/fdaac68e-4d7b-49df-b92b-2227b02e27ee.jpg": "Landscapes & Nature",
@@ -175,16 +192,122 @@ window.galleryCategories = {
   "Landscape & Nature/Sunset-Sunrise/IMG_9174.JPG": "Landscapes & Nature",
   "Landscape & Nature/Sunset-Sunrise/IMG_9183.JPG": "Landscapes & Nature",
   "Landscape & Nature/Sunset-Sunrise/cc169fdd-6634-4e36-b1c4-5fb04bb7d794.jpg": "Landscapes & Nature",
+  "People & Places/City View/IMG_0136.JPG": "People & Places",
   "People & Places/City View/IMG_0340.JPG": "People & Places",
+  "People & Places/City View/IMG_1202.JPG": "People & Places",
+  "People & Places/City View/IMG_1203.JPG": "People & Places",
+  "People & Places/City View/IMG_1207.JPG": "People & Places",
+  "People & Places/City View/IMG_1211.JPG": "People & Places",
+  "People & Places/City View/IMG_1256.JPG": "People & Places",
   "People & Places/City View/IMG_1260.JPG": "People & Places",
+  "People & Places/City View/IMG_1262.JPG": "People & Places",
+  "People & Places/City View/IMG_1289.JPG": "People & Places",
   "People & Places/City View/IMG_1293.JPG": "People & Places",
   "People & Places/City View/IMG_1298.JPG": "People & Places",
   "People & Places/City View/IMG_1300.JPG": "People & Places",
   "People & Places/City View/IMG_1312.JPG": "People & Places",
   "People & Places/City View/IMG_1318.JPG": "People & Places",
+  "People & Places/City View/IMG_1355.JPG": "People & Places",
   "People & Places/City View/IMG_1446.JPG": "People & Places",
+  "People & Places/City View/IMG_1500.JPG": "People & Places",
+  "People & Places/City View/IMG_1658.JPG": "People & Places",
+  "People & Places/City View/IMG_1663.JPG": "People & Places",
   "People & Places/City View/IMG_1665.JPG": "People & Places",
+  "People & Places/City View/IMG_1669.JPG": "People & Places",
+  "People & Places/City View/IMG_5154.JPG": "People & Places",
+  "People & Places/City View/IMG_5310.JPG": "People & Places",
+  "People & Places/City View/IMG_5319.JPG": "People & Places",
+  "People & Places/City View/IMG_5375.JPG": "People & Places",
+  "People & Places/City View/IMG_5376.JPG": "People & Places",
+  "People & Places/City View/IMG_5382.JPG": "People & Places",
+  "People & Places/City View/IMG_5393.JPG": "People & Places",
+  "People & Places/City View/IMG_5395.JPG": "People & Places",
+  "People & Places/City View/IMG_5396.JPG": "People & Places",
+  "People & Places/City View/IMG_5414.JPG": "People & Places",
+  "People & Places/City View/IMG_5420.JPG": "People & Places",
+  "People & Places/City View/IMG_5493.JPG": "People & Places",
+  "People & Places/City View/IMG_5556.JPG": "People & Places",
+  "People & Places/City View/IMG_5562.JPG": "People & Places",
+  "People & Places/City View/IMG_5564.JPG": "People & Places",
+  "People & Places/City View/IMG_5780.JPG": "People & Places",
+  "People & Places/City View/IMG_5798.JPG": "People & Places",
+  "People & Places/City View/IMG_5802.JPG": "People & Places",
+  "People & Places/City View/IMG_5876.JPG": "People & Places",
+  "People & Places/City View/IMG_5877.JPG": "People & Places",
+  "People & Places/City View/IMG_5878.JPG": "People & Places",
+  "People & Places/City View/IMG_5885.JPG": "People & Places",
+  "People & Places/City View/IMG_6080.JPG": "People & Places",
+  "People & Places/City View/IMG_6083.JPG": "People & Places",
+  "People & Places/City View/IMG_6084.JPG": "People & Places",
+  "People & Places/City View/IMG_6102.JPG": "People & Places",
+  "People & Places/City View/IMG_6105.JPG": "People & Places",
+  "People & Places/City View/IMG_6144.JPG": "People & Places",
+  "People & Places/City View/IMG_6230.JPG": "People & Places",
+  "People & Places/City View/IMG_6277.JPG": "People & Places",
+  "People & Places/City View/IMG_6286.JPG": "People & Places",
+  "People & Places/City View/IMG_6288.JPG": "People & Places",
+  "People & Places/City View/IMG_6331.JPG": "People & Places",
+  "People & Places/City View/IMG_6332.JPG": "People & Places",
+  "People & Places/City View/IMG_6373.JPG": "People & Places",
+  "People & Places/City View/IMG_6374.JPG": "People & Places",
+  "People & Places/City View/IMG_6386.JPG": "People & Places",
+  "People & Places/City View/IMG_6406.JPG": "People & Places",
+  "People & Places/City View/IMG_6407.JPG": "People & Places",
+  "People & Places/City View/IMG_6444.JPG": "People & Places",
+  "People & Places/City View/IMG_6475.JPG": "People & Places",
+  "People & Places/City View/IMG_6621.JPG": "People & Places",
+  "People & Places/City View/IMG_6630.JPG": "People & Places",
+  "People & Places/City View/IMG_6634.JPG": "People & Places",
+  "People & Places/City View/IMG_6668.JPG": "People & Places",
+  "People & Places/City View/IMG_6672.JPG": "People & Places",
+  "People & Places/City View/IMG_6673.JPG": "People & Places",
+  "People & Places/City View/IMG_6674.JPG": "People & Places",
+  "People & Places/City View/IMG_6691.JPG": "People & Places",
+  "People & Places/City View/IMG_6696.JPG": "People & Places",
+  "People & Places/City View/IMG_6704.JPG": "People & Places",
+  "People & Places/City View/IMG_6737.JPG": "People & Places",
+  "People & Places/City View/IMG_6797.JPG": "People & Places",
+  "People & Places/City View/IMG_6798.JPG": "People & Places",
+  "People & Places/City View/IMG_6799.JPG": "People & Places",
+  "People & Places/City View/IMG_6801.JPG": "People & Places",
+  "People & Places/City View/IMG_6805.JPG": "People & Places",
+  "People & Places/City View/IMG_6808.JPG": "People & Places",
+  "People & Places/City View/IMG_6809.JPG": "People & Places",
   "People & Places/City View/IMG_6810.JPG": "People & Places",
+  "People & Places/City View/IMG_6959.JPG": "People & Places",
+  "People & Places/City View/IMG_6960.JPG": "People & Places",
+  "People & Places/City View/IMG_6968.JPG": "People & Places",
+  "People & Places/City View/IMG_6985.JPG": "People & Places",
+  "People & Places/City View/IMG_6986.JPG": "People & Places",
+  "People & Places/City View/IMG_6988.JPG": "People & Places",
+  "People & Places/City View/IMG_6992.JPG": "People & Places",
+  "People & Places/City View/IMG_6993.JPG": "People & Places",
+  "People & Places/City View/IMG_7004.JPG": "People & Places",
+  "People & Places/City View/IMG_7026.JPG": "People & Places",
+  "People & Places/City View/IMG_7027.JPG": "People & Places",
+  "People & Places/City View/IMG_7028.JPG": "People & Places",
+  "People & Places/City View/IMG_7032.JPG": "People & Places",
+  "People & Places/City View/IMG_7070.JPG": "People & Places",
+  "People & Places/City View/IMG_7072.JPG": "People & Places",
+  "People & Places/City View/IMG_7077.JPG": "People & Places",
+  "People & Places/City View/IMG_7080.JPG": "People & Places",
+  "People & Places/City View/IMG_7082.JPG": "People & Places",
+  "People & Places/City View/IMG_7087.JPG": "People & Places",
+  "People & Places/City View/IMG_7184.JPG": "People & Places",
+  "People & Places/City View/IMG_7319.JPG": "People & Places",
+  "People & Places/City View/IMG_7322.JPG": "People & Places",
+  "People & Places/City View/IMG_7348.JPG": "People & Places",
+  "People & Places/City View/IMG_7672.JPG": "People & Places",
+  "People & Places/City View/IMG_7674.JPG": "People & Places",
+  "People & Places/City View/IMG_7675.JPG": "People & Places",
+  "People & Places/City View/IMG_7680.JPG": "People & Places",
+  "People & Places/City View/IMG_8554.JPG": "People & Places",
+  "People & Places/City View/IMG_8669.JPG": "People & Places",
+  "People & Places/City View/IMG_8673.JPG": "People & Places",
+  "People & Places/City View/IMG_8728.JPG": "People & Places",
+  "People & Places/City View/IMG_9162.JPG": "People & Places",
+  "People & Places/City View/IMG_9326.JPG": "People & Places",
+  "People & Places/City View/IMG_9957.JPG": "People & Places",
   "People & Places/City View/cda7c76b-6a70-45d0-ba8d-cb14f9a4a42a.jpg": "People & Places",
   "People & Places/City View/f8a69e79-9a97-4e3c-9d2c-cf6f2cd7da4f.jpg": "People & Places",
   "People & Places/People/0f2f1e87-a08c-4e9d-9663-e630a430ed58.jpg": "People & Places",
@@ -385,6 +508,17 @@ window.galleryCategories = {
   "Art & Creative/Art/IMG_9934.JPG": "Art & Creative",
   "Art & Creative/Art/IMG_9938.JPG": "Art & Creative",
   "Art & Creative/Art/IMG_9949.JPG": "Art & Creative",
+  "Art & Creative/Flowers/F8FE62E6-2A87-4419-BEBD-7ACE634357AD.jpg": "Art & Creative",
+  "Art & Creative/Flowers/IMG_1315.JPG": "Art & Creative",
+  "Art & Creative/Flowers/IMG_1316.JPG": "Art & Creative",
+  "Art & Creative/Flowers/IMG_5586.JPG": "Art & Creative",
+  "Art & Creative/Flowers/IMG_5687.JPG": "Art & Creative",
+  "Art & Creative/Flowers/IMG_5738.JPG": "Art & Creative",
+  "Art & Creative/Flowers/IMG_6245.JPG": "Art & Creative",
+  "Art & Creative/Flowers/IMG_7583.JPG": "Art & Creative",
+  "Art & Creative/Flowers/IMG_7907.JPG": "Art & Creative",
+  "Art & Creative/Flowers/IMG_8099.JPG": "Art & Creative",
+  "Art & Creative/Flowers/IMG_8433.JPG": "Art & Creative",
   "Art & Creative/Food/9287c743-c7ee-414a-a3a8-ca9a31a8b59f.jpg": "Art & Creative",
   "Art & Creative/Food/IMG_0139.JPG": "Art & Creative",
   "Art & Creative/Food/IMG_0144.JPG": "Art & Creative",
@@ -557,13 +691,22 @@ window.galleryCategories = {
   "Landscape & Nature/Nature/IMG_5503.JPG": {
     "subcategory": "nature"
   },
+  "Landscape & Nature/Nature/IMG_5504.JPG": {
+    "subcategory": "nature"
+  },
   "Landscape & Nature/Nature/IMG_5544.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_5548.JPG": {
     "subcategory": "nature"
   },
   "Landscape & Nature/Nature/IMG_5549.JPG": {
     "subcategory": "nature"
   },
   "Landscape & Nature/Nature/IMG_5551.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_5552.JPG": {
     "subcategory": "nature"
   },
   "Landscape & Nature/Nature/IMG_5558.JPG": {
@@ -599,6 +742,12 @@ window.galleryCategories = {
   "Landscape & Nature/Nature/IMG_5896.JPG": {
     "subcategory": "nature"
   },
+  "Landscape & Nature/Nature/IMG_6074.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6111.JPG": {
+    "subcategory": "nature"
+  },
   "Landscape & Nature/Nature/IMG_6114.JPG": {
     "subcategory": "nature"
   },
@@ -612,6 +761,9 @@ window.galleryCategories = {
     "subcategory": "nature"
   },
   "Landscape & Nature/Nature/IMG_6126.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6127.JPG": {
     "subcategory": "nature"
   },
   "Landscape & Nature/Nature/IMG_6132.JPG": {
@@ -644,6 +796,9 @@ window.galleryCategories = {
   "Landscape & Nature/Nature/IMG_6710.JPG": {
     "subcategory": "nature"
   },
+  "Landscape & Nature/Nature/IMG_6803.JPG": {
+    "subcategory": "nature"
+  },
   "Landscape & Nature/Nature/IMG_6804.JPG": {
     "subcategory": "nature"
   },
@@ -665,6 +820,9 @@ window.galleryCategories = {
   "Landscape & Nature/Nature/IMG_6869.JPG": {
     "subcategory": "nature"
   },
+  "Landscape & Nature/Nature/IMG_6873.JPG": {
+    "subcategory": "nature"
+  },
   "Landscape & Nature/Nature/IMG_6876.JPG": {
     "subcategory": "nature"
   },
@@ -681,6 +839,9 @@ window.galleryCategories = {
     "subcategory": "nature"
   },
   "Landscape & Nature/Nature/IMG_6899.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6901.JPG": {
     "subcategory": "nature"
   },
   "Landscape & Nature/Nature/IMG_6903.JPG": {
@@ -747,6 +908,30 @@ window.galleryCategories = {
     "subcategory": "nature"
   },
   "Landscape & Nature/Nature/IMG_7083.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_7181.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_7187.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_7268.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_7320.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_8450.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_8530.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_8532.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_8533.JPG": {
     "subcategory": "nature"
   },
   "Landscape & Nature/Nature/f342cec4-11a6-45e0-bce2-267ef355254a.jpg": {
@@ -935,10 +1120,34 @@ window.galleryCategories = {
   "Landscape & Nature/Sunset-Sunrise/cc169fdd-6634-4e36-b1c4-5fb04bb7d794.jpg": {
     "subcategory": "sunset/sunrise"
   },
+  "People & Places/City View/IMG_0136.JPG": {
+    "subcategory": "city view"
+  },
   "People & Places/City View/IMG_0340.JPG": {
     "subcategory": "city view"
   },
+  "People & Places/City View/IMG_1202.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_1203.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_1207.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_1211.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_1256.JPG": {
+    "subcategory": "city view"
+  },
   "People & Places/City View/IMG_1260.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_1262.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_1289.JPG": {
     "subcategory": "city view"
   },
   "People & Places/City View/IMG_1293.JPG": {
@@ -956,13 +1165,307 @@ window.galleryCategories = {
   "People & Places/City View/IMG_1318.JPG": {
     "subcategory": "city view"
   },
+  "People & Places/City View/IMG_1355.JPG": {
+    "subcategory": "city view"
+  },
   "People & Places/City View/IMG_1446.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_1500.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_1658.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_1663.JPG": {
     "subcategory": "city view"
   },
   "People & Places/City View/IMG_1665.JPG": {
     "subcategory": "city view"
   },
+  "People & Places/City View/IMG_1669.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_5154.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_5310.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_5319.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_5375.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_5376.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_5382.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_5393.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_5395.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_5396.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_5414.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_5420.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_5493.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_5556.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_5562.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_5564.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_5780.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_5798.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_5802.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_5876.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_5877.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_5878.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_5885.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6080.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6083.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6084.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6102.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6105.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6144.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6230.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6277.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6286.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6288.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6331.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6332.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6373.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6374.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6386.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6406.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6407.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6444.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6475.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6621.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6630.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6634.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6668.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6672.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6673.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6674.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6691.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6696.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6704.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6737.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6797.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6798.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6799.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6801.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6805.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6808.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6809.JPG": {
+    "subcategory": "city view"
+  },
   "People & Places/City View/IMG_6810.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6959.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6960.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6968.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6985.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6986.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6988.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6992.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6993.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_7004.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_7026.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_7027.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_7028.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_7032.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_7070.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_7072.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_7077.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_7080.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_7082.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_7087.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_7184.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_7319.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_7322.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_7348.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_7672.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_7674.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_7675.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_7680.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_8554.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_8669.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_8673.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_8728.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_9162.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_9326.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_9957.JPG": {
     "subcategory": "city view"
   },
   "People & Places/City View/cda7c76b-6a70-45d0-ba8d-cb14f9a4a42a.jpg": {
@@ -1564,6 +2067,39 @@ window.galleryCategories = {
   },
   "Art & Creative/Art/IMG_9949.JPG": {
     "subcategory": "art"
+  },
+  "Art & Creative/Flowers/F8FE62E6-2A87-4419-BEBD-7ACE634357AD.jpg": {
+    "subcategory": "flowers"
+  },
+  "Art & Creative/Flowers/IMG_1315.JPG": {
+    "subcategory": "flowers"
+  },
+  "Art & Creative/Flowers/IMG_1316.JPG": {
+    "subcategory": "flowers"
+  },
+  "Art & Creative/Flowers/IMG_5586.JPG": {
+    "subcategory": "flowers"
+  },
+  "Art & Creative/Flowers/IMG_5687.JPG": {
+    "subcategory": "flowers"
+  },
+  "Art & Creative/Flowers/IMG_5738.JPG": {
+    "subcategory": "flowers"
+  },
+  "Art & Creative/Flowers/IMG_6245.JPG": {
+    "subcategory": "flowers"
+  },
+  "Art & Creative/Flowers/IMG_7583.JPG": {
+    "subcategory": "flowers"
+  },
+  "Art & Creative/Flowers/IMG_7907.JPG": {
+    "subcategory": "flowers"
+  },
+  "Art & Creative/Flowers/IMG_8099.JPG": {
+    "subcategory": "flowers"
+  },
+  "Art & Creative/Flowers/IMG_8433.JPG": {
+    "subcategory": "flowers"
   },
   "Art & Creative/Food/9287c743-c7ee-414a-a3a8-ca9a31a8b59f.jpg": {
     "subcategory": "food"
