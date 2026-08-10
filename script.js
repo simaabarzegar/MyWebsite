@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  function openFolderCategory(mainCategory, filterSubcategory = "all") {
+  function openFolderCategory(mainCategory, filterSubcategory = null) {
     if (folderTitle) folderTitle.textContent = mainCategory;
     if (folderView) folderView.hidden = false;
 
@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // 7. Setup Subcategories & Filter Options
-  function setupSubcategoriesAndImages(mainCategory, activeSubcatFilter = "all") {
+  function setupSubcategoriesAndImages(mainCategory, activeSubcatFilter = null) {
     if (!subcatList || !folderGrid) return;
     subcatList.innerHTML = "";
     folderGrid.innerHTML = "";
@@ -215,20 +215,16 @@ document.addEventListener("DOMContentLoaded", () => {
       subcategories = ["art", "food", "flowers"];
     }
 
-    const allBtn = document.createElement("button");
-    allBtn.className = `subcat-btn ${activeSubcatFilter === "all" ? "active" : ""}`;
-    allBtn.textContent = "All Subcategories";
-    allBtn.addEventListener("click", () => {
-      document.querySelectorAll(".subcat-btn").forEach((b) => b.classList.remove("active"));
-      allBtn.classList.add("active");
-      updateTopSubnavActive("all");
-      renderMicroThumbnails(categoryEntries);
-    });
-    subcatList.appendChild(allBtn);
+    // Only treat a subcategory as "active" (and load its thumbnails) when it was
+    // explicitly requested (e.g. Quick Filter or dropdown link) — opening a folder
+    // card by itself should show the pill buttons without loading any images yet.
+    const activeSubcat = activeSubcatFilter && subcategories.some((s) => s.toLowerCase() === activeSubcatFilter.toLowerCase())
+      ? activeSubcatFilter
+      : null;
 
     subcategories.forEach((subKey) => {
       const btn = document.createElement("button");
-      const isSelected = activeSubcatFilter.toLowerCase() === subKey.toLowerCase();
+      const isSelected = activeSubcat && activeSubcat.toLowerCase() === subKey.toLowerCase();
       btn.className = `subcat-btn ${isSelected ? "active" : ""}`;
       btn.textContent = categoryDisplayNames[subKey] || subKey;
       btn.addEventListener("click", () => {
@@ -248,17 +244,18 @@ document.addEventListener("DOMContentLoaded", () => {
       subcatList.appendChild(btn);
     });
 
-    if (activeSubcatFilter !== "all") {
+    if (activeSubcat) {
+      updateTopSubnavActive(activeSubcat);
       const filtered = categoryEntries.filter(([filename, _]) => {
         const detail = detailedData[filename];
         if (detail && detail.subcategory) {
-          return detail.subcategory.toLowerCase() === activeSubcatFilter.toLowerCase();
+          return detail.subcategory.toLowerCase() === activeSubcat.toLowerCase();
         }
         return true;
       });
       renderMicroThumbnails(filtered.length > 0 ? filtered : categoryEntries);
     } else {
-      renderMicroThumbnails(categoryEntries);
+      folderGrid.innerHTML = `<p style="font-size: 0.9rem; color: var(--text-muted); padding: 1rem 0;">Select a subcategory above to view photos.</p>`;
     }
   }
 
@@ -290,11 +287,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // 9. Direct Subcategory Selection Handler
   function selectGallerySubcategory(targetSubcat) {
     updateTopSubnavActive(targetSubcat);
-
-    if (targetSubcat === "all") {
-      openFolderCategory("Landscapes & Nature", "all");
-      return;
-    }
 
     const mainCategory = subcategoryToMainFolder[targetSubcat.toLowerCase()] || "Landscapes & Nature";
     openFolderCategory(mainCategory, targetSubcat);

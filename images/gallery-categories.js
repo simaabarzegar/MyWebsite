@@ -1,2850 +1,1638 @@
 window.galleryCategories = {
   "mapping": {
-    "0e2ea1c3-8a92-46b3-8c8e-e085c39383f1.jpg": "Landscapes & Nature",
-    "305a727a-0d1b-483f-b156-5b859dd71b78.jpg": "Landscapes & Nature",
-    "3649eb62-3d62-4f1e-9304-692cda5d3efc.jpg": "Landscapes & Nature",
-    "3B8D1F4A-8D4A-4F47-A7A4-8D78B21345DB.jpg": "Landscapes & Nature",
-    "484fb03a-1e72-4f21-9d14-83ac4d321417.jpg": "Landscapes & Nature",
-    "6df6d6ac-6f93-4584-9068-b7be8c35d147.jpg": "Landscapes & Nature",
-    "E85D8E0C-C782-4F40-972B-C319BA403FC2.jpg": "Landscapes & Nature",
-    "F8FE62E6-2A87-4419-BEBD-7ACE634357AD.jpg": "Art & Creative",
-    "IMG_0107.JPG": "People & Places",
-    "IMG_0136.JPG": "People & Places",
-    "IMG_0153.JPG": "People & Places",
-    "IMG_0159.JPG": "People & Places",
-    "IMG_0180.JPG": "People & Places",
-    "IMG_0193.jpg": "Landscapes & Nature",
-    "IMG_0223.jpg": "Art & Creative",
-    "IMG_0254.jpg": "Art & Creative",
-    "IMG_0261.jpg": "Art & Creative",
-    "IMG_0262.jpg": "Art & Creative",
-    "IMG_0263.jpg": "Art & Creative",
-    "IMG_0264.jpg": "Art & Creative",
-    "IMG_0281.jpg": "Art & Creative",
-    "IMG_0283.jpg": "Art & Creative",
-    "IMG_0299.jpg": "Landscapes & Nature",
-    "IMG_0301.jpg": "Landscapes & Nature",
-    "IMG_0320.jpg": "Landscapes & Nature",
-    "IMG_0322.jpg": "Landscapes & Nature",
-    "IMG_0323.jpg": "Landscapes & Nature",
-    "IMG_0332.jpg": "Landscapes & Nature",
-    "IMG_0335.jpg": "Landscapes & Nature",
-    "IMG_0340.JPG": "Art & Creative",
-    "IMG_0381.jpg": "People & Places",
-    "IMG_0382.jpg": "People & Places",
-    "IMG_0383.jpg": "People & Places",
-    "IMG_0436.JPG": "Landscapes & Nature",
-    "IMG_0528.jpg": "Art & Creative",
-    "IMG_0557.jpg": "People & Places",
-    "IMG_0564.jpg": "People & Places",
-    "IMG_0566.jpg": "People & Places",
-    "IMG_0567.jpg": "People & Places",
-    "IMG_0572.jpg": "People & Places",
-    "IMG_0837.jpg": "People & Places",
-    "IMG_0846.jpg": "People & Places",
-    "IMG_0862.jpg": "Art & Creative",
-    "IMG_0875.jpg": "People & Places",
-    "IMG_0881.jpg": "Art & Creative",
-    "IMG_0896.jpg": "People & Places",
-    "IMG_0900.jpg": "People & Places",
-    "IMG_0904.jpg": "People & Places",
-    "IMG_0906.jpg": "People & Places",
-    "IMG_0910.jpg": "People & Places",
-    "IMG_0914.jpg": "People & Places",
-    "IMG_0920.jpg": "Art & Creative",
-    "IMG_0921.jpg": "Art & Creative",
-    "IMG_0926.jpg": "People & Places",
-    "IMG_0927.jpg": "People & Places",
-    "IMG_5154.JPG": "People & Places",
-    "IMG_5310.JPG": "People & Places",
-    "IMG_5319.JPG": "Art & Creative",
-    "IMG_5375.JPG": "People & Places",
-    "IMG_5376.JPG": "People & Places",
-    "IMG_5382.JPG": "People & Places",
-    "IMG_5393.JPG": "People & Places",
-    "IMG_5395.JPG": "People & Places",
-    "IMG_5396.JPG": "People & Places",
-    "IMG_5414.JPG": "People & Places",
-    "IMG_5417.JPG": "Landscapes & Nature",
-    "IMG_5418.JPG": "Landscapes & Nature",
-    "IMG_5419.JPG": "Landscapes & Nature",
-    "IMG_5420.JPG": "People & Places",
-    "IMG_5427.JPG": "Landscapes & Nature",
-    "IMG_5437.JPG": "People & Places",
-    "IMG_5490.JPG": "Landscapes & Nature",
-    "IMG_5493.JPG": "People & Places",
-    "IMG_5500.JPG": "Landscapes & Nature",
-    "IMG_5503.JPG": "Art & Creative",
-    "IMG_5504.JPG": "Art & Creative",
-    "IMG_5524.JPG": "Landscapes & Nature",
-    "IMG_5544.JPG": "Landscapes & Nature",
-    "IMG_5548.JPG": "Landscapes & Nature",
-    "IMG_5549.JPG": "Landscapes & Nature",
-    "IMG_5551.JPG": "Landscapes & Nature",
-    "IMG_5552.JPG": "Landscapes & Nature",
-    "IMG_5556.JPG": "People & Places",
-    "IMG_5558.JPG": "Landscapes & Nature",
-    "IMG_5559.JPG": "Landscapes & Nature",
-    "IMG_5560.JPG": "Landscapes & Nature",
-    "IMG_5562.JPG": "People & Places",
-    "IMG_5564.JPG": "People & Places",
-    "IMG_5586.JPG": "Art & Creative",
-    "IMG_5617.JPG": "People & Places",
-    "IMG_5648.JPG": "Landscapes & Nature",
-    "IMG_5649.JPG": "Landscapes & Nature",
-    "IMG_5651.JPG": "Landscapes & Nature",
-    "IMG_5653.JPG": "Art & Creative",
-    "IMG_5655.JPG": "Landscapes & Nature",
-    "IMG_5687.JPG": "Art & Creative",
-    "IMG_5713.JPG": "Art & Creative",
-    "IMG_5738.JPG": "Landscapes & Nature",
-    "IMG_5780.JPG": "People & Places",
-    "IMG_5798.JPG": "People & Places",
-    "IMG_5802.JPG": "People & Places",
-    "IMG_5826.JPG": "People & Places",
-    "IMG_5852.JPG": "Landscapes & Nature",
-    "IMG_5854.JPG": "Landscapes & Nature",
-    "IMG_5876.JPG": "People & Places",
-    "IMG_5877.JPG": "People & Places",
-    "IMG_5878.JPG": "People & Places",
-    "IMG_5881.JPG": "People & Places",
-    "IMG_5882.JPG": "Landscapes & Nature",
-    "IMG_5884.JPG": "Landscapes & Nature",
-    "IMG_5885.JPG": "Art & Creative",
-    "IMG_5894.JPG": "Landscapes & Nature",
-    "IMG_5895.JPG": "People & Places",
-    "IMG_5896.JPG": "People & Places",
-    "IMG_5906.JPG": "Landscapes & Nature",
-    "IMG_5937.JPG": "Landscapes & Nature",
-    "IMG_6074.JPG": "People & Places",
-    "IMG_6079.JPG": "People & Places",
-    "IMG_6080.JPG": "Art & Creative",
-    "IMG_6083.JPG": "Art & Creative",
-    "IMG_6084.JPG": "Art & Creative",
-    "IMG_6085.JPG": "Art & Creative",
-    "IMG_6087.JPG": "Art & Creative",
-    "IMG_6088.JPG": "Art & Creative",
-    "IMG_6090.JPG": "Art & Creative",
-    "IMG_6093.JPG": "Art & Creative",
-    "IMG_6094.JPG": "Art & Creative",
-    "IMG_6095.JPG": "People & Places",
-    "IMG_6102.JPG": "Art & Creative",
-    "IMG_6105.JPG": "People & Places",
-    "IMG_6111.JPG": "Art & Creative",
-    "IMG_6112.JPG": "People & Places",
-    "IMG_6114.JPG": "People & Places",
-    "IMG_6122.JPG": "Landscapes & Nature",
-    "IMG_6123.JPG": "Landscapes & Nature",
-    "IMG_6124.JPG": "Landscapes & Nature",
-    "IMG_6126.JPG": "People & Places",
-    "IMG_6127.JPG": "Art & Creative",
-    "IMG_6129.JPG": "Art & Creative",
-    "IMG_6130.JPG": "People & Places",
-    "IMG_6131.JPG": "Art & Creative",
-    "IMG_6132.JPG": "People & Places",
-    "IMG_6144.JPG": "People & Places",
-    "IMG_6145.JPG": "Art & Creative",
-    "IMG_6150.JPG": "People & Places",
-    "IMG_6152.JPG": "Landscapes & Nature",
-    "IMG_6172.JPG": "Landscapes & Nature",
-    "IMG_6175.JPG": "Landscapes & Nature",
-    "IMG_6187.JPG": "Landscapes & Nature",
-    "IMG_6193.JPG": "Landscapes & Nature",
-    "IMG_6226.JPG": "Landscapes & Nature",
-    "IMG_6230.JPG": "People & Places",
-    "IMG_6240.JPG": "People & Places",
-    "IMG_6245.JPG": "Art & Creative",
-    "IMG_6246.JPG": "Art & Creative",
-    "IMG_6250.JPG": "Art & Creative",
-    "IMG_6251.JPG": "Art & Creative",
-    "IMG_6269.JPG": "People & Places",
-    "IMG_6270.JPG": "People & Places",
-    "IMG_6277.JPG": "People & Places",
-    "IMG_6279.JPG": "Art & Creative",
-    "IMG_6280.JPG": "Art & Creative",
-    "IMG_6285.JPG": "People & Places",
-    "IMG_6286.JPG": "People & Places",
-    "IMG_6287.JPG": "People & Places",
-    "IMG_6288.JPG": "People & Places",
-    "IMG_6289.JPG": "Art & Creative",
-    "IMG_6290.JPG": "Landscapes & Nature",
-    "IMG_6315.JPG": "People & Places",
-    "IMG_6331.JPG": "People & Places",
-    "IMG_6332.JPG": "People & Places",
-    "IMG_6372.JPG": "People & Places",
-    "IMG_6373.JPG": "People & Places",
-    "IMG_6374.JPG": "People & Places",
-    "IMG_6386.JPG": "People & Places",
-    "IMG_6397.JPG": "People & Places",
-    "IMG_6406.JPG": "People & Places",
-    "IMG_6407.JPG": "Art & Creative",
-    "IMG_6434.JPG": "Art & Creative",
-    "IMG_6444.JPG": "People & Places",
-    "IMG_6475.JPG": "People & Places",
-    "IMG_6476.JPG": "Art & Creative",
-    "IMG_6553.JPG": "Art & Creative",
-    "IMG_6582.JPG": "People & Places",
-    "IMG_6590.JPG": "People & Places",
-    "IMG_6591.JPG": "People & Places",
-    "IMG_6593.JPG": "Landscapes & Nature",
-    "IMG_6595.JPG": "Landscapes & Nature",
-    "IMG_6596.JPG": "Landscapes & Nature",
-    "IMG_6597.JPG": "Landscapes & Nature",
-    "IMG_6602.JPG": "People & Places",
-    "IMG_6606.JPG": "Art & Creative",
-    "IMG_6609.JPG": "Art & Creative",
-    "IMG_6619.JPG": "People & Places",
-    "IMG_6621.JPG": "People & Places",
-    "IMG_6629.JPG": "Art & Creative",
-    "IMG_6630.JPG": "Landscapes & Nature",
-    "IMG_6631.JPG": "Landscapes & Nature",
-    "IMG_6634.JPG": "Art & Creative",
-    "IMG_6637.JPG": "Art & Creative",
-    "IMG_6648.PNG": "Landscapes & Nature",
-    "IMG_6649.PNG": "Landscapes & Nature",
-    "IMG_6652.PNG": "Landscapes & Nature",
-    "IMG_6659.JPG": "People & Places",
-    "IMG_6668.JPG": "People & Places",
-    "IMG_6669.JPG": "People & Places",
-    "IMG_6670.JPG": "Art & Creative",
-    "IMG_6672.JPG": "People & Places",
-    "IMG_6673.JPG": "People & Places",
-    "IMG_6674.JPG": "Art & Creative",
-    "IMG_6675.JPG": "Art & Creative",
-    "IMG_6690.JPG": "People & Places",
-    "IMG_6691.JPG": "People & Places",
-    "IMG_6694.JPG": "People & Places",
-    "IMG_6696.JPG": "People & Places",
-    "IMG_6700.JPG": "People & Places",
-    "IMG_6701.JPG": "People & Places",
-    "IMG_6704.JPG": "People & Places",
-    "IMG_6710.JPG": "People & Places",
-    "IMG_6729.JPG": "Art & Creative",
-    "IMG_6731.JPG": "Art & Creative",
-    "IMG_6734.JPG": "Art & Creative",
-    "IMG_6737.JPG": "People & Places",
-    "IMG_6748.JPG": "Art & Creative",
-    "IMG_6777.JPG": "Landscapes & Nature",
-    "IMG_6787.JPG": "People & Places",
-    "IMG_6796.JPG": "People & Places",
-    "IMG_6797.JPG": "People & Places",
-    "IMG_6798.JPG": "People & Places",
-    "IMG_6799.JPG": "People & Places",
-    "IMG_6801.JPG": "People & Places",
-    "IMG_6803.JPG": "People & Places",
-    "IMG_6804.JPG": "People & Places",
-    "IMG_6805.JPG": "People & Places",
-    "IMG_6807.JPG": "People & Places",
-    "IMG_6808.JPG": "People & Places",
-    "IMG_6809.JPG": "Art & Creative",
-    "IMG_6810.JPG": "People & Places",
-    "IMG_6823.JPG": "People & Places",
-    "IMG_6824.JPG": "Landscapes & Nature",
-    "IMG_6827.JPG": "Landscapes & Nature",
-    "IMG_6835.JPG": "People & Places",
-    "IMG_6846.JPG": "Landscapes & Nature",
-    "IMG_6847.JPG": "Landscapes & Nature",
-    "IMG_6850.JPG": "People & Places",
-    "IMG_6853.JPG": "Landscapes & Nature",
-    "IMG_6856.JPG": "Landscapes & Nature",
-    "IMG_6857.JPG": "Landscapes & Nature",
-    "IMG_6863.JPG": "Landscapes & Nature",
-    "IMG_6869.JPG": "Landscapes & Nature",
-    "IMG_6873.JPG": "Landscapes & Nature",
-    "IMG_6876.JPG": "Landscapes & Nature",
-    "IMG_6880.JPG": "Landscapes & Nature",
-    "IMG_6884.JPG": "Landscapes & Nature",
-    "IMG_6886.JPG": "Landscapes & Nature",
-    "IMG_6888.JPG": "Landscapes & Nature",
-    "IMG_6894.JPG": "Landscapes & Nature",
-    "IMG_6895.JPG": "Landscapes & Nature",
-    "IMG_6898.JPG": "Landscapes & Nature",
-    "IMG_6899.JPG": "Landscapes & Nature",
-    "IMG_6901.JPG": "Landscapes & Nature",
-    "IMG_6903.JPG": "Landscapes & Nature",
-    "IMG_6912.JPG": "People & Places",
-    "IMG_6916.JPG": "Landscapes & Nature",
-    "IMG_6924.JPG": "Landscapes & Nature",
-    "IMG_6925.JPG": "Landscapes & Nature",
-    "IMG_6927.JPG": "Landscapes & Nature",
-    "IMG_6928.JPG": "Landscapes & Nature",
-    "IMG_6929.JPG": "Landscapes & Nature",
-    "IMG_6930.JPG": "Landscapes & Nature",
-    "IMG_6931.JPG": "Landscapes & Nature",
-    "IMG_6932.JPG": "Landscapes & Nature",
-    "IMG_6933.JPG": "Landscapes & Nature",
-    "IMG_6936.JPG": "Landscapes & Nature",
-    "IMG_6938.JPG": "Landscapes & Nature",
-    "IMG_6939.JPG": "Landscapes & Nature",
-    "IMG_6941.JPG": "Landscapes & Nature",
-    "IMG_6942.JPG": "Landscapes & Nature",
-    "IMG_6943.JPG": "Landscapes & Nature",
-    "IMG_6944.JPG": "Landscapes & Nature",
-    "IMG_6945.JPG": "Landscapes & Nature",
-    "IMG_6959.JPG": "People & Places",
-    "IMG_6960.JPG": "Art & Creative",
-    "IMG_6961.JPG": "Art & Creative",
-    "IMG_6962.JPG": "Art & Creative",
-    "IMG_6963.JPG": "Art & Creative",
-    "IMG_6964.JPG": "Art & Creative",
-    "IMG_6966.JPG": "Art & Creative",
-    "IMG_6967.JPG": "Art & Creative",
-    "IMG_6968.JPG": "People & Places",
-    "IMG_6969.JPG": "People & Places",
-    "IMG_6970.JPG": "Art & Creative",
-    "IMG_6971.JPG": "Art & Creative",
-    "IMG_6972.JPG": "Art & Creative",
-    "IMG_6973.JPG": "Art & Creative",
-    "IMG_6974.JPG": "Art & Creative",
-    "IMG_6975.JPG": "Art & Creative",
-    "IMG_6976.JPG": "Art & Creative",
-    "IMG_6977.JPG": "Art & Creative",
-    "IMG_6978.JPG": "Art & Creative",
-    "IMG_6979.JPG": "Art & Creative",
-    "IMG_6980.JPG": "Art & Creative",
-    "IMG_6981.JPG": "Art & Creative",
-    "IMG_6983.JPG": "Art & Creative",
-    "IMG_6985.JPG": "People & Places",
-    "IMG_6986.JPG": "People & Places",
-    "IMG_6987.JPG": "People & Places",
-    "IMG_6988.JPG": "People & Places",
-    "IMG_6989.JPG": "People & Places",
-    "IMG_6990.JPG": "People & Places",
-    "IMG_6992.JPG": "People & Places",
-    "IMG_6993.JPG": "People & Places",
-    "IMG_6996.JPG": "People & Places",
-    "IMG_6997.JPG": "People & Places",
-    "IMG_6998.JPG": "People & Places",
-    "IMG_7004.JPG": "People & Places",
-    "IMG_7006.JPG": "Art & Creative",
-    "IMG_7008.JPG": "Art & Creative",
-    "IMG_7010.JPG": "Art & Creative",
-    "IMG_7017.JPG": "Art & Creative",
-    "IMG_7018.JPG": "People & Places",
-    "IMG_7019.JPG": "Art & Creative",
-    "IMG_7022.JPG": "Art & Creative",
-    "IMG_7025.JPG": "People & Places",
-    "IMG_7026.JPG": "People & Places",
-    "IMG_7027.JPG": "People & Places",
-    "IMG_7028.JPG": "Landscapes & Nature",
-    "IMG_7029.JPG": "People & Places",
-    "IMG_7032.JPG": "People & Places",
-    "IMG_7035.JPG": "People & Places",
-    "IMG_7036.JPG": "People & Places",
-    "IMG_7037.JPG": "People & Places",
-    "IMG_7038.JPG": "Art & Creative",
-    "IMG_7039.JPG": "Art & Creative",
-    "IMG_7042.JPG": "Art & Creative",
-    "IMG_7043.JPG": "People & Places",
-    "IMG_7044.JPG": "Art & Creative",
-    "IMG_7052.JPG": "Art & Creative",
-    "IMG_7054.JPG": "Art & Creative",
-    "IMG_7055.JPG": "Art & Creative",
-    "IMG_7056.JPG": "Art & Creative",
-    "IMG_7060.JPG": "People & Places",
-    "IMG_7061.JPG": "People & Places",
-    "IMG_7064.JPG": "People & Places",
-    "IMG_7070.JPG": "Art & Creative",
-    "IMG_7072.JPG": "People & Places",
-    "IMG_7076.JPG": "People & Places",
-    "IMG_7077.JPG": "People & Places",
-    "IMG_7078.JPG": "People & Places",
-    "IMG_7079.JPG": "People & Places",
-    "IMG_7080.JPG": "People & Places",
-    "IMG_7082.JPG": "People & Places",
-    "IMG_7083.JPG": "People & Places",
-    "IMG_7084.JPG": "Art & Creative",
-    "IMG_7087.JPG": "People & Places",
-    "IMG_7181.JPG": "Landscapes & Nature",
-    "IMG_7184.JPG": "People & Places",
-    "IMG_7187.JPG": "Landscapes & Nature",
-    "IMG_7213.JPG": "Art & Creative",
-    "IMG_7216.JPG": "People & Places",
-    "IMG_7268.JPG": "Art & Creative",
-    "IMG_7273.JPG": "Art & Creative",
-    "IMG_7281.JPG": "People & Places",
-    "IMG_7284.JPG": "People & Places",
-    "IMG_7285.JPG": "Art & Creative",
-    "IMG_7286.JPG": "Art & Creative",
-    "IMG_7287.JPG": "Art & Creative",
-    "IMG_7302.JPG": "People & Places",
-    "IMG_7309.JPG": "People & Places",
-    "IMG_7319.JPG": "People & Places",
-    "IMG_7320.JPG": "People & Places",
-    "IMG_7322.JPG": "People & Places",
-    "IMG_7323.JPG": "People & Places",
-    "IMG_7332.JPG": "Art & Creative",
-    "IMG_7348.JPG": "People & Places",
-    "IMG_7353.JPG": "Art & Creative",
-    "IMG_7354.JPG": "People & Places",
-    "IMG_7583.JPG": "Art & Creative",
-    "IMG_7607.JPG": "People & Places",
-    "IMG_7609.JPG": "Landscapes & Nature",
-    "IMG_7626.JPG": "Landscapes & Nature",
-    "IMG_7627.JPG": "Landscapes & Nature",
-    "IMG_7672.JPG": "People & Places",
-    "IMG_7674.JPG": "People & Places",
-    "IMG_7675.JPG": "People & Places",
-    "IMG_7680.JPG": "People & Places",
-    "IMG_7697.JPG": "People & Places",
-    "IMG_7803.HEIC": "People & Places",
-    "IMG_7803.jpg": "People & Places",
-    "IMG_7870.HEIC": "People & Places",
-    "IMG_7870.jpg": "People & Places",
-    "IMG_7907.JPG": "Landscapes & Nature",
-    "IMG_7910.PNG": "Landscapes & Nature",
-    "IMG_7923.HEIC": "Art & Creative",
-    "IMG_7923.jpg": "Art & Creative",
-    "IMG_8089.JPG": "People & Places",
-    "IMG_8099.JPG": "Art & Creative",
-    "IMG_8422.JPG": "Landscapes & Nature",
-    "IMG_8433.JPG": "Art & Creative",
-    "IMG_8443.JPG": "Landscapes & Nature",
-    "IMG_8447.JPG": "People & Places",
-    "IMG_8450.JPG": "People & Places",
-    "IMG_8530.JPG": "Landscapes & Nature",
-    "IMG_8532.JPG": "Landscapes & Nature",
-    "IMG_8533.JPG": "Art & Creative",
-    "IMG_8554.JPG": "People & Places",
-    "IMG_8556.JPG": "People & Places",
-    "IMG_8588.JPG": "Landscapes & Nature",
-    "IMG_8589.JPG": "Landscapes & Nature",
-    "IMG_8645.JPG": "People & Places",
-    "IMG_8647.JPG": "People & Places",
-    "IMG_8649.JPG": "People & Places",
-    "IMG_8669.JPG": "People & Places",
-    "IMG_8673.JPG": "People & Places",
-    "IMG_8679.JPG": "Art & Creative",
-    "IMG_8680.JPG": "Art & Creative",
-    "IMG_8681.JPG": "Art & Creative",
-    "IMG_8683.JPG": "Art & Creative",
-    "IMG_8687.JPG": "Art & Creative",
-    "IMG_8691.JPG": "People & Places",
-    "IMG_8728.JPG": "People & Places",
-    "IMG_8866.JPG": "People & Places",
-    "IMG_8998.JPG": "People & Places",
-    "IMG_9002.JPG": "People & Places",
-    "IMG_9162.JPG": "People & Places",
-    "IMG_9167.JPG": "Art & Creative",
-    "IMG_9174.JPG": "People & Places",
-    "IMG_9183.JPG": "People & Places",
-    "IMG_9326.JPG": "People & Places",
-    "IMG_9328.JPG": "Art & Creative",
-    "IMG_9334.JPG": "Art & Creative",
-    "IMG_9336.JPG": "Art & Creative",
-    "IMG_9340.JPG": "Art & Creative",
-    "IMG_9350.JPG": "Art & Creative",
-    "IMG_9351.JPG": "Art & Creative",
-    "IMG_9355.JPG": "Art & Creative",
-    "IMG_9357.JPG": "Art & Creative",
-    "IMG_9360.JPG": "People & Places",
-    "IMG_9441.JPG": "Art & Creative",
-    "IMG_9443.JPG": "People & Places",
-    "IMG_9449.JPG": "People & Places",
-    "IMG_9540.JPG": "Art & Creative",
-    "IMG_9542.JPG": "Art & Creative",
-    "IMG_9546.JPG": "People & Places",
-    "IMG_9564.JPG": "People & Places",
-    "IMG_9645.JPG": "Art & Creative",
-    "IMG_9658.JPG": "People & Places",
-    "IMG_9666.JPG": "Art & Creative",
-    "IMG_9669.JPG": "Art & Creative",
-    "IMG_9681.JPG": "Art & Creative",
-    "IMG_9690.JPG": "People & Places",
-    "IMG_9696.JPG": "People & Places",
-    "IMG_9718.JPG": "Art & Creative",
-    "IMG_9724.JPG": "People & Places",
-    "IMG_9750.JPG": "Art & Creative",
-    "IMG_9751.JPG": "Art & Creative",
-    "IMG_9803.JPG": "Art & Creative",
-    "IMG_9818.JPG": "Art & Creative",
-    "IMG_9828.JPG": "People & Places",
-    "IMG_9913.JPG": "People & Places",
-    "IMG_9917.JPG": "Art & Creative",
-    "IMG_9934.JPG": "People & Places",
-    "IMG_9938.JPG": "Art & Creative",
-    "IMG_9941.JPG": "People & Places",
-    "IMG_9942.JPG": "Art & Creative",
-    "IMG_9949.JPG": "Art & Creative",
-    "IMG_9955.JPG": "People & Places",
-    "IMG_9957.JPG": "People & Places",
-    "IMG_9958.JPG": "People & Places",
-    "aedc1f5c-6fbc-472f-a030-1ea07ed5176a.jpg": "People & Places",
-    "f342cec4-11a6-45e0-bce2-267ef355254a.jpg": "Landscapes & Nature",
-    "f9a3d4c5-7ab7-4d85-9b6b-7e84d450cf3a.jpg": "Landscapes & Nature",
-    "fdaac68e-4d7b-49df-b92b-2227b02e27ee.jpg": "Landscapes & Nature",
-    "fe762644-ae63-4496-9dad-ea5cc737ff7e.jpg": "Landscapes & Nature"
+  "Landscape & Nature/Moon-Sky/20338fc0-1060-4687-b1f1-0acae23c2908.jpg": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/B802CE0F-F650-4562-AAE5-DEC136FDFC54.jpg": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_0159.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_0436.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_0981.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_1333.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_1356.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_1414.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_1430.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_1644.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_1651.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_5427.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_5490.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_5906.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_6152.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_6582.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_6590.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_6602.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_6609.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_6694.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_6777.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_6823.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_6932.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_7309.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_7609.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_8588.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/IMG_8589.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Moon-Sky/b439133a-0235-48d5-8e18-0de26f505b12.jpg": "Landscapes & Nature",
+  "Landscape & Nature/Nature/20338fc0-1060-4687-b1f1-0acae23c2908.jpg": "Landscapes & Nature",
+  "Landscape & Nature/Nature/305a727a-0d1b-483f-b156-5b859dd71b78.jpg": "Landscapes & Nature",
+  "Landscape & Nature/Nature/484fb03a-1e72-4f21-9d14-83ac4d321417.jpg": "Landscapes & Nature",
+  "Landscape & Nature/Nature/4b49f7e5-2677-4cad-88a6-72b76cebcbba.jpg": "Landscapes & Nature",
+  "Landscape & Nature/Nature/6df6d6ac-6f93-4584-9068-b7be8c35d147.jpg": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_0180.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_1171.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_1177.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_1312.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_1316.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_1338.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_1365.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_1481.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_1559.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_1670.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_1671.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_1693.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_1725.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_5418.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_5419.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_5503.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_5544.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_5549.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_5551.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_5558.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_5649.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_5651.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_5653.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_5655.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_5881.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_5882.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_5884.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_5894.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_5895.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_5896.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6114.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6122.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6123.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6124.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6126.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6132.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6150.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6175.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6187.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6193.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6285.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6290.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6591.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6619.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6710.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6804.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6846.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6847.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6853.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6856.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6863.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6869.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6876.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6880.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6888.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6894.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6895.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6899.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6903.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6925.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6927.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6928.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6929.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6930.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6931.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6933.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6936.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6938.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6939.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6941.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6942.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6943.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6944.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6945.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6997.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_6998.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_7029.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_7035.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_7064.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/IMG_7083.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Nature/f342cec4-11a6-45e0-bce2-267ef355254a.jpg": "Landscapes & Nature",
+  "Landscape & Nature/Nature/f9a3d4c5-7ab7-4d85-9b6b-7e84d450cf3a.jpg": "Landscapes & Nature",
+  "Landscape & Nature/Nature/fdaac68e-4d7b-49df-b92b-2227b02e27ee.jpg": "Landscapes & Nature",
+  "Landscape & Nature/Nature/fe762644-ae63-4496-9dad-ea5cc737ff7e.jpg": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/3B8D1F4A-8D4A-4F47-A7A4-8D78B21345DB.jpg": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/3a64aabf-d1ef-43a3-b7c9-45a77b8c3afc.jpg": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/BBBD8EA7-EE03-476C-A059-E20471B14828.jpg": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/E85D8E0C-C782-4F40-972B-C319BA403FC2.jpg": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_1321.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_1394.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_1537.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_1572.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_5417.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_5524.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_5559.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_5560.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_5852.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_5854.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_6172.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_6226.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_6240.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_6270.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_6593.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_6597.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_6649.PNG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_6652.PNG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_6824.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_6827.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_6850.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_6857.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_6884.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_6898.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_6912.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_6916.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_6924.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_7607.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_7626.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_7627.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_8422.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/IMG_8443.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/d01b0725-526c-4511-8694-f0a0180dbc30.jpg": "Landscapes & Nature",
+  "Landscape & Nature/Sea side-Water/eba0cb84-9ae8-4a0b-9c8f-aa72b0e00610.jpg": "Landscapes & Nature",
+  "Landscape & Nature/Sunset-Sunrise/IMG_0153.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sunset-Sunrise/IMG_1176.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sunset-Sunrise/IMG_1292.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sunset-Sunrise/IMG_1431.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sunset-Sunrise/IMG_1499.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sunset-Sunrise/IMG_1653.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sunset-Sunrise/IMG_5437.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sunset-Sunrise/IMG_5617.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sunset-Sunrise/IMG_5648.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sunset-Sunrise/IMG_5826.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sunset-Sunrise/IMG_6315.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sunset-Sunrise/IMG_6606.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sunset-Sunrise/IMG_6659.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sunset-Sunrise/IMG_6835.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sunset-Sunrise/IMG_6886.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sunset-Sunrise/IMG_6996.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sunset-Sunrise/IMG_7060.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sunset-Sunrise/IMG_9174.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sunset-Sunrise/IMG_9183.JPG": "Landscapes & Nature",
+  "Landscape & Nature/Sunset-Sunrise/cc169fdd-6634-4e36-b1c4-5fb04bb7d794.jpg": "Landscapes & Nature",
+  "People & Places/City View/IMG_0340.JPG": "People & Places",
+  "People & Places/City View/IMG_1260.JPG": "People & Places",
+  "People & Places/City View/IMG_1293.JPG": "People & Places",
+  "People & Places/City View/IMG_1298.JPG": "People & Places",
+  "People & Places/City View/IMG_1300.JPG": "People & Places",
+  "People & Places/City View/IMG_1312.JPG": "People & Places",
+  "People & Places/City View/IMG_1318.JPG": "People & Places",
+  "People & Places/City View/IMG_1446.JPG": "People & Places",
+  "People & Places/City View/IMG_1665.JPG": "People & Places",
+  "People & Places/City View/IMG_6810.JPG": "People & Places",
+  "People & Places/City View/cda7c76b-6a70-45d0-ba8d-cb14f9a4a42a.jpg": "People & Places",
+  "People & Places/City View/f8a69e79-9a97-4e3c-9d2c-cf6f2cd7da4f.jpg": "People & Places",
+  "People & Places/People/0f2f1e87-a08c-4e9d-9663-e630a430ed58.jpg": "People & Places",
+  "People & Places/People/2f23ea30-3fc1-43af-81e6-420dce288b5f.jpg": "People & Places",
+  "People & Places/People/3649eb62-3d62-4f1e-9304-692cda5d3efc.jpg": "People & Places",
+  "People & Places/People/3C14BEFD-E729-4E2C-92B7-215059E8B273.jpg": "People & Places",
+  "People & Places/People/4c908cee-a896-48a1-ae2e-0f4f63575384.jpg": "People & Places",
+  "People & Places/People/IMG_1240.JPG": "People & Places",
+  "People & Places/People/IMG_1241.JPG": "People & Places",
+  "People & Places/People/IMG_1242.JPG": "People & Places",
+  "People & Places/People/IMG_1659.JPG": "People & Places",
+  "People & Places/People/IMG_1664.JPG": "People & Places",
+  "People & Places/People/IMG_1696.PNG": "People & Places",
+  "People & Places/People/IMG_6675.JPG": "People & Places",
+  "People & Places/People/a036bdd7-4a5d-475b-8118-5b8df6dd930c.jpg": "People & Places",
+  "People & Places/People/aedc1f5c-6fbc-472f-a030-1ea07ed5176a(1).jpg": "People & Places",
+  "People & Places/People/aedc1f5c-6fbc-472f-a030-1ea07ed5176a.jpg": "People & Places",
+  "People & Places/Places/05f70e71-d7a5-4c6a-b0f9-f9475c052275.jpg": "People & Places",
+  "People & Places/Places/0e2ea1c3-8a92-46b3-8c8e-e085c39383f1.jpg": "People & Places",
+  "People & Places/Places/35005edc-d385-49ed-a807-54f0d3455a03.jpg": "People & Places",
+  "People & Places/Places/3fbb6129-c19b-463c-91a0-50687e488728.jpg": "People & Places",
+  "People & Places/Places/IMG_1204.JPG": "People & Places",
+  "People & Places/Places/IMG_1206.JPG": "People & Places",
+  "People & Places/Places/IMG_1209.JPG": "People & Places",
+  "People & Places/Places/IMG_1215.JPG": "People & Places",
+  "People & Places/Places/IMG_1237.JPG": "People & Places",
+  "People & Places/Places/IMG_1306.JPG": "People & Places",
+  "People & Places/Places/IMG_1394.JPG": "People & Places",
+  "People & Places/Places/IMG_1411.JPG": "People & Places",
+  "People & Places/Places/IMG_1449.JPG": "People & Places",
+  "People & Places/Places/IMG_1506.JPG": "People & Places",
+  "People & Places/Places/IMG_1524.JPG": "People & Places",
+  "People & Places/Places/IMG_1566.JPG": "People & Places",
+  "People & Places/Places/IMG_1567.JPG": "People & Places",
+  "People & Places/Places/IMG_1571.JPG": "People & Places",
+  "People & Places/Places/IMG_1573.JPG": "People & Places",
+  "People & Places/Places/IMG_1673.JPG": "People & Places",
+  "People & Places/Places/IMG_1674.JPG": "People & Places",
+  "People & Places/Places/IMG_1693.JPG": "People & Places",
+  "People & Places/Places/IMG_1725.JPG": "People & Places",
+  "People & Places/Places/IMG_6085.JPG": "People & Places",
+  "People & Places/Places/IMG_6087.JPG": "People & Places",
+  "People & Places/Places/IMG_6088.JPG": "People & Places",
+  "People & Places/Places/IMG_6090.JPG": "People & Places",
+  "People & Places/Places/IMG_6093.JPG": "People & Places",
+  "People & Places/Places/IMG_6094.JPG": "People & Places",
+  "People & Places/Places/IMG_6112.JPG": "People & Places",
+  "People & Places/Places/IMG_6129.JPG": "People & Places",
+  "People & Places/Places/IMG_6130.JPG": "People & Places",
+  "People & Places/Places/IMG_6131.JPG": "People & Places",
+  "People & Places/Places/IMG_6145.JPG": "People & Places",
+  "People & Places/Places/IMG_6250.JPG": "People & Places",
+  "People & Places/Places/IMG_6251.JPG": "People & Places",
+  "People & Places/Places/IMG_6269.JPG": "People & Places",
+  "People & Places/Places/IMG_6279.JPG": "People & Places",
+  "People & Places/Places/IMG_6287.JPG": "People & Places",
+  "People & Places/Places/IMG_6289.JPG": "People & Places",
+  "People & Places/Places/IMG_6434.JPG": "People & Places",
+  "People & Places/Places/IMG_6629.JPG": "People & Places",
+  "People & Places/Places/IMG_6631.JPG": "People & Places",
+  "People & Places/Places/IMG_6669.JPG": "People & Places",
+  "People & Places/Places/IMG_6670.JPG": "People & Places",
+  "People & Places/Places/IMG_6700.JPG": "People & Places",
+  "People & Places/Places/IMG_6729.JPG": "People & Places",
+  "People & Places/Places/IMG_6731.JPG": "People & Places",
+  "People & Places/Places/IMG_6734.JPG": "People & Places",
+  "People & Places/Places/IMG_6748.JPG": "People & Places",
+  "People & Places/Places/IMG_6796.JPG": "People & Places",
+  "People & Places/Places/IMG_6807.JPG": "People & Places",
+  "People & Places/Places/IMG_6961.JPG": "People & Places",
+  "People & Places/Places/IMG_6962.JPG": "People & Places",
+  "People & Places/Places/IMG_6963.JPG": "People & Places",
+  "People & Places/Places/IMG_6964.JPG": "People & Places",
+  "People & Places/Places/IMG_6966.JPG": "People & Places",
+  "People & Places/Places/IMG_6967.JPG": "People & Places",
+  "People & Places/Places/IMG_6969.JPG": "People & Places",
+  "People & Places/Places/IMG_6970.JPG": "People & Places",
+  "People & Places/Places/IMG_6971.JPG": "People & Places",
+  "People & Places/Places/IMG_6972.JPG": "People & Places",
+  "People & Places/Places/IMG_6973.JPG": "People & Places",
+  "People & Places/Places/IMG_6974.JPG": "People & Places",
+  "People & Places/Places/IMG_6975.JPG": "People & Places",
+  "People & Places/Places/IMG_6976.JPG": "People & Places",
+  "People & Places/Places/IMG_6977.JPG": "People & Places",
+  "People & Places/Places/IMG_6978.JPG": "People & Places",
+  "People & Places/Places/IMG_6979.JPG": "People & Places",
+  "People & Places/Places/IMG_6980.JPG": "People & Places",
+  "People & Places/Places/IMG_6981.JPG": "People & Places",
+  "People & Places/Places/IMG_6983.JPG": "People & Places",
+  "People & Places/Places/IMG_6989.JPG": "People & Places",
+  "People & Places/Places/IMG_7006.JPG": "People & Places",
+  "People & Places/Places/IMG_7008.JPG": "People & Places",
+  "People & Places/Places/IMG_7010.JPG": "People & Places",
+  "People & Places/Places/IMG_7017.JPG": "People & Places",
+  "People & Places/Places/IMG_7018.JPG": "People & Places",
+  "People & Places/Places/IMG_7019.JPG": "People & Places",
+  "People & Places/Places/IMG_7022.JPG": "People & Places",
+  "People & Places/Places/IMG_7025.JPG": "People & Places",
+  "People & Places/Places/IMG_7036.JPG": "People & Places",
+  "People & Places/Places/IMG_7037.JPG": "People & Places",
+  "People & Places/Places/IMG_7038.JPG": "People & Places",
+  "People & Places/Places/IMG_7039.JPG": "People & Places",
+  "People & Places/Places/IMG_7042.JPG": "People & Places",
+  "People & Places/Places/IMG_7043.JPG": "People & Places",
+  "People & Places/Places/IMG_7044.JPG": "People & Places",
+  "People & Places/Places/IMG_7052.JPG": "People & Places",
+  "People & Places/Places/IMG_7054.JPG": "People & Places",
+  "People & Places/Places/IMG_7055.JPG": "People & Places",
+  "People & Places/Places/IMG_7056.JPG": "People & Places",
+  "People & Places/Places/IMG_7061.JPG": "People & Places",
+  "People & Places/Places/IMG_7076.JPG": "People & Places",
+  "People & Places/Places/IMG_7078.JPG": "People & Places",
+  "People & Places/Places/IMG_7079.JPG": "People & Places",
+  "People & Places/Places/IMG_7084.JPG": "People & Places",
+  "People & Places/Places/IMG_7213.JPG": "People & Places",
+  "People & Places/Places/IMG_7273.JPG": "People & Places",
+  "People & Places/Places/IMG_7281.JPG": "People & Places",
+  "People & Places/Places/IMG_7284.JPG": "People & Places",
+  "People & Places/Places/IMG_7285.JPG": "People & Places",
+  "People & Places/Places/IMG_7286.JPG": "People & Places",
+  "People & Places/Places/IMG_7287.JPG": "People & Places",
+  "People & Places/Places/IMG_7302.JPG": "People & Places",
+  "People & Places/Places/IMG_7332.JPG": "People & Places",
+  "People & Places/Places/IMG_7353.JPG": "People & Places",
+  "People & Places/Places/IMG_7697.JPG": "People & Places",
+  "People & Places/Places/IMG_8089.JPG": "People & Places",
+  "People & Places/Places/IMG_8649.JPG": "People & Places",
+  "People & Places/Places/IMG_8679.JPG": "People & Places",
+  "People & Places/Places/IMG_8687.JPG": "People & Places",
+  "People & Places/Places/IMG_8691.JPG": "People & Places",
+  "People & Places/Places/IMG_8866.JPG": "People & Places",
+  "People & Places/Places/IMG_9002.JPG": "People & Places",
+  "People & Places/Places/IMG_9328.JPG": "People & Places",
+  "People & Places/Places/IMG_9334.JPG": "People & Places",
+  "People & Places/Places/IMG_9336.JPG": "People & Places",
+  "People & Places/Places/IMG_9340.JPG": "People & Places",
+  "People & Places/Places/IMG_9351.JPG": "People & Places",
+  "People & Places/Places/IMG_9355.JPG": "People & Places",
+  "People & Places/Places/IMG_9357.JPG": "People & Places",
+  "People & Places/Places/IMG_9360.JPG": "People & Places",
+  "People & Places/Places/IMG_9449.JPG": "People & Places",
+  "People & Places/Places/IMG_9540.JPG": "People & Places",
+  "People & Places/Places/IMG_9546.JPG": "People & Places",
+  "People & Places/Places/IMG_9666.JPG": "People & Places",
+  "People & Places/Places/IMG_9690.JPG": "People & Places",
+  "People & Places/Places/IMG_9751.JPG": "People & Places",
+  "People & Places/Places/IMG_9803.JPG": "People & Places",
+  "People & Places/Places/IMG_9818.JPG": "People & Places",
+  "People & Places/Places/IMG_9913.JPG": "People & Places",
+  "People & Places/Places/IMG_9917.JPG": "People & Places",
+  "People & Places/Places/IMG_9941.JPG": "People & Places",
+  "People & Places/Places/IMG_9942.JPG": "People & Places",
+  "People & Places/Places/IMG_9955.JPG": "People & Places",
+  "People & Places/Places/IMG_9958.JPG": "People & Places",
+  "Art & Creative/Art/35005edc-d385-49ed-a807-54f0d3455a03.jpg": "Art & Creative",
+  "Art & Creative/Art/468194B1-58AA-430A-91D5-A9FE706A0EEB.jpg": "Art & Creative",
+  "Art & Creative/Art/538d367b-7bbd-4080-aab8-e87fa518c952.jpg": "Art & Creative",
+  "Art & Creative/Art/IMG_1231.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_1247.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_1264.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_1501.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_1509.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_1511.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_1512.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_1519.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_1520.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_1521.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_1522.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_1523.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_1527.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_1673.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_6246.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_6476.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_6553.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_6595.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_6596.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_6637.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_6648.PNG": "Art & Creative",
+  "Art & Creative/Art/IMG_6990.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_7910.PNG": "Art & Creative",
+  "Art & Creative/Art/IMG_8447.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_8680.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_8681.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_8683.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_9167.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_9441.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_9542.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_9564.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_9645.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_9658.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_9669.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_9681.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_9696.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_9718.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_9724.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_9750.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_9828.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_9934.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_9938.JPG": "Art & Creative",
+  "Art & Creative/Art/IMG_9949.JPG": "Art & Creative",
+  "Art & Creative/Food/9287c743-c7ee-414a-a3a8-ca9a31a8b59f.jpg": "Art & Creative",
+  "Art & Creative/Food/IMG_0139.JPG": "Art & Creative",
+  "Art & Creative/Food/IMG_0144.JPG": "Art & Creative",
+  "Art & Creative/Food/IMG_1193.JPG": "Art & Creative",
+  "Art & Creative/Food/IMG_1194.JPG": "Art & Creative",
+  "Art & Creative/Food/IMG_1195.JPG": "Art & Creative",
+  "Art & Creative/Food/IMG_1198.JPG": "Art & Creative",
+  "Art & Creative/Food/IMG_1199.JPG": "Art & Creative",
+  "Art & Creative/Food/IMG_1286.JPG": "Art & Creative",
+  "Art & Creative/Food/IMG_1308.JPG": "Art & Creative",
+  "Art & Creative/Food/IMG_1309.JPG": "Art & Creative",
+  "Art & Creative/Food/IMG_1310.JPG": "Art & Creative",
+  "Art & Creative/Food/IMG_1474.JPG": "Art & Creative",
+  "Art & Creative/Food/IMG_1475.JPG": "Art & Creative",
+  "Art & Creative/Food/IMG_1477.JPG": "Art & Creative",
+  "Art & Creative/Food/IMG_1478.JPG": "Art & Creative",
+  "Art & Creative/Food/IMG_1496.JPG": "Art & Creative",
+  "Art & Creative/Food/IMG_1502.JPG": "Art & Creative",
+  "Art & Creative/Food/IMG_1503.JPG": "Art & Creative",
+  "Art & Creative/Food/IMG_1577.JPG": "Art & Creative",
+  "Art & Creative/Food/IMG_1675.JPG": "Art & Creative",
+  "Art & Creative/Food/IMG_1676.JPG": "Art & Creative",
+  "Art & Creative/Food/IMG_5713.JPG": "Art & Creative"
 },
   "detailed": {
-    "0e2ea1c3-8a92-46b3-8c8e-e085c39383f1.jpg": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.397
-    },
-    "305a727a-0d1b-483f-b156-5b859dd71b78.jpg": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.841
-    },
-    "3649eb62-3d62-4f1e-9304-692cda5d3efc.jpg": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.403
-    },
-    "3B8D1F4A-8D4A-4F47-A7A4-8D78B21345DB.jpg": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.813
-    },
-    "484fb03a-1e72-4f21-9d14-83ac4d321417.jpg": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.913
-    },
-    "6df6d6ac-6f93-4584-9068-b7be8c35d147.jpg": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.983
-    },
-    "E85D8E0C-C782-4F40-972B-C319BA403FC2.jpg": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.886
-    },
-    "F8FE62E6-2A87-4419-BEBD-7ACE634357AD.jpg": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.985
-    },
-    "IMG_0107.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.985
-    },
-    "IMG_0136.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.96
-    },
-    "IMG_0153.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.972
-    },
-    "IMG_0159.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.929
-    },
-    "IMG_0180.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.614
-    },
-    "IMG_0193.jpg": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.415
-    },
-    "IMG_0223.jpg": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.641
-    },
-    "IMG_0254.jpg": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.586
-    },
-    "IMG_0261.jpg": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.847
-    },
-    "IMG_0262.jpg": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.723
-    },
-    "IMG_0263.jpg": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.705
-    },
-    "IMG_0264.jpg": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.943
-    },
-    "IMG_0281.jpg": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.982
-    },
-    "IMG_0283.jpg": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.875
-    },
-    "IMG_0299.jpg": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.893
-    },
-    "IMG_0301.jpg": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.837
-    },
-    "IMG_0320.jpg": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.82
-    },
-    "IMG_0322.jpg": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.939
-    },
-    "IMG_0323.jpg": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.941
-    },
-    "IMG_0332.jpg": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.894
-    },
-    "IMG_0335.jpg": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.894
-    },
-    "IMG_0340.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.505
-    },
-    "IMG_0381.jpg": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.975
-    },
-    "IMG_0382.jpg": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.964
-    },
-    "IMG_0383.jpg": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.902
-    },
-    "IMG_0436.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.997
-    },
-    "IMG_0528.jpg": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.801
-    },
-    "IMG_0557.jpg": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.874
-    },
-    "IMG_0564.jpg": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.955
-    },
-    "IMG_0566.jpg": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.972
-    },
-    "IMG_0567.jpg": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.958
-    },
-    "IMG_0572.jpg": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.914
-    },
-    "IMG_0837.jpg": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.943
-    },
-    "IMG_0846.jpg": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.971
-    },
-    "IMG_0862.jpg": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.738
-    },
-    "IMG_0875.jpg": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.998
-    },
-    "IMG_0881.jpg": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.907
-    },
-    "IMG_0896.jpg": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.96
-    },
-    "IMG_0900.jpg": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.651
-    },
-    "IMG_0904.jpg": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.97
-    },
-    "IMG_0906.jpg": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.562
-    },
-    "IMG_0910.jpg": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.584
-    },
-    "IMG_0914.jpg": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.924
-    },
-    "IMG_0920.jpg": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.44
-    },
-    "IMG_0921.jpg": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.367
-    },
-    "IMG_0926.jpg": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.944
-    },
-    "IMG_0927.jpg": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.824
-    },
-    "IMG_5154.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.471
-    },
-    "IMG_5310.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.864
-    },
-    "IMG_5319.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.681
-    },
-    "IMG_5375.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.856
-    },
-    "IMG_5376.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.881
-    },
-    "IMG_5382.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.619
-    },
-    "IMG_5393.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.724
-    },
-    "IMG_5395.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.903
-    },
-    "IMG_5396.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.659
-    },
-    "IMG_5414.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.813
-    },
-    "IMG_5417.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.648
-    },
-    "IMG_5418.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.953
-    },
-    "IMG_5419.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.93
-    },
-    "IMG_5420.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.951
-    },
-    "IMG_5427.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.654
-    },
-    "IMG_5437.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.349
-    },
-    "IMG_5490.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.997
-    },
-    "IMG_5493.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.957
-    },
-    "IMG_5500.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.995
-    },
-    "IMG_5503.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.991
-    },
-    "IMG_5504.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.991
-    },
-    "IMG_5524.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.994
-    },
-    "IMG_5544.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.969
-    },
-    "IMG_5548.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.992
-    },
-    "IMG_5549.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.994
-    },
-    "IMG_5551.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.951
-    },
-    "IMG_5552.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.969
-    },
-    "IMG_5556.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.924
-    },
-    "IMG_5558.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.894
-    },
-    "IMG_5559.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.964
-    },
-    "IMG_5560.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.965
-    },
-    "IMG_5562.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.655
-    },
-    "IMG_5564.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.953
-    },
-    "IMG_5586.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.982
-    },
-    "IMG_5617.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.894
-    },
-    "IMG_5648.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.982
-    },
-    "IMG_5649.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.962
-    },
-    "IMG_5651.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.687
-    },
-    "IMG_5653.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.411
-    },
-    "IMG_5655.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.979
-    },
-    "IMG_5687.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.59
-    },
-    "IMG_5713.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.486
-    },
-    "IMG_5738.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.539
-    },
-    "IMG_5780.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.739
-    },
-    "IMG_5798.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.988
-    },
-    "IMG_5802.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.734
-    },
-    "IMG_5826.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.876
-    },
-    "IMG_5852.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.51
-    },
-    "IMG_5854.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.682
-    },
-    "IMG_5876.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.832
-    },
-    "IMG_5877.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.984
-    },
-    "IMG_5878.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.987
-    },
-    "IMG_5881.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.983
-    },
-    "IMG_5882.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.624
-    },
-    "IMG_5884.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.44
-    },
-    "IMG_5885.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.558
-    },
-    "IMG_5894.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.642
-    },
-    "IMG_5895.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.97
-    },
-    "IMG_5896.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.846
-    },
-    "IMG_5906.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.587
-    },
-    "IMG_5937.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.843
-    },
-    "IMG_6074.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.91
-    },
-    "IMG_6079.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.966
-    },
-    "IMG_6080.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.917
-    },
-    "IMG_6083.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.963
-    },
-    "IMG_6084.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.937
-    },
-    "IMG_6085.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.824
-    },
-    "IMG_6087.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.787
-    },
-    "IMG_6088.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.735
-    },
-    "IMG_6090.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.78
-    },
-    "IMG_6093.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.884
-    },
-    "IMG_6094.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.854
-    },
-    "IMG_6095.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.919
-    },
-    "IMG_6102.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.636
-    },
-    "IMG_6105.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.599
-    },
-    "IMG_6111.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.522
-    },
-    "IMG_6112.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.392
-    },
-    "IMG_6114.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.834
-    },
-    "IMG_6122.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.926
-    },
-    "IMG_6123.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.866
-    },
-    "IMG_6124.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.533
-    },
-    "IMG_6126.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.673
-    },
-    "IMG_6127.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.575
-    },
-    "IMG_6129.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.522
-    },
-    "IMG_6130.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.781
-    },
-    "IMG_6131.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.686
-    },
-    "IMG_6132.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.918
-    },
-    "IMG_6144.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.584
-    },
-    "IMG_6145.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.762
-    },
-    "IMG_6150.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.724
-    },
-    "IMG_6152.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.997
-    },
-    "IMG_6172.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.522
-    },
-    "IMG_6175.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.859
-    },
-    "IMG_6187.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.897
-    },
-    "IMG_6193.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.734
-    },
-    "IMG_6226.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.989
-    },
-    "IMG_6230.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.895
-    },
-    "IMG_6240.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.529
-    },
-    "IMG_6245.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.407
-    },
-    "IMG_6246.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.951
-    },
-    "IMG_6250.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.98
-    },
-    "IMG_6251.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.979
-    },
-    "IMG_6269.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.642
-    },
-    "IMG_6270.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.575
-    },
-    "IMG_6277.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.784
-    },
-    "IMG_6279.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.905
-    },
-    "IMG_6280.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.958
-    },
-    "IMG_6285.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.751
-    },
-    "IMG_6286.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.427
-    },
-    "IMG_6287.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.806
-    },
-    "IMG_6288.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.762
-    },
-    "IMG_6289.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.945
-    },
-    "IMG_6290.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.581
-    },
-    "IMG_6315.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.631
-    },
-    "IMG_6331.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.971
-    },
-    "IMG_6332.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.902
-    },
-    "IMG_6372.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.953
-    },
-    "IMG_6373.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.884
-    },
-    "IMG_6374.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.925
-    },
-    "IMG_6386.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.918
-    },
-    "IMG_6397.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.941
-    },
-    "IMG_6406.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.694
-    },
-    "IMG_6407.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.552
-    },
-    "IMG_6434.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.818
-    },
-    "IMG_6444.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.724
-    },
-    "IMG_6475.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.953
-    },
-    "IMG_6476.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.298
-    },
-    "IMG_6553.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.914
-    },
-    "IMG_6582.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.957
-    },
-    "IMG_6590.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.747
-    },
-    "IMG_6591.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.649
-    },
-    "IMG_6593.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.933
-    },
-    "IMG_6595.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.832
-    },
-    "IMG_6596.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.903
-    },
-    "IMG_6597.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.974
-    },
-    "IMG_6602.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.434
-    },
-    "IMG_6606.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.585
-    },
-    "IMG_6609.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.409
-    },
-    "IMG_6619.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.853
-    },
-    "IMG_6621.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.917
-    },
-    "IMG_6629.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.703
-    },
-    "IMG_6630.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.647
-    },
-    "IMG_6631.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.659
-    },
-    "IMG_6634.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.432
-    },
-    "IMG_6637.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.964
-    },
-    "IMG_6648.PNG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.77
-    },
-    "IMG_6649.PNG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.921
-    },
-    "IMG_6652.PNG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.905
-    },
-    "IMG_6659.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.57
-    },
-    "IMG_6668.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.303
-    },
-    "IMG_6669.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.977
-    },
-    "IMG_6670.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.948
-    },
-    "IMG_6672.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.862
-    },
-    "IMG_6673.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.904
-    },
-    "IMG_6674.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.989
-    },
-    "IMG_6675.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.681
-    },
-    "IMG_6690.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.94
-    },
-    "IMG_6691.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.76
-    },
-    "IMG_6694.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.798
-    },
-    "IMG_6696.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.978
-    },
-    "IMG_6700.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.56
-    },
-    "IMG_6701.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.617
-    },
-    "IMG_6704.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.947
-    },
-    "IMG_6710.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.696
-    },
-    "IMG_6729.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.869
-    },
-    "IMG_6731.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.558
-    },
-    "IMG_6734.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.881
-    },
-    "IMG_6737.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.658
-    },
-    "IMG_6748.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.969
-    },
-    "IMG_6777.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.789
-    },
-    "IMG_6787.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.974
-    },
-    "IMG_6796.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.953
-    },
-    "IMG_6797.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.815
-    },
-    "IMG_6798.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.539
-    },
-    "IMG_6799.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.947
-    },
-    "IMG_6801.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.979
-    },
-    "IMG_6803.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.639
-    },
-    "IMG_6804.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.998
-    },
-    "IMG_6805.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.998
-    },
-    "IMG_6807.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.929
-    },
-    "IMG_6808.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.628
-    },
-    "IMG_6809.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.811
-    },
-    "IMG_6810.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.907
-    },
-    "IMG_6823.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.821
-    },
-    "IMG_6824.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.92
-    },
-    "IMG_6827.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.992
-    },
-    "IMG_6835.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.945
-    },
-    "IMG_6846.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.994
-    },
-    "IMG_6847.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.871
-    },
-    "IMG_6850.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.347
-    },
-    "IMG_6853.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.977
-    },
-    "IMG_6856.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.886
-    },
-    "IMG_6857.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.935
-    },
-    "IMG_6863.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.514
-    },
-    "IMG_6869.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.373
-    },
-    "IMG_6873.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.777
-    },
-    "IMG_6876.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.989
-    },
-    "IMG_6880.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.802
-    },
-    "IMG_6884.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.804
-    },
-    "IMG_6886.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.981
-    },
-    "IMG_6888.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.994
-    },
-    "IMG_6894.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.994
-    },
-    "IMG_6895.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.934
-    },
-    "IMG_6898.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.983
-    },
-    "IMG_6899.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.593
-    },
-    "IMG_6901.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.804
-    },
-    "IMG_6903.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.724
-    },
-    "IMG_6912.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.577
-    },
-    "IMG_6916.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.697
-    },
-    "IMG_6924.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.511
-    },
-    "IMG_6925.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.367
-    },
-    "IMG_6927.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.689
-    },
-    "IMG_6928.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.808
-    },
-    "IMG_6929.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.609
-    },
-    "IMG_6930.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.795
-    },
-    "IMG_6931.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.93
-    },
-    "IMG_6932.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.939
-    },
-    "IMG_6933.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.843
-    },
-    "IMG_6936.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.864
-    },
-    "IMG_6938.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.789
-    },
-    "IMG_6939.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.798
-    },
-    "IMG_6941.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.921
-    },
-    "IMG_6942.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.559
-    },
-    "IMG_6943.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.871
-    },
-    "IMG_6944.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.458
-    },
-    "IMG_6945.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.651
-    },
-    "IMG_6959.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.992
-    },
-    "IMG_6960.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.601
-    },
-    "IMG_6961.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.965
-    },
-    "IMG_6962.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.835
-    },
-    "IMG_6963.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.737
-    },
-    "IMG_6964.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.729
-    },
-    "IMG_6966.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.886
-    },
-    "IMG_6967.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.879
-    },
-    "IMG_6968.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.99
-    },
-    "IMG_6969.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.988
-    },
-    "IMG_6970.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.779
-    },
-    "IMG_6971.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.98
-    },
-    "IMG_6972.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.946
-    },
-    "IMG_6973.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.938
-    },
-    "IMG_6974.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.871
-    },
-    "IMG_6975.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.985
-    },
-    "IMG_6976.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.975
-    },
-    "IMG_6977.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.983
-    },
-    "IMG_6978.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.981
-    },
-    "IMG_6979.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.876
-    },
-    "IMG_6980.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.713
-    },
-    "IMG_6981.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.983
-    },
-    "IMG_6983.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.677
-    },
-    "IMG_6985.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.837
-    },
-    "IMG_6986.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.85
-    },
-    "IMG_6987.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.91
-    },
-    "IMG_6988.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.89
-    },
-    "IMG_6989.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.887
-    },
-    "IMG_6990.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.898
-    },
-    "IMG_6992.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.991
-    },
-    "IMG_6993.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.963
-    },
-    "IMG_6996.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.74
-    },
-    "IMG_6997.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.892
-    },
-    "IMG_6998.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.97
-    },
-    "IMG_7004.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.737
-    },
-    "IMG_7006.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.957
-    },
-    "IMG_7008.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.856
-    },
-    "IMG_7010.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.869
-    },
-    "IMG_7017.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.501
-    },
-    "IMG_7018.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.481
-    },
-    "IMG_7019.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.667
-    },
-    "IMG_7022.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.627
-    },
-    "IMG_7025.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.77
-    },
-    "IMG_7026.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.951
-    },
-    "IMG_7027.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.627
-    },
-    "IMG_7028.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.494
-    },
-    "IMG_7029.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.828
-    },
-    "IMG_7032.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.697
-    },
-    "IMG_7035.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.642
-    },
-    "IMG_7036.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.799
-    },
-    "IMG_7037.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.532
-    },
-    "IMG_7038.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.547
-    },
-    "IMG_7039.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.72
-    },
-    "IMG_7042.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.744
-    },
-    "IMG_7043.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.734
-    },
-    "IMG_7044.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.77
-    },
-    "IMG_7052.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.958
-    },
-    "IMG_7054.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.802
-    },
-    "IMG_7055.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.494
-    },
-    "IMG_7056.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.929
-    },
-    "IMG_7060.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.998
-    },
-    "IMG_7061.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.897
-    },
-    "IMG_7064.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.846
-    },
-    "IMG_7070.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.687
-    },
-    "IMG_7072.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.771
-    },
-    "IMG_7076.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.853
-    },
-    "IMG_7077.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.841
-    },
-    "IMG_7078.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.625
-    },
-    "IMG_7079.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.832
-    },
-    "IMG_7080.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.948
-    },
-    "IMG_7082.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.953
-    },
-    "IMG_7083.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.887
-    },
-    "IMG_7084.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.637
-    },
-    "IMG_7087.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.994
-    },
-    "IMG_7181.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.649
-    },
-    "IMG_7184.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.881
-    },
-    "IMG_7187.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.618
-    },
-    "IMG_7213.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.842
-    },
-    "IMG_7216.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.988
-    },
-    "IMG_7268.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.871
-    },
-    "IMG_7273.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.571
-    },
-    "IMG_7281.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.797
-    },
-    "IMG_7284.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.485
-    },
-    "IMG_7285.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.601
-    },
-    "IMG_7286.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.735
-    },
-    "IMG_7287.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.887
-    },
-    "IMG_7302.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.578
-    },
-    "IMG_7309.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.528
-    },
-    "IMG_7319.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.931
-    },
-    "IMG_7320.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.942
-    },
-    "IMG_7322.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.871
-    },
-    "IMG_7323.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.819
-    },
-    "IMG_7332.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.897
-    },
-    "IMG_7348.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.948
-    },
-    "IMG_7353.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.52
-    },
-    "IMG_7354.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.679
-    },
-    "IMG_7583.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.988
-    },
-    "IMG_7607.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.813
-    },
-    "IMG_7609.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.569
-    },
-    "IMG_7626.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.956
-    },
-    "IMG_7627.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.996
-    },
-    "IMG_7672.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.962
-    },
-    "IMG_7674.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.793
-    },
-    "IMG_7675.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.878
-    },
-    "IMG_7680.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.755
-    },
-    "IMG_7697.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.97
-    },
-    "IMG_7803.HEIC": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.953
-    },
-    "IMG_7803.jpg": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.954
-    },
-    "IMG_7870.HEIC": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.854
-    },
-    "IMG_7870.jpg": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.87
-    },
-    "IMG_7907.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.447
-    },
-    "IMG_7910.PNG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.685
-    },
-    "IMG_7923.HEIC": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.559
-    },
-    "IMG_7923.jpg": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.581
-    },
-    "IMG_8089.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.981
-    },
-    "IMG_8099.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.948
-    },
-    "IMG_8422.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.999
-    },
-    "IMG_8433.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.925
-    },
-    "IMG_8443.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 1.0
-    },
-    "IMG_8447.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.939
-    },
-    "IMG_8450.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.984
-    },
-    "IMG_8530.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.534
-    },
-    "IMG_8532.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.854
-    },
-    "IMG_8533.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.534
-    },
-    "IMG_8554.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.752
-    },
-    "IMG_8556.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.751
-    },
-    "IMG_8588.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.846
-    },
-    "IMG_8589.JPG": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.729
-    },
-    "IMG_8645.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.946
-    },
-    "IMG_8647.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.853
-    },
-    "IMG_8649.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.888
-    },
-    "IMG_8669.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.76
-    },
-    "IMG_8673.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.885
-    },
-    "IMG_8679.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.997
-    },
-    "IMG_8680.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.997
-    },
-    "IMG_8681.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.998
-    },
-    "IMG_8683.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.998
-    },
-    "IMG_8687.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.99
-    },
-    "IMG_8691.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.315
-    },
-    "IMG_8728.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.953
-    },
-    "IMG_8866.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.922
-    },
-    "IMG_8998.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.821
-    },
-    "IMG_9002.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.756
-    },
-    "IMG_9162.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.953
-    },
-    "IMG_9167.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.971
-    },
-    "IMG_9174.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.707
-    },
-    "IMG_9183.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.846
-    },
-    "IMG_9326.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.912
-    },
-    "IMG_9328.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.902
-    },
-    "IMG_9334.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.939
-    },
-    "IMG_9336.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.983
-    },
-    "IMG_9340.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.984
-    },
-    "IMG_9350.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.998
-    },
-    "IMG_9351.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.995
-    },
-    "IMG_9355.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.956
-    },
-    "IMG_9357.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.99
-    },
-    "IMG_9360.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.804
-    },
-    "IMG_9441.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.725
-    },
-    "IMG_9443.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.885
-    },
-    "IMG_9449.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.899
-    },
-    "IMG_9540.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.944
-    },
-    "IMG_9542.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.977
-    },
-    "IMG_9546.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.601
-    },
-    "IMG_9564.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.937
-    },
-    "IMG_9645.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.921
-    },
-    "IMG_9658.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.654
-    },
-    "IMG_9666.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.788
-    },
-    "IMG_9669.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.761
-    },
-    "IMG_9681.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.781
-    },
-    "IMG_9690.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.669
-    },
-    "IMG_9696.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.81
-    },
-    "IMG_9718.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.72
-    },
-    "IMG_9724.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.562
-    },
-    "IMG_9750.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.579
-    },
-    "IMG_9751.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.989
-    },
-    "IMG_9803.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.473
-    },
-    "IMG_9818.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.772
-    },
-    "IMG_9828.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.579
-    },
-    "IMG_9913.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.495
-    },
-    "IMG_9917.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.846
-    },
-    "IMG_9934.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.57
-    },
-    "IMG_9938.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.582
-    },
-    "IMG_9941.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.482
-    },
-    "IMG_9942.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.974
-    },
-    "IMG_9949.JPG": {
-        "folder": "art_creative",
-        "category": "Art & Creative",
-        "confidence": 0.309
-    },
-    "IMG_9955.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.618
-    },
-    "IMG_9957.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.98
-    },
-    "IMG_9958.JPG": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.932
-    },
-    "aedc1f5c-6fbc-472f-a030-1ea07ed5176a.jpg": {
-        "folder": "people_places",
-        "category": "People & Places",
-        "confidence": 0.42
-    },
-    "f342cec4-11a6-45e0-bce2-267ef355254a.jpg": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.95
-    },
-    "f9a3d4c5-7ab7-4d85-9b6b-7e84d450cf3a.jpg": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.631
-    },
-    "fdaac68e-4d7b-49df-b92b-2227b02e27ee.jpg": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.991
-    },
-    "fe762644-ae63-4496-9dad-ea5cc737ff7e.jpg": {
-        "folder": "landscapes_nature",
-        "category": "Landscapes & Nature",
-        "confidence": 0.504
-    }
+  "Landscape & Nature/Moon-Sky/20338fc0-1060-4687-b1f1-0acae23c2908.jpg": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/B802CE0F-F650-4562-AAE5-DEC136FDFC54.jpg": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_0159.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_0436.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_0981.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_1333.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_1356.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_1414.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_1430.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_1644.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_1651.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_5427.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_5490.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_5906.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_6152.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_6582.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_6590.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_6602.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_6609.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_6694.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_6777.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_6823.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_6932.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_7309.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_7609.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_8588.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/IMG_8589.JPG": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Moon-Sky/b439133a-0235-48d5-8e18-0de26f505b12.jpg": {
+    "subcategory": "moon"
+  },
+  "Landscape & Nature/Nature/20338fc0-1060-4687-b1f1-0acae23c2908.jpg": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/305a727a-0d1b-483f-b156-5b859dd71b78.jpg": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/484fb03a-1e72-4f21-9d14-83ac4d321417.jpg": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/4b49f7e5-2677-4cad-88a6-72b76cebcbba.jpg": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/6df6d6ac-6f93-4584-9068-b7be8c35d147.jpg": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_0180.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_1171.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_1177.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_1312.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_1316.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_1338.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_1365.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_1481.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_1559.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_1670.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_1671.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_1693.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_1725.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_5418.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_5419.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_5503.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_5544.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_5549.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_5551.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_5558.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_5649.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_5651.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_5653.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_5655.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_5881.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_5882.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_5884.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_5894.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_5895.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_5896.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6114.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6122.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6123.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6124.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6126.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6132.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6150.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6175.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6187.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6193.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6285.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6290.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6591.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6619.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6710.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6804.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6846.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6847.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6853.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6856.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6863.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6869.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6876.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6880.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6888.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6894.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6895.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6899.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6903.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6925.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6927.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6928.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6929.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6930.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6931.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6933.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6936.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6938.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6939.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6941.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6942.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6943.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6944.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6945.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6997.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_6998.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_7029.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_7035.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_7064.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/IMG_7083.JPG": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/f342cec4-11a6-45e0-bce2-267ef355254a.jpg": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/f9a3d4c5-7ab7-4d85-9b6b-7e84d450cf3a.jpg": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/fdaac68e-4d7b-49df-b92b-2227b02e27ee.jpg": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Nature/fe762644-ae63-4496-9dad-ea5cc737ff7e.jpg": {
+    "subcategory": "nature"
+  },
+  "Landscape & Nature/Sea side-Water/3B8D1F4A-8D4A-4F47-A7A4-8D78B21345DB.jpg": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/3a64aabf-d1ef-43a3-b7c9-45a77b8c3afc.jpg": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/BBBD8EA7-EE03-476C-A059-E20471B14828.jpg": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/E85D8E0C-C782-4F40-972B-C319BA403FC2.jpg": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_1321.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_1394.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_1537.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_1572.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_5417.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_5524.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_5559.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_5560.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_5852.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_5854.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_6172.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_6226.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_6240.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_6270.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_6593.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_6597.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_6649.PNG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_6652.PNG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_6824.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_6827.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_6850.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_6857.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_6884.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_6898.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_6912.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_6916.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_6924.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_7607.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_7626.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_7627.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_8422.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/IMG_8443.JPG": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/d01b0725-526c-4511-8694-f0a0180dbc30.jpg": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sea side-Water/eba0cb84-9ae8-4a0b-9c8f-aa72b0e00610.jpg": {
+    "subcategory": "sea side"
+  },
+  "Landscape & Nature/Sunset-Sunrise/IMG_0153.JPG": {
+    "subcategory": "sunset/sunrise"
+  },
+  "Landscape & Nature/Sunset-Sunrise/IMG_1176.JPG": {
+    "subcategory": "sunset/sunrise"
+  },
+  "Landscape & Nature/Sunset-Sunrise/IMG_1292.JPG": {
+    "subcategory": "sunset/sunrise"
+  },
+  "Landscape & Nature/Sunset-Sunrise/IMG_1431.JPG": {
+    "subcategory": "sunset/sunrise"
+  },
+  "Landscape & Nature/Sunset-Sunrise/IMG_1499.JPG": {
+    "subcategory": "sunset/sunrise"
+  },
+  "Landscape & Nature/Sunset-Sunrise/IMG_1653.JPG": {
+    "subcategory": "sunset/sunrise"
+  },
+  "Landscape & Nature/Sunset-Sunrise/IMG_5437.JPG": {
+    "subcategory": "sunset/sunrise"
+  },
+  "Landscape & Nature/Sunset-Sunrise/IMG_5617.JPG": {
+    "subcategory": "sunset/sunrise"
+  },
+  "Landscape & Nature/Sunset-Sunrise/IMG_5648.JPG": {
+    "subcategory": "sunset/sunrise"
+  },
+  "Landscape & Nature/Sunset-Sunrise/IMG_5826.JPG": {
+    "subcategory": "sunset/sunrise"
+  },
+  "Landscape & Nature/Sunset-Sunrise/IMG_6315.JPG": {
+    "subcategory": "sunset/sunrise"
+  },
+  "Landscape & Nature/Sunset-Sunrise/IMG_6606.JPG": {
+    "subcategory": "sunset/sunrise"
+  },
+  "Landscape & Nature/Sunset-Sunrise/IMG_6659.JPG": {
+    "subcategory": "sunset/sunrise"
+  },
+  "Landscape & Nature/Sunset-Sunrise/IMG_6835.JPG": {
+    "subcategory": "sunset/sunrise"
+  },
+  "Landscape & Nature/Sunset-Sunrise/IMG_6886.JPG": {
+    "subcategory": "sunset/sunrise"
+  },
+  "Landscape & Nature/Sunset-Sunrise/IMG_6996.JPG": {
+    "subcategory": "sunset/sunrise"
+  },
+  "Landscape & Nature/Sunset-Sunrise/IMG_7060.JPG": {
+    "subcategory": "sunset/sunrise"
+  },
+  "Landscape & Nature/Sunset-Sunrise/IMG_9174.JPG": {
+    "subcategory": "sunset/sunrise"
+  },
+  "Landscape & Nature/Sunset-Sunrise/IMG_9183.JPG": {
+    "subcategory": "sunset/sunrise"
+  },
+  "Landscape & Nature/Sunset-Sunrise/cc169fdd-6634-4e36-b1c4-5fb04bb7d794.jpg": {
+    "subcategory": "sunset/sunrise"
+  },
+  "People & Places/City View/IMG_0340.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_1260.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_1293.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_1298.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_1300.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_1312.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_1318.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_1446.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_1665.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/IMG_6810.JPG": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/cda7c76b-6a70-45d0-ba8d-cb14f9a4a42a.jpg": {
+    "subcategory": "city view"
+  },
+  "People & Places/City View/f8a69e79-9a97-4e3c-9d2c-cf6f2cd7da4f.jpg": {
+    "subcategory": "city view"
+  },
+  "People & Places/People/0f2f1e87-a08c-4e9d-9663-e630a430ed58.jpg": {
+    "subcategory": "people"
+  },
+  "People & Places/People/2f23ea30-3fc1-43af-81e6-420dce288b5f.jpg": {
+    "subcategory": "people"
+  },
+  "People & Places/People/3649eb62-3d62-4f1e-9304-692cda5d3efc.jpg": {
+    "subcategory": "people"
+  },
+  "People & Places/People/3C14BEFD-E729-4E2C-92B7-215059E8B273.jpg": {
+    "subcategory": "people"
+  },
+  "People & Places/People/4c908cee-a896-48a1-ae2e-0f4f63575384.jpg": {
+    "subcategory": "people"
+  },
+  "People & Places/People/IMG_1240.JPG": {
+    "subcategory": "people"
+  },
+  "People & Places/People/IMG_1241.JPG": {
+    "subcategory": "people"
+  },
+  "People & Places/People/IMG_1242.JPG": {
+    "subcategory": "people"
+  },
+  "People & Places/People/IMG_1659.JPG": {
+    "subcategory": "people"
+  },
+  "People & Places/People/IMG_1664.JPG": {
+    "subcategory": "people"
+  },
+  "People & Places/People/IMG_1696.PNG": {
+    "subcategory": "people"
+  },
+  "People & Places/People/IMG_6675.JPG": {
+    "subcategory": "people"
+  },
+  "People & Places/People/a036bdd7-4a5d-475b-8118-5b8df6dd930c.jpg": {
+    "subcategory": "people"
+  },
+  "People & Places/People/aedc1f5c-6fbc-472f-a030-1ea07ed5176a(1).jpg": {
+    "subcategory": "people"
+  },
+  "People & Places/People/aedc1f5c-6fbc-472f-a030-1ea07ed5176a.jpg": {
+    "subcategory": "people"
+  },
+  "People & Places/Places/05f70e71-d7a5-4c6a-b0f9-f9475c052275.jpg": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/0e2ea1c3-8a92-46b3-8c8e-e085c39383f1.jpg": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/35005edc-d385-49ed-a807-54f0d3455a03.jpg": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/3fbb6129-c19b-463c-91a0-50687e488728.jpg": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_1204.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_1206.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_1209.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_1215.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_1237.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_1306.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_1394.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_1411.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_1449.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_1506.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_1524.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_1566.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_1567.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_1571.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_1573.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_1673.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_1674.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_1693.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_1725.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6085.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6087.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6088.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6090.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6093.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6094.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6112.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6129.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6130.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6131.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6145.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6250.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6251.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6269.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6279.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6287.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6289.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6434.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6629.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6631.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6669.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6670.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6700.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6729.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6731.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6734.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6748.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6796.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6807.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6961.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6962.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6963.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6964.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6966.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6967.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6969.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6970.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6971.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6972.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6973.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6974.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6975.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6976.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6977.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6978.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6979.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6980.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6981.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6983.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_6989.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7006.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7008.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7010.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7017.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7018.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7019.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7022.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7025.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7036.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7037.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7038.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7039.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7042.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7043.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7044.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7052.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7054.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7055.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7056.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7061.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7076.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7078.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7079.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7084.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7213.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7273.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7281.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7284.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7285.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7286.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7287.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7302.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7332.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7353.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_7697.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_8089.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_8649.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_8679.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_8687.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_8691.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_8866.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_9002.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_9328.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_9334.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_9336.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_9340.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_9351.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_9355.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_9357.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_9360.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_9449.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_9540.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_9546.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_9666.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_9690.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_9751.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_9803.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_9818.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_9913.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_9917.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_9941.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_9942.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_9955.JPG": {
+    "subcategory": "places"
+  },
+  "People & Places/Places/IMG_9958.JPG": {
+    "subcategory": "places"
+  },
+  "Art & Creative/Art/35005edc-d385-49ed-a807-54f0d3455a03.jpg": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/468194B1-58AA-430A-91D5-A9FE706A0EEB.jpg": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/538d367b-7bbd-4080-aab8-e87fa518c952.jpg": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_1231.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_1247.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_1264.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_1501.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_1509.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_1511.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_1512.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_1519.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_1520.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_1521.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_1522.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_1523.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_1527.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_1673.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_6246.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_6476.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_6553.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_6595.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_6596.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_6637.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_6648.PNG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_6990.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_7910.PNG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_8447.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_8680.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_8681.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_8683.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_9167.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_9441.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_9542.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_9564.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_9645.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_9658.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_9669.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_9681.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_9696.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_9718.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_9724.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_9750.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_9828.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_9934.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_9938.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Art/IMG_9949.JPG": {
+    "subcategory": "art"
+  },
+  "Art & Creative/Food/9287c743-c7ee-414a-a3a8-ca9a31a8b59f.jpg": {
+    "subcategory": "food"
+  },
+  "Art & Creative/Food/IMG_0139.JPG": {
+    "subcategory": "food"
+  },
+  "Art & Creative/Food/IMG_0144.JPG": {
+    "subcategory": "food"
+  },
+  "Art & Creative/Food/IMG_1193.JPG": {
+    "subcategory": "food"
+  },
+  "Art & Creative/Food/IMG_1194.JPG": {
+    "subcategory": "food"
+  },
+  "Art & Creative/Food/IMG_1195.JPG": {
+    "subcategory": "food"
+  },
+  "Art & Creative/Food/IMG_1198.JPG": {
+    "subcategory": "food"
+  },
+  "Art & Creative/Food/IMG_1199.JPG": {
+    "subcategory": "food"
+  },
+  "Art & Creative/Food/IMG_1286.JPG": {
+    "subcategory": "food"
+  },
+  "Art & Creative/Food/IMG_1308.JPG": {
+    "subcategory": "food"
+  },
+  "Art & Creative/Food/IMG_1309.JPG": {
+    "subcategory": "food"
+  },
+  "Art & Creative/Food/IMG_1310.JPG": {
+    "subcategory": "food"
+  },
+  "Art & Creative/Food/IMG_1474.JPG": {
+    "subcategory": "food"
+  },
+  "Art & Creative/Food/IMG_1475.JPG": {
+    "subcategory": "food"
+  },
+  "Art & Creative/Food/IMG_1477.JPG": {
+    "subcategory": "food"
+  },
+  "Art & Creative/Food/IMG_1478.JPG": {
+    "subcategory": "food"
+  },
+  "Art & Creative/Food/IMG_1496.JPG": {
+    "subcategory": "food"
+  },
+  "Art & Creative/Food/IMG_1502.JPG": {
+    "subcategory": "food"
+  },
+  "Art & Creative/Food/IMG_1503.JPG": {
+    "subcategory": "food"
+  },
+  "Art & Creative/Food/IMG_1577.JPG": {
+    "subcategory": "food"
+  },
+  "Art & Creative/Food/IMG_1675.JPG": {
+    "subcategory": "food"
+  },
+  "Art & Creative/Food/IMG_1676.JPG": {
+    "subcategory": "food"
+  },
+  "Art & Creative/Food/IMG_5713.JPG": {
+    "subcategory": "food"
+  }
 }
 };
