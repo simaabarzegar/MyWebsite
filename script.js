@@ -267,7 +267,10 @@ document.addEventListener("DOMContentLoaded", () => {
     entries.forEach(([filename, _]) => {
       const img = document.createElement("img");
       const imgPath = filename.startsWith("images/") ? filename : `images/${filename}`;
-      img.src = imgPath;
+      // The grid shows a small pre-generated thumbnail (fast); the zoom modal
+      // still opens the original full-resolution image.
+      const thumbPath = imgPath.replace("images/", "images/_thumbs/").replace(/\.[^./]+$/, ".jpg");
+      img.src = thumbPath;
       img.alt = filename;
       img.className = "micro-thumb";
       img.loading = "lazy";
